@@ -281,9 +281,9 @@ export default function AboutPage() {
             you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/pricing">
+            <Link href="https://app.writeworks.ai/sign-up">
               <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90 h-12 px-8">
-                Get Started
+                Free Trial
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Link>

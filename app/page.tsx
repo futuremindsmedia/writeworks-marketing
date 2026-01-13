@@ -108,15 +108,7 @@ export default function Home() {
               className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90 px-8"
               asChild
             >
-              <a href="https://app.writeworks.ai/sign-up">Start Free</a>
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="w-full sm:w-auto border-white/20 text-white hover:bg-white/5 bg-transparent hover:border-white/40"
-              asChild
-            >
-              <a href="#frameworks">See How It Works</a>
+              <a href="https://app.writeworks.ai/sign-up">Free Trial</a>
             </Button>
           </div>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-white/60">
@@ -135,7 +127,7 @@ export default function Home() {
           <div className="relative rounded-lg overflow-hidden border border-white/10">
             <div className="bg-black rounded-lg overflow-hidden">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-27%20at%2016.24.11-3qvocKjyuQAvQJvctZfMC3jJhNJF4a.png"
+                src="/images/screenshot-202025-10-27-20at-2016.png"
                 alt="WriteWorks AI Dashboard"
                 className="w-full h-auto"
               />
@@ -285,7 +277,7 @@ export default function Home() {
               <div className="rounded-lg overflow-hidden border border-white/10">
                 <div className="bg-black rounded-lg overflow-hidden">
                   <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-27%20at%2016.20.59-zq9nj0vkQPEQuIK68uvlJR2xdAbjVE.png"
+                    src="/images/screenshot-202025-10-27-20at-2016.png"
                     alt="Content Editor with LLM Visibility Score"
                     className="w-full h-auto"
                   />

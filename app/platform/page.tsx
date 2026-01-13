@@ -102,7 +102,7 @@ export default function PlatformPage() {
               className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
               asChild
             >
-              <a href="https://app.writeworks.ai/sign-up">Start Free</a>
+              <a href="https://app.writeworks.ai/sign-up">Free Trial</a>
             </Button>
             <Button
               size="lg"

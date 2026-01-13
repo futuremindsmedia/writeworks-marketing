@@ -186,7 +186,7 @@ export default function PricingPage() {
                   asChild
                 >
                   <a href="https://app.writeworks.ai/sign-up">
-                    {plan.price === "Custom" ? "Contact Sales" : "Get Started"}
+                    {plan.price === "Custom" ? "Contact Sales" : "Free Trial"}
                   </a>
                 </Button>
               </Card>

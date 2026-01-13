@@ -279,11 +279,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-3 md:px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <a href="/">
-            <img
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WriteWorks%20Logo1-Rm1hq6fM67OQcTXXNiAOlnZs28cQrH.png"
-              alt="WriteWorks AI"
-              className="h-12 md:h-16 w-auto"
-            />
+            <img src="/images/writeworks-20logo1.png" alt="WriteWorks AI" className="h-12 md:h-16 w-auto" />
           </a>
         </div>
 
@@ -350,7 +346,7 @@ export function Header() {
                       <div className="hidden md:block">
                         <div className="rounded-lg overflow-hidden border border-white/10 h-full">
                           <img
-                            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-27%20at%2016.20.59-zq9nj0vkQPEQuIK68uvlJR2xdAbjVE.png"
+                            src="/images/screenshot-202025-10-27-20at-2016.png"
                             alt="WriteWorks Content Editor with LLM Visibility Score"
                             className="w-full h-full object-contain"
                           />
@@ -470,7 +466,7 @@ export function Header() {
             <Link href="https://app.writeworks.ai/login">Sign In</Link>
           </Button>
           <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
-            <Link href="https://app.writeworks.ai/sign-up">Get Started</Link>
+            <Link href="https://app.writeworks.ai/sign-up">Free Trial</Link>
           </Button>
         </div>
 
@@ -602,7 +598,7 @@ export function Header() {
                 className="w-full bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90 h-12"
                 asChild
               >
-                <Link href="https://app.writeworks.ai/sign-up">Get Started</Link>
+                <Link href="https://app.writeworks.ai/sign-up">Free Trial</Link>
               </Button>
             </div>
           </nav>

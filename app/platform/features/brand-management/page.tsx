@@ -230,16 +230,8 @@ export default function BrandManagementPage() {
                 asChild
               >
                 <a href="https://app.writeworks.ai/sign-up">
-                  Start Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+                  Free Trial <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white/20 text-white bg-transparent hover:bg-white/5"
-                asChild
-              >
-                <a href="https://app.writeworks.ai/demo">Watch Demo</a>
               </Button>
             </div>
           </div>
@@ -485,7 +477,7 @@ export default function BrandManagementPage() {
                 asChild
               >
                 <a href="https://app.writeworks.ai/sign-up">
-                  Start Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+                  Free Trial <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
               <Button

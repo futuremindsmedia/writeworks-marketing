@@ -99,16 +99,15 @@ export default function FieldEventsMarketingPage() {
                 asChild
               >
                 <Link href="https://app.writeworks.ai/sign-up">
-                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                  Free Trial <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
                 className="border-white/20 text-white bg-transparent hover:bg-white/5"
-                asChild
               >
-                <Link href="/contact">Book Demo</Link>
+                <a href="https://app.writeworks.ai/demo">Book Demo</a>
               </Button>
             </div>
           </div>
@@ -223,7 +222,7 @@ export default function FieldEventsMarketingPage() {
               asChild
             >
               <Link href="https://app.writeworks.ai/sign-up">
-                Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                Free Trial <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
           </div>
