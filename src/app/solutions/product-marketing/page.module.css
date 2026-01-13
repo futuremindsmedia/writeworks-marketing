@@ -1,0 +1,800 @@
+:root {
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary: #0ea5e9;
+    --dark: #1e293b;
+    --gray-50: #f8fafc;
+    --gray-100: #f1f5f9;
+    --gray-200: #e2e8f0;
+    --gray-400: #94a3b8;
+    --gray-600: #475569;
+    --success: #10b981;
+    --warning: #f59e0b;
+    --radius: 12px;
+    --shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Navigation */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--gray-200);
+    z-index: 100;
+    padding: 16px 0;
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.navLinks {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.navLink {
+    color: var(--gray-600);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.navLink:hover {
+    color: var(--primary);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: none;
+}
+
+.btnPrimary {
+    background: var(--primary);
+    color: #fff;
+}
+
+.btnPrimary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow);
+}
+
+.btnOutline {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--primary);
+}
+
+.btnOutline:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+.btnLarge {
+    padding: 16px 32px;
+    font-size: 1.05rem;
+}
+
+/* Hero Section */
+.hero {
+    padding: 140px 0 80px;
+    background: linear-gradient(135deg, var(--gray-50) 0%, #fff 100%);
+}
+
+.heroContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.heroBadge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ede9fe;
+    color: var(--primary);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.heroTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.heroTitleAccent {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.heroDescription {
+    font-size: 1.2rem;
+    color: var(--gray-600);
+    margin-bottom: 32px;
+    max-width: 520px;
+}
+
+.heroCta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.heroStats {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--gray-200);
+}
+
+.heroStat {
+    text-align: left;
+}
+
+.heroStatValue {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.heroStatLabel {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+}
+
+.heroVisual {
+    position: relative;
+}
+
+.heroImage {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--gray-200);
+}
+
+/* Section Base */
+.section {
+    padding: 80px 0;
+}
+
+.sectionHeader {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.sectionLabel {
+    display: inline-block;
+    background: #ede9fe;
+    color: var(--primary);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+}
+
+.sectionTitle {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 16px;
+}
+
+.sectionDescription {
+    font-size: 1.1rem;
+    color: var(--gray-600);
+}
+
+/* Target Audience Section */
+.audience {
+    background: var(--gray-50);
+}
+
+.audienceGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.audienceCard {
+    background: #fff;
+    padding: 32px;
+    border-radius: var(--radius);
+    border: 1px solid var(--gray-200);
+    transition: all 0.2s;
+}
+
+.audienceCard:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary);
+}
+
+.audienceIcon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.audienceIcon svg {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+.audienceCardTitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--dark);
+}
+
+.audienceCardDescription {
+    color: var(--gray-600);
+    font-size: 0.95rem;
+}
+
+/* Challenges Section */
+.challenges {
+    background: #fff;
+}
+
+.challengesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.challengeCard {
+    display: flex;
+    gap: 20px;
+    padding: 28px;
+    background: var(--gray-50);
+    border-radius: var(--radius);
+    border: 1px solid var(--gray-200);
+}
+
+.challengeNumber {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: #fef2f2;
+    color: #ef4444;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.challengeContent h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--dark);
+}
+
+.challengeContent p {
+    color: var(--gray-600);
+    font-size: 0.95rem;
+}
+
+/* Solutions Section */
+.solutions {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: #fff;
+}
+
+.solutions .sectionLabel {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+}
+
+.solutionsSectionTitle {
+    color: #fff;
+}
+
+.solutionsSectionDescription {
+    color: rgba(255,255,255,0.85);
+}
+
+.solutionsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.solutionCard {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 28px;
+    border-radius: var(--radius);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.solutionCardTitle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.solutionCardTitle svg {
+    width: 24px;
+    height: 24px;
+    color: #34d399;
+}
+
+.solutionCardDescription {
+    color: rgba(255,255,255,0.85);
+    font-size: 0.95rem;
+}
+
+/* Jobs to Be Done Section */
+.jtbd {
+    background: var(--gray-50);
+}
+
+.jtbdGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.jtbdCard {
+    background: #fff;
+    padding: 24px;
+    border-radius: var(--radius);
+    border: 1px solid var(--gray-200);
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.jtbdCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.jtbdIcon {
+    width: 56px;
+    height: 56px;
+    background: #ede9fe;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.jtbdIcon svg {
+    width: 28px;
+    height: 28px;
+    color: var(--primary);
+}
+
+.jtbdCardTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 8px;
+}
+
+.jtbdCardDescription {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+}
+
+/* Time Savings Section */
+.timeSavings {
+    background: #fff;
+}
+
+.timeSavingsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.timeSavingsTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.timeSavingsDescription {
+    color: var(--gray-600);
+    font-size: 1.05rem;
+    margin-bottom: 32px;
+}
+
+.savingsMetrics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.savingsMetric {
+    background: var(--gray-50);
+    padding: 24px;
+    border-radius: var(--radius);
+    border: 1px solid var(--gray-200);
+}
+
+.savingsMetricValue {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--success);
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.savingsMetricLabel {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+}
+
+.savingsVisual {
+    position: relative;
+}
+
+.savingsChart {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.barChart {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.barItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.barLabel {
+    width: 100px;
+    font-size: 0.85rem;
+    color: var(--gray-600);
+    text-align: right;
+}
+
+.barContainer {
+    flex: 1;
+    height: 40px;
+    background: var(--gray-100);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.barFill {
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #fff;
+    transition: width 0.8s ease-out;
+}
+
+.barFillWithout {
+    background: var(--gray-400);
+    width: 100%;
+}
+
+.barFillWith {
+    background: linear-gradient(135deg, var(--success) 0%, #059669 100%);
+    width: 30%;
+}
+
+.chartCaption {
+    text-align: center;
+    margin-top: 16px;
+    color: var(--gray-600);
+    font-size: 0.9rem;
+}
+
+/* CTA Section */
+.cta {
+    background: linear-gradient(135deg, var(--dark) 0%, #0f172a 100%);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.ctaTitle {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.ctaDescription {
+    color: var(--gray-400);
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btnOutlineWhite {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btnOutlineWhite:hover {
+    background: #fff;
+    color: var(--dark);
+}
+
+/* Footer */
+.footer {
+    background: #0f172a;
+    padding: 40px 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerLogo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 32px;
+}
+
+.footerLink {
+    color: var(--gray-400);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.footerLink:hover {
+    color: #fff;
+}
+
+.footerCopy {
+    color: var(--gray-400);
+    font-size: 0.85rem;
+}
+
+/* Mobile Menu Button */
+.mobileMenuBtn {
+    display: none;
+    background: none;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.mobileMenuBtn svg {
+    width: 24px;
+    height: 24px;
+    color: var(--gray-600);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+
+    .heroContainer {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .heroVisual {
+        order: -1;
+    }
+
+    .audienceGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .jtbdGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .timeSavingsWrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .savingsVisual {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobileMenuBtn {
+        display: block;
+    }
+
+    .navLinks {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+        border-bottom: 1px solid var(--gray-200);
+        box-shadow: var(--shadow);
+    }
+
+    .navLinksActive {
+        display: flex;
+    }
+
+    .hero {
+        padding: 120px 0 60px;
+    }
+
+    .heroTitle {
+        font-size: 2rem;
+    }
+
+    .heroDescription {
+        font-size: 1.05rem;
+    }
+
+    .heroStats {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .heroCta {
+        flex-direction: column;
+    }
+
+    .heroCta .btn {
+        width: 100%;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .sectionTitle {
+        font-size: 1.75rem;
+    }
+
+    .audienceGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .challengesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .solutionsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .jtbdGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .savingsMetrics {
+        grid-template-columns: 1fr;
+    }
+
+    .barLabel {
+        width: 80px;
+        font-size: 0.75rem;
+    }
+
+    .ctaTitle {
+        font-size: 1.75rem;
+    }
+
+    .footerContainer {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .footerLinks {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .heroTitle {
+        font-size: 1.75rem;
+    }
+
+    .jtbdGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .challengeCard {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
