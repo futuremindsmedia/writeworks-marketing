@@ -79,7 +79,7 @@ export default function SolutionsPage() {
       <section className="max-w-7xl mx-auto px-4 pt-8 pb-12 md:pt-10 md:pb-16">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-balance">
-            Solutions for Every Marketing Team
+            The AI Content Platform Built for Enterprise Marketing Teams
           </h1>
           <p className="text-base text-white/70 mb-6 text-pretty">
             WriteWorks helps marketing teams create content that gets cited by ChatGPT, Claude, Perplexity, and all

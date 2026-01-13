@@ -39,8 +39,8 @@ export default function ProductMarketingPage() {
   const [challengesRef, challengesInView] = useInView()
   const [solutionRef, solutionInView] = useInView()
   const [audienceRef, audienceInView] = useInView()
-  const [jobsRef, jobsInView] = useInView()
   const [ctaRef, ctaInView] = useInView()
+  const [jobsRef, jobsInView] = useInView()
 
   const challenges = [
     {
@@ -149,7 +149,7 @@ export default function ProductMarketingPage() {
               For Product Marketing Teams
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              Product Marketing That Gets Cited by AI
+              AI for Product Marketing: Launch Better, Faster
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Launch faster with messaging that gets mentioned in ChatGPT, Claude, Perplexity, and AI Overviews.

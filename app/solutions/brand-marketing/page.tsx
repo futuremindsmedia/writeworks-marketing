@@ -68,7 +68,9 @@ export default function BrandMarketingPage() {
             <div className="inline-block px-3 py-1.5 bg-white/5 border border-white/10 rounded-full mb-4">
               <span className="text-xs text-white/70">Solutions for Brand Teams</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Brand Marketing</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              AI Brand Content Tool: Consistent Voice, Every Channel
+            </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Automate brand compliance. Protect voice, tone, and style at scale.
             </p>

@@ -119,7 +119,7 @@ export default function PricingPage() {
             Simple, Transparent Pricing
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-6 text-balance leading-tight">
-            Choose the Right Plan for Your Team
+            AI Content Platform Pricing: Plans for Every Team Size
           </h1>
           <p className="text-base md:text-lg text-white/70 mb-8 text-pretty max-w-2xl mx-auto">
             Start optimizing your content for LLM visibility today. All plans include access to 80+ specialized AI

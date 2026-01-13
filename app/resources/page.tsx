@@ -90,7 +90,7 @@ export default function ResourcesPage() {
             <Breadcrumbs items={[{ label: "Resources" }]} />
 
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 text-balance">
-              Resources & Insights for LLM Optimization
+              AI Content Resources: Guides, Research & Best Practices
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-8 text-pretty">
               Guides, case studies, and insights to help you maximize your brand's visibility across AI platforms

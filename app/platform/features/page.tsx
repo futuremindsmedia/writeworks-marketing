@@ -272,7 +272,7 @@ export default function PlatformFeaturesPage() {
             Platform Features
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 text-balance leading-tight">
-            Everything You Need to Optimize Content for AI Platforms
+            Powerful AI Writing Features for Every Content Need
           </h1>
           <p className="text-base md:text-lg text-muted-foreground mb-8 text-pretty max-w-2xl mx-auto">
             Comprehensive tools and features designed to help you create content that gets cited by ChatGPT, Claude,

@@ -69,7 +69,9 @@ export default function ContentMarketingPage() {
             <div className="inline-block px-3 py-1.5 bg-white/5 border border-white/10 rounded-full mb-4">
               <span className="text-xs text-white/70">Solutions for Content Teams</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Content Marketing</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              The AI Content Marketing Platform That Scales With You
+            </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Plan, create, and scale with ease. Elevate quality and performance across all channels.
             </p>

@@ -69,7 +69,9 @@ export default function FieldEventsMarketingPage() {
             <div className="inline-block px-3 py-1.5 bg-white/5 border border-white/10 rounded-full mb-4">
               <span className="text-xs text-white/70">Solutions for Event Teams</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Field & Events Marketing</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              Event Marketing Content AI: From Invites to Follow-Ups
+            </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Maximize event attendance and create meaningful experiences. Scale event content without the crunch.
             </p>

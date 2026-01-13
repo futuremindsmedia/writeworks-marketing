@@ -69,7 +69,9 @@ export default function TechnologyPage() {
             <div className="inline-block px-3 py-1.5 bg-white/5 border border-white/10 rounded-full mb-4">
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Technology</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              AI Writing for Tech Companies: From Docs to Launch Content
+            </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Move faster from roadmap to reality. Scale technical content and get cited by AI platforms.
             </p>

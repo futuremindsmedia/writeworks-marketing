@@ -69,7 +69,9 @@ export default function PerformanceMarketingPage() {
             <div className="inline-block px-3 py-1.5 bg-white/5 border border-white/10 rounded-full mb-4">
               <span className="text-xs text-white/70">Solutions for Performance Teams</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">Performance Marketing</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+              AI for Performance Marketing: Convert More, Test Faster
+            </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Drive engagement and growth with personalization at scale. Launch more campaigns, faster.
             </p>

@@ -63,7 +63,7 @@ export default function PlatformPage() {
             Enterprise AI Content Platform
           </div>
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-balance leading-tight">
-            The Complete LLM Content Optimization Platform
+            AI Content Writing Software for Marketing Teams
           </h1>
           <p className="text-base md:text-lg text-white/70 mb-8 text-pretty max-w-2xl mx-auto leading-relaxed">
             Everything you need to create content that gets cited by ChatGPT, Claude, Perplexity, AI Overviews, and
@@ -92,7 +92,7 @@ export default function PlatformPage() {
           <div className="relative rounded-lg overflow-hidden border border-white/10">
             <div className="bg-black rounded-lg overflow-hidden">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-27%20at%2016.24.11-3qvocKjyuQAvQJvctZfMC3jJhNJF4a.png"
+                src="/images/screenshot-202025-10-27-20at-2016.png"
                 alt="WriteWorks AI Platform Dashboard"
                 className="w-full h-auto"
               />
@@ -344,7 +344,7 @@ export default function PlatformPage() {
               <div className="relative rounded-lg overflow-hidden border border-white/10 w-full">
                 <div className="bg-black rounded-lg overflow-hidden">
                   <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-27%20at%2016.24.11-3qvocKjyuQAvQJvctZfMC3jJhNJF4a.png"
+                    src="/images/screenshot-202025-10-27-20at-2016.png"
                     alt="Brand Management Dashboard"
                     className="w-full h-auto"
                   />
@@ -430,7 +430,7 @@ export default function PlatformPage() {
               <div className="relative rounded-lg overflow-hidden border border-white/10 w-full">
                 <div className="bg-black rounded-lg overflow-hidden">
                   <img
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202025-10-27%20at%2015.02.39-KKpbcGkjj4RRgJR1Nh5MRWg3ywk1bH.png"
+                    src="/images/screenshot-202025-10-27-20at-2015.png"
                     alt="Content Workflow"
                     className="w-full h-auto"
                   />
