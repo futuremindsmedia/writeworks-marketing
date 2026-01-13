@@ -12,126 +12,120 @@ import {
   Globe,
   CheckCircle2,
   ArrowRight,
-  TrendingUp,
   Clock,
   Target,
   Sparkles,
+  FileText,
+  Layers,
+  RefreshCw,
+  Bot,
+  Workflow,
+  BadgeCheck,
 } from "lucide-react"
-import { AnimatedChat } from "@/components/animated-chat"
-
-function LogoCarousel() {
-  const logos = [
-    { name: "ChatGPT", image: "/images/logos/chatgpt.png" },
-    { name: "Perplexity", image: "/images/logos/perplexity.png" },
-    { name: "Claude", image: "/images/logos/claude.png" },
-    { name: "Google AI Overviews", image: "/images/logos/google-ai.png" },
-    { name: "Copilot", image: "/images/logos/copilot.png" },
-    { name: "Grok", image: "/images/logos/grok.png" },
-    { name: "Meta AI", image: "/images/logos/meta-ai.png" },
-    { name: "DeepSeek", image: "/images/logos/deepseek.png" },
-  ]
-
-  return (
-    <div className="relative overflow-hidden py-8">
-      <div className="flex animate-scroll gap-16">
-        {[...logos, ...logos].map((logo, i) => (
-          <div
-            key={i}
-            className="flex items-center justify-center min-w-[200px] h-24 px-8 rounded-lg bg-card border border-border/40 hover:border-[#6366F1]/50 transition-all duration-300"
-          >
-            <div
-              className={`h-12 w-full flex items-center justify-center ${logo.name === "Claude" ? "overflow-hidden" : ""}`}
-            >
-              <img
-                src={logo.image || "/placeholder.svg"}
-                alt={logo.name}
-                className={`h-full w-auto max-w-[160px] object-contain filter brightness-0 invert ${
-                  logo.name === "Claude" ? "scale-110 translate-y-1" : ""
-                }`}
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  )
-}
+import Link from "next/link"
+import Image from "next/image"
 
 export default function EnterprisePage() {
   const challenges = [
     {
-      icon: Target,
-      title: "Fragmented Content Strategy",
+      icon: Clock,
+      title: "Content Takes Too Long",
       description:
-        "Multiple teams creating content in silos, leading to inconsistent messaging and missed opportunities for AI platform visibility.",
+        "Marketing teams spend 60% of their time on content creation, leaving little room for strategy and campaign optimization.",
     },
     {
-      icon: TrendingUp,
-      title: "Scaling Content Production",
+      icon: Users,
+      title: "Scaling With Quality",
       description:
-        "Need to produce high-quality, AI-optimized content at scale across multiple brands, products, and markets.",
+        "As content demands grow, maintaining consistent quality and brand voice across global teams becomes nearly impossible.",
+    },
+    {
+      icon: Layers,
+      title: "Fragmented Workflows",
+      description:
+        "Multiple tools, disconnected teams, and manual processes create bottlenecks that slow down content production.",
     },
     {
       icon: Shield,
-      title: "Brand Consistency & Compliance",
+      title: "Governance & Compliance",
       description:
-        "Ensuring brand guidelines and regulatory compliance across thousands of content pieces and multiple teams.",
-    },
-    {
-      icon: Clock,
-      title: "Slow Time-to-Market",
-      description:
-        "Complex approval workflows and manual processes delay content publication and reduce competitive advantage.",
+        "Ensuring brand guidelines, legal compliance, and approval workflows are followed across thousands of content pieces.",
     },
   ]
 
   const solutions = [
     {
-      icon: Users,
-      title: "Unified Content Intelligence Platform",
+      icon: Bot,
+      title: "80+ Specialized Content Writing Agents",
       description:
-        "Centralize all content operations with role-based access, team workspaces, and real-time collaboration across your entire organization.",
+        "AI agents trained on your brand voice handle first drafts, research, and optimization—while your team focuses on strategy and creativity.",
     },
     {
-      icon: Zap,
-      title: "AI-Powered Content Optimization",
+      icon: FileText,
+      title: "Human-Built Frameworks",
       description:
-        "Automatically optimize content for AI platform visibility with proprietary Visibility Score, ensuring your brand appears in ChatGPT, Claude, and Perplexity.",
+        "Our proprietary frameworks ensure AI output matches your brand standards, tone, and messaging guidelines from the start.",
     },
     {
-      icon: Lock,
-      title: "Enterprise-Grade Security",
+      icon: Workflow,
+      title: "Streamlined Content Workflows",
       description:
-        "SOC 2 Type II certified, GDPR compliant, with SSO, advanced permissions, and audit logs to meet your security requirements.",
+        "From brief to publish, automate approvals, track progress, and eliminate bottlenecks with unified content operations.",
     },
     {
       icon: BarChart3,
-      title: "Advanced Analytics & Reporting",
+      title: "Real-Time Performance Insights",
       description:
-        "Track AI platform performance, content ROI, and team productivity with custom dashboards and executive reporting.",
+        "Track content performance, team productivity, and ROI with enterprise dashboards and custom reporting.",
     },
   ]
 
   const features = [
     "Unlimited team members and workspaces",
-    "Custom AI models and training",
-    "Dedicated account manager",
+    "Custom AI agent training on your brand",
+    "Brand voice and style guide enforcement",
+    "Multi-language content support",
+    "Advanced approval workflows",
+    "Role-based access control",
+    "Dedicated success manager",
     "Priority support (24/7)",
-    "Advanced API access",
-    "Custom integrations",
-    "On-premise deployment options",
+    "Custom integrations (CMS, DAM, etc.)",
+    "SSO and enterprise authentication",
     "SLA guarantees",
-    "Custom contract terms",
-    "Volume discounts",
-    "Training and onboarding",
-    "Strategic consulting",
+    "On-premise deployment options",
   ]
 
   const stats = [
-    { value: "10M+", label: "Content pieces optimized" },
-    { value: "500+", label: "Enterprise customers" },
-    { value: "95%", label: "Customer satisfaction" },
-    { value: "3x", label: "Increase in AI visibility" },
+    { value: "70%", label: "Faster content production" },
+    { value: "80+", label: "AI Writing Agents" },
+    { value: "100%", label: "Brand consistency" },
+    { value: "50%", label: "Cost reduction" },
+  ]
+
+  const benefits = [
+    {
+      icon: Zap,
+      title: "10x Content Velocity",
+      description: "Produce more high-quality content in less time with AI-assisted writing and automated workflows.",
+    },
+    {
+      icon: BadgeCheck,
+      title: "Consistent Brand Voice",
+      description:
+        "Every piece of content matches your brand guidelines, tone, and messaging—across all teams and markets.",
+    },
+    {
+      icon: RefreshCw,
+      title: "Repurpose at Scale",
+      description:
+        "Transform one piece of content into dozens of formats for different channels, audiences, and regions.",
+    },
+    {
+      icon: Target,
+      title: "Strategic Focus",
+      description:
+        "Free your team from repetitive tasks so they can focus on strategy, creativity, and high-impact work.",
+    },
   ]
 
   return (
@@ -144,11 +138,11 @@ export default function EnterprisePage() {
             WriteWorks for Enterprise
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 text-balance leading-tight">
-            Enterprise AI Platform for High-Performance Content
+            Enterprise Content Writing, Powered by AI + Human Intelligence
           </h1>
           <p className="text-base md:text-lg text-white/70 mb-8 text-pretty max-w-2xl mx-auto">
-            WriteWorks empowers enterprise organizations to create content that drives brand visibility across ChatGPT,
-            Claude, Perplexity, and all major AI platforms—with enterprise-grade security, scale, and support.
+            WriteWorks combines 80+ AI Writing Agents with human-built frameworks to help enterprise marketing teams
+            create quality content faster—without sacrificing brand consistency or creative control.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
@@ -156,7 +150,7 @@ export default function EnterprisePage() {
               className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90 px-8"
               asChild
             >
-              <a href="/contact">Request a Demo</a>
+              <Link href="/contact">Request a Demo</Link>
             </Button>
             <Button
               size="lg"
@@ -164,65 +158,64 @@ export default function EnterprisePage() {
               className="w-full sm:w-auto border-white/20 text-white hover:bg-white/5 bg-transparent hover:border-white/40"
               asChild
             >
-              <a href="#features">Explore Features</a>
+              <Link href="#how-it-works">See How It Works</Link>
             </Button>
           </div>
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-white/70">
-            <div className="flex items-center gap-2">
-              <Zap className="w-4 h-4 text-white" />
-              No credit card required
-            </div>
-            <div className="flex items-center gap-2">
-              <Target className="w-4 h-4 text-white" />
-              300% avg visibility increase
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* Logo Carousel */}
-      <section className="py-12 md:py-16 border-y border-white/10">
-        <div className="container mx-auto px-3 md:px-4">
-          <p className="text-center text-sm text-white/70 mb-8">
-            WriteWorks drives enterprise growth across all major AI platforms
-          </p>
-          <LogoCarousel />
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 md:py-20">
-        <div className="container mx-auto px-3 md:px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+      {/* Stats Bar */}
+      <section className="border-y border-white/10 bg-white/[0.02]">
+        <div className="container mx-auto px-3 md:px-4 py-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] bg-clip-text text-transparent mb-2">
+                <div className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] bg-clip-text text-transparent mb-1">
                   {stat.value}
                 </div>
-                <div className="text-sm text-white/70">{stat.label}</div>
+                <div className="text-xs text-white/60">{stat.label}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Enterprise Challenges Section */}
+      {/* Product Screenshot - Dashboard */}
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-3 md:px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="rounded-xl border border-white/10 overflow-hidden shadow-2xl">
+              <Image
+                src="/images/dashboard-screenshot.png"
+                alt="WriteWorks Enterprise Dashboard"
+                width={1200}
+                height={700}
+                className="w-full h-auto"
+              />
+            </div>
+            <p className="text-center text-sm text-white/50 mt-4">
+              WriteWorks Dashboard - Centralized content operations for enterprise teams
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Enterprise Challenges */}
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-3 md:px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-balance">
-              Enterprise Content Challenges WriteWorks Solves
+              Enterprise Content Challenges
             </h2>
             <p className="text-base text-white/70 text-balance">
-              Large organizations face unique challenges when optimizing content for AI platforms. WriteWorks provides
-              enterprise solutions.
+              Marketing teams at scale face unique challenges. WriteWorks is built to solve them.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
             {challenges.map((challenge, index) => (
               <Card
                 key={index}
-                className="bg-white/5 backdrop-blur-sm border-white/10 p-6 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300"
+                className="bg-white/5 border-white/10 p-6 hover:border-white/20 transition-all duration-300"
               >
                 <challenge.icon className="w-8 h-8 text-white mb-4" />
                 <h3 className="text-lg font-semibold text-white mb-3">{challenge.title}</h3>
@@ -233,83 +226,102 @@ export default function EnterprisePage() {
         </div>
       </section>
 
-      {/* How WriteWorks Solves It with AnimatedChat */}
-      <section className="py-16 md:py-20">
+      {/* How WriteWorks Solves It */}
+      <section id="how-it-works" className="py-16 md:py-20 border-y border-white/10">
         <div className="container mx-auto px-3 md:px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-balance">
-              Enterprise Content Intelligence Platform
+              AI + Human Intelligence = Quality Content at Scale
             </h2>
             <p className="text-base text-white/70 text-balance">
-              WriteWorks provides the tools, security, and scale your organization needs to dominate AI-powered search.
+              WriteWorks doesn&apos;t replace your team—it amplifies their capabilities with intelligent automation and
+              proven frameworks.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-12 items-stretch max-w-6xl mx-auto">
-            <div className="flex flex-col justify-center">
-              <div className="space-y-8">
-                {solutions.map((solution, index) => (
-                  <div key={index} className="flex gap-4">
-                    <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#6366F1] to-[#8B5CF6] flex items-center justify-center flex-shrink-0">
-                      <solution.icon className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-semibold text-white mb-2">{solution.title}</h3>
-                      <p className="text-sm text-white/70 leading-relaxed">{solution.description}</p>
-                    </div>
-                  </div>
-                ))}
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            {solutions.map((solution, index) => (
+              <div key={index} className="flex gap-4">
+                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-[#6366F1] to-[#8B5CF6] flex items-center justify-center flex-shrink-0">
+                  <solution.icon className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-white mb-2">{solution.title}</h3>
+                  <p className="text-sm text-white/70 leading-relaxed">{solution.description}</p>
+                </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Product Screenshot - Content Editor */}
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-3 md:px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Write Better Content, Faster</h2>
+              <p className="text-base text-white/70 max-w-2xl mx-auto">
+                The WriteWorks editor combines AI assistance with your brand guidelines for consistent, high-quality
+                content every time.
+              </p>
             </div>
-            <div className="relative flex items-center">
-              <AnimatedChat
-                messages={[
-                  {
-                    role: "user",
-                    content: "How does WriteWorks handle enterprise-scale content production?",
-                    delay: 500,
-                  },
-                  {
-                    role: "assistant",
-                    content:
-                      "WriteWorks provides unified content intelligence across your entire organization. Teams collaborate in real-time with role-based access, while Content Writing agents scale production without compromising quality or brand consistency.",
-                    delay: 800,
-                  },
-                  { role: "user", content: "What about security and compliance?", delay: 1000 },
-                  {
-                    role: "assistant",
-                    content:
-                      "WriteWorks meets enterprise security requirements with SOC 2 Type II certification, GDPR compliance, SSO integration, and comprehensive audit logs. Your data remains secure while teams optimize content for AI platforms.",
-                    delay: 1200,
-                  },
-                ]}
-                className="w-full min-h-[400px]"
+            <div className="rounded-xl border border-white/10 overflow-hidden shadow-2xl">
+              <Image
+                src="/images/editor-screenshot.png"
+                alt="WriteWorks Content Editor with AI Assistance"
+                width={1200}
+                height={700}
+                className="w-full h-auto"
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Enterprise Features */}
-      <section id="features" className="py-16 md:py-20">
+      {/* Benefits Grid */}
+      <section className="py-16 md:py-20">
         <div className="container mx-auto px-3 md:px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-3xl mx-auto text-center mb-12">
+            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-balance">
+              Why Enterprise Teams Choose WriteWorks
+            </h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            {benefits.map((benefit, index) => (
+              <Card
+                key={index}
+                className="bg-white/5 border-white/10 p-6 text-center hover:border-white/20 transition-all duration-300"
+              >
+                <benefit.icon className="w-8 h-8 text-white mx-auto mb-4" />
+                <h3 className="text-base font-semibold text-white mb-2">{benefit.title}</h3>
+                <p className="text-sm text-white/70">{benefit.description}</p>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Enterprise Features Checklist */}
+      <section id="features" className="py-16 md:py-20 border-t border-white/10">
+        <div className="container mx-auto px-3 md:px-4">
+          <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-balance">
                   Everything Your Enterprise Needs
                 </h2>
                 <p className="text-base text-white/70 mb-8 leading-relaxed">
-                  From unlimited team members to custom AI models, WriteWorks Enterprise provides the power and
-                  flexibility to scale content intelligence across your entire organization.
+                  From unlimited users to custom AI training, WriteWorks Enterprise provides the power, security, and
+                  flexibility to scale content operations across your organization.
                 </p>
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
                   asChild
                 >
-                  <a href="/contact">
+                  <Link href="/contact">
                     Talk to Sales <ArrowRight className="w-4 h-4 ml-2" />
-                  </a>
+                  </Link>
                 </Button>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -338,21 +350,21 @@ export default function EnterprisePage() {
                 Security and Compliance Built In
               </h2>
               <p className="text-base text-white/70 text-balance">
-                Your data security is the top priority. WriteWorks meets the highest industry standards.
+                Your data security is our top priority. WriteWorks meets the highest industry standards.
               </p>
             </div>
             <div className="grid md:grid-cols-3 gap-6">
-              <Card className="bg-white/5 backdrop-blur-sm border-white/10 p-6 text-center hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300">
+              <Card className="bg-white/5 border-white/10 p-6 text-center hover:border-white/20 transition-all duration-300">
                 <Lock className="w-8 h-8 text-white mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-white mb-2">SOC 2 Type II</h3>
                 <p className="text-sm text-white/70">Certified security controls and processes</p>
               </Card>
-              <Card className="bg-white/5 backdrop-blur-sm border-white/10 p-6 text-center hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300">
+              <Card className="bg-white/5 border-white/10 p-6 text-center hover:border-white/20 transition-all duration-300">
                 <Globe className="w-8 h-8 text-white mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-white mb-2">GDPR Compliant</h3>
                 <p className="text-sm text-white/70">Full compliance with data protection regulations</p>
               </Card>
-              <Card className="bg-white/5 backdrop-blur-sm border-white/10 p-6 text-center hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300">
+              <Card className="bg-white/5 border-white/10 p-6 text-center hover:border-white/20 transition-all duration-300">
                 <Shield className="w-8 h-8 text-white mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-white mb-2">SSO & SAML</h3>
                 <p className="text-sm text-white/70">Seamless integration with your identity provider</p>
@@ -364,12 +376,14 @@ export default function EnterprisePage() {
 
       {/* CTA Section */}
       <section className="container mx-auto px-3 md:px-4 py-16 md:py-20">
-        <Card className="bg-white/5 border-white/10 p-12 md:p-16 text-center max-w-4xl mx-auto hover:border-white/20 transition-all">
-          <Sparkles className="w-12 h-12 text-white mx-auto mb-6" />
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Transform Enterprise Content Strategy</h2>
+        <Card className="bg-white/5 border-white/10 p-10 md:p-14 text-center max-w-4xl mx-auto hover:border-white/20 transition-all">
+          <Sparkles className="w-10 h-10 text-white mx-auto mb-6" />
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            Ready to Transform Your Content Operations?
+          </h2>
           <p className="text-base text-white/70 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Join leading enterprises using WriteWorks to dominate AI-powered search and drive unprecedented brand
-            visibility across ChatGPT, Claude, Perplexity, and all major AI platforms.
+            Join enterprise marketing teams using WriteWorks to produce quality content 70% faster while maintaining
+            brand consistency across all channels.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button
@@ -377,7 +391,7 @@ export default function EnterprisePage() {
               className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90 px-10"
               asChild
             >
-              <a href="/contact">Schedule a Demo</a>
+              <Link href="/contact">Schedule a Demo</Link>
             </Button>
             <Button
               size="lg"
@@ -385,12 +399,9 @@ export default function EnterprisePage() {
               className="w-full sm:w-auto border-white/20 text-white hover:bg-white/5 bg-transparent hover:border-white/40"
               asChild
             >
-              <a href="/pricing">View Pricing</a>
+              <Link href="/pricing">View Pricing</Link>
             </Button>
           </div>
-          <p className="text-sm text-white/70 mt-6">
-            No credit card required • 300% avg visibility increase • Enterprise-grade security
-          </p>
         </Card>
       </section>
     </div>
