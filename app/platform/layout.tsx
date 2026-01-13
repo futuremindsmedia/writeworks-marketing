@@ -2,29 +2,27 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Platform - WriteWorks AI | Complete LLM Content Optimization Platform",
+  title: "AI Content Writing Software | WriteWorks Platform",
   description:
-    "Explore the WriteWorks platform: Content editor with LLM visibility scoring, 80+ specialized AI agents, brand management, and team collaboration tools. Everything you need to get cited by AI platforms.",
+    "Professional AI content writing software designed for marketing teams. Create on-brand content 10x faster with intelligent writing assistance. Start free.",
   keywords: [
-    "LLM content platform",
-    "AI content editor",
-    "LLM visibility score",
-    "AI writing agents",
-    "content optimization platform",
-    "brand management tools",
-    "content collaboration",
+    "ai content writing software",
+    "ai writing tool",
+    "content generation platform",
+    "ai content creator",
+    "writing automation platform",
   ],
   openGraph: {
-    title: "Platform - WriteWorks AI | Complete LLM Content Optimization Platform",
+    title: "AI Content Writing Software | WriteWorks Platform",
     description:
-      "Content editor with LLM visibility scoring, 80+ AI agents, brand management, and collaboration tools.",
+      "Professional AI content writing software designed for marketing teams. Create on-brand content 10x faster with intelligent writing assistance.",
     url: "https://writeworks.ai/platform",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Platform - WriteWorks AI | Complete LLM Content Optimization Platform",
+    title: "AI Content Writing Software | WriteWorks Platform",
     description:
-      "Content editor with LLM visibility scoring, 80+ AI agents, brand management, and collaboration tools.",
+      "Professional AI content writing software designed for marketing teams. Create on-brand content 10x faster with intelligent writing assistance.",
   },
 }
 

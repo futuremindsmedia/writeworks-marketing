@@ -2,27 +2,27 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Solutions - WriteWorks AI | LLM Content Optimization for Marketing Teams",
+  title: "AI Content Platform for Enterprise Marketing | WriteWorks",
   description:
-    "Solve your LLM visibility challenges. WriteWorks helps content writers and marketing leaders create content that gets cited by ChatGPT, Claude, Perplexity, and other AI platforms using human-built frameworks.",
+    "Discover the leading AI content platform trusted by enterprise teams. Create, optimize, and scale marketing content with AI-powered workflows. Start free trial.",
   keywords: [
-    "LLM content solutions",
-    "AI citation optimization",
-    "content marketing solutions",
-    "ChatGPT visibility",
-    "AI platform citations",
-    "content team tools",
-    "marketing content optimization",
+    "ai content platform",
+    "ai writing platform",
+    "content optimization software",
+    "ai content tool",
+    "enterprise content ai",
   ],
   openGraph: {
-    title: "Solutions - WriteWorks AI | LLM Content Optimization for Marketing Teams",
-    description: "Solve your LLM visibility challenges with human-built frameworks and 80+ specialized AI agents.",
+    title: "AI Content Platform for Enterprise Marketing | WriteWorks",
+    description:
+      "Discover the leading AI content platform trusted by enterprise teams. Create, optimize, and scale marketing content with AI-powered workflows.",
     url: "https://writeworks.ai/solutions",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Solutions - WriteWorks AI | LLM Content Optimization for Marketing Teams",
-    description: "Solve your LLM visibility challenges with human-built frameworks and 80+ specialized AI agents.",
+    title: "AI Content Platform for Enterprise Marketing | WriteWorks",
+    description:
+      "Discover the leading AI content platform trusted by enterprise teams. Create, optimize, and scale marketing content with AI-powered workflows.",
   },
 }
 

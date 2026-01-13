@@ -2,28 +2,22 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Resources - WriteWorks AI | Guides, Insights & Best Practices for LLM Optimization",
+  title: "AI Content Resources | Guides, Webinars & Research",
   description:
-    "Explore our library of guides, case studies, whitepapers, and insights to help you maximize your brand's visibility across ChatGPT, Claude, Perplexity, and other AI platforms. Learn LLM content optimization best practices.",
-  keywords: [
-    "LLM optimization guides",
-    "AI content best practices",
-    "ChatGPT citation strategies",
-    "content marketing resources",
-    "AI platform visibility",
-    "LLM content insights",
-    "content optimization guides",
-  ],
+    "Explore our library of AI content resources. In-depth guides, original research, webinars, and best practices to elevate your content marketing.",
+  keywords: ["ai content resources", "content marketing resources", "ai writing guides", "marketing content hub"],
   openGraph: {
-    title: "Resources - WriteWorks AI | Guides, Insights & Best Practices for LLM Optimization",
-    description: "Explore guides, case studies, and insights to maximize your brand's visibility across AI platforms.",
+    title: "AI Content Resources | Guides, Webinars & Research",
+    description:
+      "Explore our library of AI content resources. In-depth guides, original research, webinars, and best practices to elevate your content marketing.",
     url: "https://writeworks.ai/resources",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Resources - WriteWorks AI | Guides, Insights & Best Practices for LLM Optimization",
-    description: "Explore guides, case studies, and insights to maximize your brand's visibility across AI platforms.",
+    title: "AI Content Resources | Guides, Webinars & Research",
+    description:
+      "Explore our library of AI content resources. In-depth guides, original research, webinars, and best practices to elevate your content marketing.",
   },
 }
 

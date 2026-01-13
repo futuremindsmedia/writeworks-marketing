@@ -2,18 +2,27 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Content Marketing Solutions | WriteWorks AI",
+  title: "AI Content Marketing Platform | Strategy to Execution",
   description:
-    "Plan, create, and scale with ease. Elevate quality and performance with AI-powered content optimization for maximum LLM visibility.",
+    "Transform your content marketing with our AI content marketing platform. Plan, create, optimize, and measure content performance—all in one place.",
+  keywords: [
+    "ai content marketing platform",
+    "content marketing ai",
+    "ai for content strategy",
+    "content creation ai",
+    "marketing content generator",
+  ],
   openGraph: {
-    title: "Content Marketing Solutions | WriteWorks AI",
-    description: "Plan, create, and scale with ease. Elevate quality and performance.",
+    title: "AI Content Marketing Platform | Strategy to Execution",
+    description:
+      "Transform your content marketing with our AI content marketing platform. Plan, create, optimize, and measure content performance—all in one place.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Content Marketing Solutions | WriteWorks AI",
-    description: "Plan, create, and scale with ease. Elevate quality and performance.",
+    title: "AI Content Marketing Platform | Strategy to Execution",
+    description:
+      "Transform your content marketing with our AI content marketing platform. Plan, create, optimize, and measure content performance—all in one place.",
   },
 }
 

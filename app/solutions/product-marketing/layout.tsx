@@ -2,18 +2,27 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Product Marketing Solutions | WriteWorks AI",
+  title: "AI for Product Marketing | Launch Content & Positioning",
   description:
-    "Align and refine your GTM strategy. Launch faster with AI-powered messaging that hits. Optimize product positioning and launch materials for maximum impact.",
+    "Accelerate product launches with AI for product marketing. Generate positioning docs, battle cards, and feature announcements in minutes, not days.",
+  keywords: [
+    "ai for product marketing",
+    "product marketing content",
+    "product launch content ai",
+    "feature announcement writing",
+    "product positioning",
+  ],
   openGraph: {
-    title: "Product Marketing Solutions | WriteWorks AI",
-    description: "Align and refine your GTM strategy. Launch faster with AI-powered messaging that hits.",
+    title: "AI for Product Marketing | Launch Content & Positioning",
+    description:
+      "Accelerate product launches with AI for product marketing. Generate positioning docs, battle cards, and feature announcements in minutes, not days.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Product Marketing Solutions | WriteWorks AI",
-    description: "Align and refine your GTM strategy. Launch faster with AI-powered messaging that hits.",
+    title: "AI for Product Marketing | Launch Content & Positioning",
+    description:
+      "Accelerate product launches with AI for product marketing. Generate positioning docs, battle cards, and feature announcements in minutes, not days.",
   },
 }
 
