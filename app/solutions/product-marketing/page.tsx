@@ -122,7 +122,7 @@ export default function ProductMarketingPage() {
     <div className="min-h-screen bg-black text-white">
       {/* Breadcrumbs */}
       <div className="container mx-auto px-3 md:px-4 pt-4">
-        <nav className="flex items-center gap-2 text-sm text-white/60">
+        <nav className="flex items-center justify-center gap-2 text-sm text-white/60">
           <Link href="/" className="hover:text-white transition-colors">
             <Home className="w-4 h-4" />
           </Link>
