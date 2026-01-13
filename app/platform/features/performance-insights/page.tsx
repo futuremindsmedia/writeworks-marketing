@@ -1,6 +1,17 @@
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Button } from "@/components/ui/button"
-import { BarChart3, TrendingUp, Target, PieChart, Activity, LineChart } from "lucide-react"
+import {
+  BarChart3,
+  TrendingUp,
+  Target,
+  PieChart,
+  Activity,
+  LineChart,
+  AlertTriangle,
+  Eye,
+  CheckCircle,
+  Users,
+} from "lucide-react"
 import Link from "next/link"
 
 export const metadata = {
@@ -9,32 +20,110 @@ export const metadata = {
     "Track content performance, analyze engagement metrics, and optimize your content strategy with data-driven insights.",
 }
 
+const challenges = [
+  {
+    icon: AlertTriangle,
+    title: "Blind Content Decisions",
+    description:
+      "Creating content without data means guessing what works, leading to wasted resources and missed opportunities.",
+  },
+  {
+    icon: Eye,
+    title: "Scattered Analytics",
+    description: "Performance data spread across multiple tools makes it impossible to see the full picture.",
+  },
+  {
+    icon: Target,
+    title: "Unclear ROI",
+    description: "Without proper tracking, demonstrating content value to stakeholders becomes a challenge.",
+  },
+]
+
+const solutions = [
+  {
+    challenge: "Blind Content Decisions",
+    solution:
+      "AI-powered performance insights show exactly what content drives results, enabling data-backed decisions.",
+  },
+  {
+    challenge: "Scattered Analytics",
+    solution: "Unified dashboard brings all your content metrics into one place for comprehensive analysis.",
+  },
+  {
+    challenge: "Unclear ROI",
+    solution: "Built-in ROI tracking and reporting tools demonstrate content value with clear metrics.",
+  },
+]
+
+const capabilities = [
+  {
+    icon: BarChart3,
+    title: "Detailed Analytics",
+    description: "Get comprehensive analytics on content performance and engagement across all channels.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Trend Analysis",
+    description: "Identify trends and patterns to optimize your content strategy proactively.",
+  },
+  {
+    icon: Target,
+    title: "Goal Tracking",
+    description: "Monitor progress toward content goals and KPIs with real-time dashboards.",
+  },
+]
+
+const jobsToBeDone = [
+  { task: "Track content performance", timeSaved: "75%" },
+  { task: "Generate performance reports", timeSaved: "80%" },
+  { task: "Identify top-performing content", timeSaved: "85%" },
+  { task: "Analyze audience engagement", timeSaved: "70%" },
+  { task: "Measure content ROI", timeSaved: "90%" },
+]
+
+const targetAudience = [
+  {
+    role: "Content Strategists",
+    description: "Make data-driven content decisions based on real performance metrics.",
+  },
+  {
+    role: "Marketing Leaders",
+    description: "Demonstrate content ROI and justify budget with clear analytics.",
+  },
+  {
+    role: "Content Teams",
+    description: "Understand what content resonates and optimize future creation.",
+  },
+]
+
 export default function PerformanceInsightsPage() {
   return (
     <div className="min-h-screen bg-black">
       {/* Breadcrumbs */}
       <div className="border-b border-white/10">
         <div className="container mx-auto px-4 pt-8">
-          <Breadcrumbs
-            items={[
-              { label: "Platform", href: "/platform" },
-              { label: "Features", href: "/platform/features" },
-              { label: "Performance Insights" },
-            ]}
-          />
+          <nav className="flex justify-center">
+            <Breadcrumbs
+              items={[
+                { label: "Platform", href: "/platform" },
+                { label: "Features", href: "/platform/features" },
+                { label: "Performance Insights" },
+              ]}
+            />
+          </nav>
         </div>
       </div>
 
       {/* Hero Section */}
-      <section className="pt-6 md:pt-8 pb-12 md:pb-16">
+      <section className="pt-6 md:pt-8 pb-8 md:pb-12">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Performance Insights Software</h1>
-            <p className="text-xl text-white/70 mb-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">Performance Insights Software</h1>
+            <p className="text-lg text-white/70 mb-6">
               Track content performance, analyze engagement metrics, and optimize your content strategy with
               comprehensive data-driven insights.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3 justify-center mb-8">
               <Button asChild size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] hover:opacity-90">
                 <Link href="https://app.writeworks.ai/sign-up">Start Free Trial</Link>
               </Button>
@@ -47,77 +136,129 @@ export default function PerformanceInsightsPage() {
                 <Link href="/contact">Contact Sales</Link>
               </Button>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Key Benefits */}
-      <section className="py-12 md:py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">Why Performance Insights Matter</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:border-white/20 transition-colors">
-              <BarChart3 className="w-12 h-12 text-white mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-3">Detailed Analytics</h3>
-              <p className="text-white/70">Get comprehensive analytics on content performance and engagement.</p>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:border-white/20 transition-colors">
-              <TrendingUp className="w-12 h-12 text-white mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-3">Trend Analysis</h3>
-              <p className="text-white/70">Identify trends and patterns to optimize your content strategy.</p>
-            </div>
-            <div className="bg-white/5 border border-white/10 rounded-lg p-6 hover:border-white/20 transition-colors">
-              <Target className="w-12 h-12 text-white mb-4" />
-              <h3 className="text-xl font-semibold text-white mb-3">Goal Tracking</h3>
-              <p className="text-white/70">Monitor progress toward content goals and KPIs.</p>
+            {/* Stats Bar */}
+            <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
+              <div className="bg-white/5 border border-white/10 rounded-lg p-4">
+                <div className="text-2xl font-bold text-white">3x</div>
+                <div className="text-xs text-white/60">Better Decisions</div>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-lg p-4">
+                <div className="text-2xl font-bold text-white">80%</div>
+                <div className="text-xs text-white/60">Time Saved</div>
+              </div>
+              <div className="bg-white/5 border border-white/10 rounded-lg p-4">
+                <div className="text-2xl font-bold text-white">Real-time</div>
+                <div className="text-xs text-white/60">Analytics</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="py-12 md:py-16 border-t border-white/10">
+      {/* Challenges Section */}
+      <section className="py-10 md:py-14 border-t border-white/10">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">How Performance Insights Work</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/5 border border-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-white">1</span>
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">The Challenges You Face</h2>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {challenges.map((challenge, index) => (
+              <div
+                key={index}
+                className="bg-white/5 border border-white/10 rounded-lg p-5 hover:border-white/20 transition-colors"
+              >
+                <challenge.icon className="w-10 h-10 text-white mb-3" />
+                <h3 className="text-lg font-semibold text-white mb-2">{challenge.title}</h3>
+                <p className="text-white/70 text-sm">{challenge.description}</p>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Collect Data</h3>
-              <p className="text-white/70 text-sm">Automatically track content performance metrics</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/5 border border-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-white">2</span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Solutions Section */}
+      <section className="py-10 md:py-14 border-t border-white/10">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">How WriteWorks Solves These Challenges</h2>
+          <div className="max-w-3xl mx-auto space-y-4">
+            {solutions.map((item, index) => (
+              <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-5">
+                <div className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] rounded-full flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-4 h-4 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-white font-medium mb-1">{item.challenge}</h3>
+                    <p className="text-white/70 text-sm">{item.solution}</p>
+                  </div>
+                </div>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Analyze Trends</h3>
-              <p className="text-white/70 text-sm">Identify patterns and trends in your content data</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/5 border border-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-white">3</span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Key Capabilities */}
+      <section className="py-10 md:py-14 border-t border-white/10">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">Key Capabilities</h2>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {capabilities.map((capability, index) => (
+              <div
+                key={index}
+                className="bg-white/5 border border-white/10 rounded-lg p-5 hover:border-white/20 transition-colors"
+              >
+                <capability.icon className="w-10 h-10 text-white mb-3" />
+                <h3 className="text-lg font-semibold text-white mb-2">{capability.title}</h3>
+                <p className="text-white/70 text-sm">{capability.description}</p>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Generate Reports</h3>
-              <p className="text-white/70 text-sm">Create detailed performance reports and dashboards</p>
-            </div>
-            <div className="text-center">
-              <div className="w-16 h-16 bg-white/5 border border-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-white">4</span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Jobs to be Done */}
+      <section className="py-10 md:py-14 border-t border-white/10">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">Jobs to Be Done</h2>
+          <div className="max-w-2xl mx-auto">
+            <div className="bg-white/5 border border-white/10 rounded-lg overflow-hidden">
+              <div className="grid grid-cols-2 gap-4 p-4 border-b border-white/10 bg-white/5">
+                <div className="text-sm font-medium text-white">Task</div>
+                <div className="text-sm font-medium text-white text-right">Time Saved</div>
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Optimize Strategy</h3>
-              <p className="text-white/70 text-sm">Use insights to improve content performance</p>
+              {jobsToBeDone.map((job, index) => (
+                <div key={index} className="grid grid-cols-2 gap-4 p-4 border-b border-white/10 last:border-0">
+                  <div className="text-sm text-white/70">{job.task}</div>
+                  <div className="text-sm text-white font-medium text-right">{job.timeSaved}</div>
+                </div>
+              ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Target Audience */}
+      <section className="py-10 md:py-14 border-t border-white/10">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">Who It's For</h2>
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {targetAudience.map((audience, index) => (
+              <div key={index} className="bg-white/5 border border-white/10 rounded-lg p-5 text-center">
+                <Users className="w-10 h-10 text-white mb-3 mx-auto" />
+                <h3 className="text-lg font-semibold text-white mb-2">{audience.role}</h3>
+                <p className="text-white/70 text-sm">{audience.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* What's Included */}
-      <section className="py-12 md:py-16 border-t border-white/10">
+      <section className="py-10 md:py-14 border-t border-white/10">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-white mb-12 text-center">What's Included</h2>
+          <h2 className="text-2xl font-bold text-white mb-8 text-center">What's Included</h2>
           <div className="max-w-3xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-4">
               {[
                 { icon: BarChart3, text: "Real-time analytics dashboard" },
                 { icon: TrendingUp, text: "Trend analysis tools" },
@@ -126,9 +267,9 @@ export default function PerformanceInsightsPage() {
                 { icon: Activity, text: "Performance monitoring" },
                 { icon: LineChart, text: "Custom report builder" },
               ].map((feature, index) => (
-                <div key={index} className="flex items-start gap-3">
-                  <feature.icon className="w-5 h-5 text-white mt-1 flex-shrink-0" />
-                  <span className="text-white/70">{feature.text}</span>
+                <div key={index} className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-lg p-3">
+                  <feature.icon className="w-5 h-5 text-white flex-shrink-0" />
+                  <span className="text-white/70 text-sm">{feature.text}</span>
                 </div>
               ))}
             </div>
@@ -137,10 +278,10 @@ export default function PerformanceInsightsPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 border-t border-white/10">
+      <section className="py-12 md:py-16 border-t border-white/10">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Unlock Performance Insights?</h2>
-          <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to Unlock Performance Insights?</h2>
+          <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
             Start tracking content performance today and make data-driven decisions.
           </p>
           <Button asChild size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] hover:opacity-90">
