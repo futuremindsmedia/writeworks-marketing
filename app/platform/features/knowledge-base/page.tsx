@@ -1,47 +1,128 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { ArrowLeft, BookOpen, Search, CheckCircle2, Lightbulb, Share2 } from "lucide-react"
+import { BookOpen, Search, CheckCircle2, Lightbulb, Share2, Home, ChevronRight, AlertTriangle, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
-  title: "Knowledge Base Software | WriteWorks AI Platform",
+  title: "AI Knowledge Base | Your Content's Secret Weapon",
   description:
-    "Build a centralized knowledge base for your team. Store, organize, and share information to improve collaboration and productivity.",
-  keywords: ["knowledge base", "documentation", "team knowledge", "information management", "collaboration"],
+    "Build an AI-powered knowledge base that learns from your best content. Store brand guidelines, style guides, and research to power consistent AI outputs.",
+  keywords: ["knowledge base", "AI knowledge", "content repository", "brand guidelines", "style guides"],
 }
 
 export default function KnowledgeBasePage() {
+  const challenges = [
+    {
+      title: "Scattered Information",
+      description: "Brand guidelines, research, and best practices spread across multiple locations.",
+    },
+    {
+      title: "Inconsistent AI Outputs",
+      description: "AI tools produce generic content without access to your specific knowledge.",
+    },
+    {
+      title: "Slow Onboarding",
+      description: "New team members take weeks to learn brand voice and content standards.",
+    },
+  ]
+
+  const solutions = [
+    {
+      title: "Centralized Knowledge",
+      description: "One source of truth for brand voice, guidelines, and content best practices.",
+    },
+    {
+      title: "AI-Powered Context",
+      description: "Your knowledge base trains our AI to produce brand-aligned content.",
+    },
+    {
+      title: "Instant Onboarding",
+      description: "New team members access all they need to create on-brand content immediately.",
+    },
+  ]
+
+  const capabilities = [
+    {
+      icon: Search,
+      title: "Easy Discovery",
+      description: "Find information instantly with powerful search and intuitive organization.",
+    },
+    {
+      icon: Share2,
+      title: "Team Collaboration",
+      description: "Share knowledge across teams and ensure everyone has access to the information they need.",
+    },
+    {
+      icon: Lightbulb,
+      title: "Continuous Learning",
+      description:
+        "Build institutional knowledge and onboard new team members faster with comprehensive documentation.",
+    },
+  ]
+
+  const jobsToBeDone = [
+    { task: "Find brand guidelines", traditional: "15 min", withPlatform: "10 sec", saved: "99%" },
+    { task: "Onboard new writer", traditional: "2 weeks", withPlatform: "2 days", saved: "86%" },
+    { task: "Update style guide", traditional: "4 hours", withPlatform: "30 min", saved: "88%" },
+    { task: "Share best practices", traditional: "1 hour", withPlatform: "1 click", saved: "99%" },
+  ]
+
+  const targetAudience = [
+    { role: "Content Teams", description: "Access brand knowledge to create consistent content" },
+    { role: "Brand Managers", description: "Maintain and distribute brand guidelines" },
+    { role: "Marketing Leaders", description: "Ensure team alignment on messaging and voice" },
+  ]
+
+  const features = [
+    "Rich text article editor",
+    "Category organization",
+    "Tag management",
+    "Full-text search",
+    "Related articles",
+    "Version history",
+    "Access controls",
+    "Article analytics",
+    "Feedback collection",
+    "Export capabilities",
+    "AI context integration",
+    "Custom branding",
+  ]
+
   return (
     <div className="min-h-screen bg-black">
-      {/* Back Navigation */}
-      <div className="border-b border-white/10">
-        <div className="container mx-auto px-4 py-4">
-          <Link
-            href="/platform/features"
-            className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Back to All Features
-          </Link>
-        </div>
-      </div>
-
       {/* Hero Section */}
-      <section className="py-16 md:py-20">
+      <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">
+          {/* Breadcrumbs */}
+          <nav className="flex items-center justify-center gap-2 text-sm mb-8">
+            <Link href="/" className="text-white/60 hover:text-white transition-colors">
+              <Home className="h-4 w-4" />
+            </Link>
+            <ChevronRight className="h-4 w-4 text-white/40" />
+            <Link href="/platform" className="text-white/60 hover:text-white transition-colors">
+              Platform
+            </Link>
+            <ChevronRight className="h-4 w-4 text-white/40" />
+            <Link href="/platform/features" className="text-white/60 hover:text-white transition-colors">
+              Features
+            </Link>
+            <ChevronRight className="h-4 w-4 text-white/40" />
+            <span className="text-white">Knowledge Base</span>
+          </nav>
+
           <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-6">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 mb-4">
               <BookOpen className="h-4 w-4 text-white" />
-              <span className="text-sm font-medium text-white">Knowledge Management</span>
+              <span className="text-sm text-white/80">Knowledge Management</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] bg-clip-text text-transparent">
-              Knowledge Base Software
+            <h1 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+              AI Knowledge Base | Your Content's Secret Weapon
             </h1>
-            <p className="text-xl text-white/70 mb-8 leading-relaxed">
-              Build a centralized knowledge base for your team. Store, organize, and share information to improve
-              collaboration, reduce repetitive questions, and boost productivity.
+            <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
+              Build an AI-powered knowledge base that learns from your best content. Store brand guidelines, style
+              guides, and research to power consistent AI outputs.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-3 justify-center mb-8">
               <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
                 Start Free Trial
               </Button>
@@ -53,42 +134,40 @@ export default function KnowledgeBasePage() {
                 Watch Demo
               </Button>
             </div>
+
+            {/* Stats Bar */}
+            <div className="grid grid-cols-3 gap-4 max-w-2xl mx-auto">
+              <div className="text-center p-3 rounded-lg bg-white/5 border border-white/10">
+                <div className="text-2xl font-bold text-white">99%</div>
+                <div className="text-xs text-white/60">Faster Search</div>
+              </div>
+              <div className="text-center p-3 rounded-lg bg-white/5 border border-white/10">
+                <div className="text-2xl font-bold text-white">86%</div>
+                <div className="text-xs text-white/60">Faster Onboarding</div>
+              </div>
+              <div className="text-center p-3 rounded-lg bg-white/5 border border-white/10">
+                <div className="text-2xl font-bold text-white">100%</div>
+                <div className="text-xs text-white/60">Brand Consistency</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Key Benefits */}
-      <section className="py-16 md:py-20 border-t border-white/10">
+      {/* Challenges Section */}
+      <section className="py-12 md:py-16 border-t border-white/10">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">Key Benefits</h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: Search,
-                  title: "Easy Discovery",
-                  description: "Find information instantly with powerful search and intuitive organization.",
-                },
-                {
-                  icon: Share2,
-                  title: "Team Collaboration",
-                  description:
-                    "Share knowledge across teams and ensure everyone has access to the information they need.",
-                },
-                {
-                  icon: Lightbulb,
-                  title: "Continuous Learning",
-                  description:
-                    "Build institutional knowledge and onboard new team members faster with comprehensive documentation.",
-                },
-              ].map((benefit, index) => (
-                <div
-                  key={index}
-                  className="p-6 rounded-lg border border-white/10 bg-white/5 hover:border-white/20 transition-all duration-300"
-                >
-                  <benefit.icon className="h-12 w-12 text-white mb-4" />
-                  <h3 className="text-xl font-semibold mb-3 text-white">{benefit.title}</h3>
-                  <p className="text-white/70">{benefit.description}</p>
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">The Challenges</h2>
+              <p className="text-white/70">Common knowledge management problems teams face</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {challenges.map((challenge, index) => (
+                <div key={index} className="p-5 rounded-lg border border-white/10 bg-white/5">
+                  <AlertTriangle className="h-8 w-8 text-white/60 mb-3" />
+                  <h3 className="text-lg font-semibold text-white mb-2">{challenge.title}</h3>
+                  <p className="text-sm text-white/70">{challenge.description}</p>
                 </div>
               ))}
             </div>
@@ -96,46 +175,99 @@ export default function KnowledgeBasePage() {
         </div>
       </section>
 
-      {/* How It Works */}
-      <section className="py-16 md:py-20 border-t border-white/10">
+      {/* Solutions Section */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">How WriteWorks Solves This</h2>
+              <p className="text-white/70">Your knowledge powering every piece of content</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {solutions.map((solution, index) => (
+                <div key={index} className="p-5 rounded-lg border border-white/10 bg-white/5">
+                  <Zap className="h-8 w-8 text-white mb-3" />
+                  <h3 className="text-lg font-semibold text-white mb-2">{solution.title}</h3>
+                  <p className="text-sm text-white/70">{solution.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Capabilities */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-5xl mx-auto">
+            <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center text-white">Key Capabilities</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {capabilities.map((capability, index) => (
+                <div
+                  key={index}
+                  className="p-5 rounded-lg border border-white/10 bg-white/5 hover:border-white/20 transition-all"
+                >
+                  <capability.icon className="h-10 w-10 text-white mb-3" />
+                  <h3 className="text-lg font-semibold mb-2 text-white">{capability.title}</h3>
+                  <p className="text-sm text-white/70">{capability.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Jobs to Be Done */}
+      <section className="py-12 md:py-16 border-t border-white/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">How It Works</h2>
-            <div className="space-y-8">
-              {[
-                {
-                  step: "01",
-                  title: "Create Articles",
-                  description: "Write and format knowledge base articles with our rich text editor and media support.",
-                },
-                {
-                  step: "02",
-                  title: "Organize Content",
-                  description: "Structure your knowledge base with categories, tags, and hierarchical organization.",
-                },
-                {
-                  step: "03",
-                  title: "Enable Search",
-                  description:
-                    "Make information discoverable with powerful search, filters, and related content suggestions.",
-                },
-                {
-                  step: "04",
-                  title: "Maintain & Update",
-                  description:
-                    "Keep your knowledge base current with version control, update notifications, and analytics.",
-                },
-              ].map((step, index) => (
-                <div key={index} className="flex gap-6">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] flex items-center justify-center text-2xl font-bold text-white">
-                      {step.step}
-                    </div>
-                  </div>
-                  <div className="flex-1 pt-2">
-                    <h3 className="text-2xl font-semibold mb-2 text-white">{step.title}</h3>
-                    <p className="text-white/70 text-lg">{step.description}</p>
-                  </div>
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Time Saved on Key Tasks</h2>
+              <p className="text-white/70">See how much faster you can manage knowledge</p>
+            </div>
+            <div className="overflow-x-auto">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-white/10">
+                    <th className="text-left py-3 px-4 text-white/80 font-medium">Task</th>
+                    <th className="text-center py-3 px-4 text-white/80 font-medium">Traditional</th>
+                    <th className="text-center py-3 px-4 text-white/80 font-medium">With WriteWorks</th>
+                    <th className="text-center py-3 px-4 text-white/80 font-medium">Time Saved</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {jobsToBeDone.map((job, index) => (
+                    <tr key={index} className="border-b border-white/5">
+                      <td className="py-3 px-4 text-white/70">{job.task}</td>
+                      <td className="py-3 px-4 text-center text-white/50">{job.traditional}</td>
+                      <td className="py-3 px-4 text-center text-white">{job.withPlatform}</td>
+                      <td className="py-3 px-4 text-center">
+                        <span className="px-2 py-1 rounded bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white text-sm font-medium">
+                          {job.saved}
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Target Audience */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">Built For</h2>
+              <p className="text-white/70">Teams that need organized brand knowledge</p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {targetAudience.map((audience, index) => (
+                <div key={index} className="p-5 rounded-lg border border-white/10 bg-white/5 text-center">
+                  <h3 className="text-lg font-semibold text-white mb-2">{audience.role}</h3>
+                  <p className="text-sm text-white/70">{audience.description}</p>
                 </div>
               ))}
             </div>
@@ -144,28 +276,15 @@ export default function KnowledgeBasePage() {
       </section>
 
       {/* Features List */}
-      <section className="py-16 md:py-20 border-t border-white/10">
+      <section className="py-12 md:py-16 border-t border-white/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-white">What's Included</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              {[
-                "Rich text article editor",
-                "Category organization",
-                "Tag management",
-                "Full-text search",
-                "Related articles",
-                "Version history",
-                "Access controls",
-                "Article analytics",
-                "Feedback collection",
-                "Export capabilities",
-                "Multi-language support",
-                "Custom branding",
-              ].map((feature, index) => (
+            <h2 className="text-2xl md:text-3xl font-bold mb-10 text-center text-white">What's Included</h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              {features.map((feature, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <CheckCircle2 className="h-6 w-6 text-white flex-shrink-0 mt-0.5" />
-                  <span className="text-lg text-white/70">{feature}</span>
+                  <CheckCircle2 className="h-5 w-5 text-white flex-shrink-0 mt-0.5" />
+                  <span className="text-white/70">{feature}</span>
                 </div>
               ))}
             </div>
@@ -174,14 +293,14 @@ export default function KnowledgeBasePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 border-t border-white/10">
+      <section className="py-12 md:py-16 border-t border-white/10">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">Ready to Build Your Knowledge Base?</h2>
-            <p className="text-xl text-white/70 mb-8">
-              Centralize team knowledge and improve collaboration. Try knowledge base free for 14 days.
+          <div className="max-w-3xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-white">Ready to Build Your Knowledge Base?</h2>
+            <p className="text-white/70 mb-6">
+              Centralize team knowledge and improve AI outputs. Try knowledge base free for 14 days.
             </p>
-            <div className="flex flex-wrap gap-4 justify-center">
+            <div className="flex flex-wrap gap-3 justify-center">
               <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
                 Start Free Trial
               </Button>
