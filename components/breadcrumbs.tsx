@@ -12,8 +12,12 @@ interface BreadcrumbsProps {
 
 export function Breadcrumbs({ items }: BreadcrumbsProps) {
   return (
-    <nav aria-label="Breadcrumb" className="mb-4 flex justify-center md:justify-start">
-      <ol className="flex flex-wrap items-center gap-2 text-sm" itemScope itemType="https://schema.org/BreadcrumbList">
+    <nav aria-label="Breadcrumb" className="mb-4 flex justify-center">
+      <ol
+        className="flex flex-wrap items-center justify-center gap-2 text-sm"
+        itemScope
+        itemType="https://schema.org/BreadcrumbList"
+      >
         {/* Home */}
         <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
           <Link
