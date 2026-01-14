@@ -126,14 +126,7 @@ export default function ProjectManagementPage() {
             </p>
             <div className="flex flex-wrap gap-3 justify-center mb-8">
               <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Managing Projects
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white/20 text-white hover:bg-white/5 bg-transparent"
-              >
-                Watch Demo
+                Start Free Trial
               </Button>
             </div>
 

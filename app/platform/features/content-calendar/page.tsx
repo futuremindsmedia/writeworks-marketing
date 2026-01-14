@@ -1,3 +1,4 @@
+import React from "react"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { Calendar, Clock, TrendingUp, CheckCircle2, Users, Home, ChevronRight, AlertTriangle, Zap } from "lucide-react"
@@ -125,13 +126,6 @@ export default function ContentCalendarPage() {
               <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
                 Start Free Trial
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white/20 text-white hover:bg-white/5 bg-transparent"
-              >
-                Watch Demo
-              </Button>
             </div>
 
             {/* Stats Bar */}
@@ -206,7 +200,7 @@ export default function ContentCalendarPage() {
                   key={index}
                   className="p-5 rounded-lg border border-white/10 bg-white/5 hover:border-white/20 transition-all"
                 >
-                  <capability.icon className="h-10 w-10 text-white mb-3" />
+                  {React.createElement(capability.icon, { className: "h-10 w-10 text-white mb-3" })}
                   <h3 className="text-lg font-semibold mb-2 text-white">{capability.title}</h3>
                   <p className="text-sm text-white/70">{capability.description}</p>
                 </div>

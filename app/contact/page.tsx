@@ -242,9 +242,9 @@ export default function ContactPage() {
                     "We typically respond to all inquiries within 24 hours during business days. For urgent matters, please contact our support team directly.",
                 },
                 {
-                  question: "Do you offer demos?",
+                  question: "Do you offer a free trial?",
                   answer:
-                    "Yes! We offer personalized demos for teams interested in WriteWorks AI. Contact our sales team to schedule a demo.",
+                    "Yes! We offer a free trial so you can experience WriteWorks AI firsthand. Sign up at app.writeworks.ai to get started.",
                 },
                 {
                   question: "What support options are available?",

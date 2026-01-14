@@ -373,7 +373,7 @@ export default function EnterprisePage() {
             <div className="flex flex-wrap gap-3 justify-center">
               <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
                 <Link href="https://app.writeworks.ai/sign-up">
-                  Schedule a Demo <ArrowRight className="ml-2 h-4 w-4" />
+                  Free Trial <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               <Button variant="outline" className="border-white/20 text-white hover:bg-white/5 bg-transparent" asChild>

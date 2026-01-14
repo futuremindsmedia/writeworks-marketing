@@ -102,14 +102,6 @@ export default function TechnologyPage() {
                   Free Trial <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white/20 text-white bg-transparent hover:bg-white/5"
-                asChild
-              >
-                <Link href="/contact">Book Demo</Link>
-              </Button>
             </div>
           </div>
         </div>
@@ -137,98 +129,16 @@ export default function TechnologyPage() {
       </section>
 
       {/* How We Solve It */}
-      <section className="py-12 md:py-16 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">How WriteWorks Solves This</h2>
-          </div>
-          <div className="max-w-3xl mx-auto space-y-4">
-            {solutions.map((item, index) => (
-              <div key={index} className="flex gap-4 p-4 rounded-xl border border-white/10 bg-white/5">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] flex items-center justify-center text-sm font-bold">
-                  {index + 1}
-                </div>
-                <div>
-                  <div className="text-sm text-white/50 mb-1">{item.challenge}</div>
-                  <div className="text-white/90">{item.solution}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Solutions section will be added here if needed */}
 
       {/* Jobs to Be Done */}
-      <section className="py-12 md:py-16 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Time Saved on Key Tasks</h2>
-            <p className="text-white/70">Real productivity gains for technology teams</p>
-          </div>
-          <div className="max-w-3xl mx-auto">
-            <div className="rounded-xl border border-white/10 overflow-hidden">
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b border-white/10 bg-white/5">
-                    <th className="text-left p-3 text-sm font-medium text-white/70">Task</th>
-                    <th className="text-center p-3 text-sm font-medium text-white/70">Before</th>
-                    <th className="text-center p-3 text-sm font-medium text-white/70">After</th>
-                    <th className="text-center p-3 text-sm font-medium text-white/70">Saved</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {jobsToBeDone.map((job, index) => (
-                    <tr key={index} className="border-b border-white/5 last:border-0">
-                      <td className="p-3 text-sm text-white/90">{job.task}</td>
-                      <td className="p-3 text-sm text-white/50 text-center">{job.before}</td>
-                      <td className="p-3 text-sm text-white/50 text-center">{job.after}</td>
-                      <td className="p-3 text-center">
-                        <span className="text-sm font-semibold text-[#6366F1]">{job.timeSaved}</span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Jobs to Be Done section will be added here if needed */}
 
       {/* Target Audience */}
-      <section className="py-12 md:py-16 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Built For</h2>
-          </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            {targetAudience.map((persona, index) => (
-              <div key={index} className="p-4 rounded-xl border border-white/10 bg-white/5 text-center">
-                <div className="text-lg font-semibold mb-1">{persona.role}</div>
-                <div className="text-sm text-white/60">{persona.description}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Target Audience section will be added here if needed */}
 
       {/* CTA Section */}
-      <section className="py-12 md:py-16 border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">Scale Your Technical Content</h2>
-            <p className="text-white/70 mb-6">Join tech companies using WriteWorks to get cited by AI platforms</p>
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
-              asChild
-            >
-              <Link href="https://app.writeworks.ai/sign-up">
-                Free Trial <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+      {/* CTA section will be added here if needed */}
     </div>
   )
 }
