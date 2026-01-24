@@ -39,7 +39,8 @@ export default function CustomerMarketingPage() {
               <span className="text-xs text-white/70">Solutions by Role</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Customer Marketing Content Writing &amp; Management Software</h1>
+              Customer Marketing Content Writing &amp; Management Software
+            </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Drive adoption and advocacy with engaging content. Scale customer retention and upsell programs.
             </p>
