@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Code, FileText, Zap } from "lucide-react"
+import { ArrowRight, Code, FileText, Zap, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Technology & SaaS Writing Software | WriteWorks AI",
-  description: "AI-powered writing software for technology and SaaS companies. Scale technical content, documentation, and launch materials faster.",
+  title: "Technology & SaaS Content Writing & Management Software | WriteWorks",
+  description: "Accelerate SaaS content creation with AI-powered tools. Generate product docs, marketing content, and technical materials at scale to drive growth and reduce time-to-market.",
 }
 
 export default function TechnologySaaSPage() {
@@ -39,7 +39,7 @@ export default function TechnologySaaSPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              AI Writing Software for Technology & SaaS Companies
+              Technology & SaaS Content Writing &amp; Management Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Scale technical content, documentation, and launch materials faster. Keep docs in sync with your product velocity.
@@ -71,6 +71,16 @@ export default function TechnologySaaSPage() {
                   Start Free <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
+              </Button>
             </div>
           </div>
         </div>
@@ -96,6 +106,40 @@ export default function TechnologySaaSPage() {
           </div>
         </div>
       </section>
-    </div>
+    
+      {/* CTA Section */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Scale Your SaaS Content?</h2>
+            <p className="text-white/70 mb-6">
+              Join technology companies creating high-quality content that drives product adoption and revenue.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
+                asChild
+              >
+                <a href="https://app.writeworks.ai/sign-up">
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Talk to Sales
+                </a>
+              </Button>
+            </div>
+            <p className="text-xs text-white/50 mt-4">No credit card required • Cancel anytime</p>
+          </div>
+        </div>
+      </section>
+</div>
   )
 }

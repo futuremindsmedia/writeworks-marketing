@@ -44,13 +44,13 @@ export default function SEOContentPage() {
 
   const challenges = [
     {
-      title: "Content Doesn't Rank",
+      title: "SEO Content Content Writing & Management Software | WriteWorks",
       description:
         "Your SEO content struggles to break into top positions despite keyword optimization.",
     },
     {
       title: "AI Platforms Ignore You",
-      description: "ChatGPT, Claude, and AI Overviews cite competitors, not your content.",
+      description: "Dominate search rankings with AI-powered SEO content creation. Generate optimized articles, landing pages, and web content at scale to drive organic traffic and conversions.",
     },
     {
       title: "Slow Content Production",
@@ -382,6 +382,40 @@ export default function SEOContentPage() {
           </div>
         </div>
       </section>
-    </div>
+    
+      {/* CTA Section */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Scale Your SEO Content?</h2>
+            <p className="text-white/70 mb-6">
+              Join SEO teams creating high-ranking content that drives organic traffic and revenue.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
+                asChild
+              >
+                <a href="https://app.writeworks.ai/sign-up">
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Talk to Sales
+                </a>
+              </Button>
+            </div>
+            <p className="text-xs text-white/50 mt-4">No credit card required • Cancel anytime</p>
+          </div>
+        </div>
+      </section>
+</div>
   )
 }

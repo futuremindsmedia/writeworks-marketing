@@ -44,13 +44,13 @@ export default function LLMOptimizationPage() {
 
   const challenges = [
     {
-      title: "AI Platforms Ignore Your Content",
+      title: "LLM Optimization Content Writing & Management Software | WriteWorks",
       description:
         "ChatGPT, Claude, and Perplexity cite competitors when answering questions about your space.",
     },
     {
       title: "No LLM Citation Strategy",
-      description: "You're optimizing for Google, but not for how LLMs consume and cite content.",
+      description: "Maximize AI visibility with LLM-optimized content creation. Ensure your brand gets cited by ChatGPT, Claude, and Perplexity with AI-native content strategies.",
     },
     {
       title: "Can't Measure AI Visibility",
@@ -382,6 +382,40 @@ export default function LLMOptimizationPage() {
           </div>
         </div>
       </section>
-    </div>
+    
+      {/* CTA Section */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Dominate AI Search?</h2>
+            <p className="text-white/70 mb-6">
+              Join forward-thinking brands getting cited by ChatGPT, Claude, and Perplexity.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
+                asChild
+              >
+                <a href="https://app.writeworks.ai/sign-up">
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Talk to Sales
+                </a>
+              </Button>
+            </div>
+            <p className="text-xs text-white/50 mt-4">No credit card required • Cancel anytime</p>
+          </div>
+        </div>
+      </section>
+</div>
   )
 }

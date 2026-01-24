@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Users, MessageSquare, TrendingUp } from "lucide-react"
+import { ArrowRight, Users, MessageSquare, TrendingUp, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Community Management Writing Software | WriteWorks AI",
-  description: "AI-powered writing software for community managers. Foster engagement and loyalty with compelling content.",
+  title: "Community Management Content Writing & Management Software | WriteWorks",
+  description: "Build thriving communities with AI-powered content creation. Scale engagement, foster conversations, and grow membership with compelling community content.",
 }
 
 export default function CommunityManagementPage() {
@@ -39,7 +39,7 @@ export default function CommunityManagementPage() {
               <span className="text-xs text-white/70">Solutions by Role</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              AI Writing Software for Community Management
+              Community Management Content Writing &amp; Management Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Foster engagement and loyalty with compelling content. Scale community interactions and grow membership.
@@ -71,6 +71,16 @@ export default function CommunityManagementPage() {
                   Start Free <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
+              </Button>
             </div>
           </div>
         </div>
@@ -96,6 +106,40 @@ export default function CommunityManagementPage() {
           </div>
         </div>
       </section>
-    </div>
+    
+      {/* CTA Section */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Your Community?</h2>
+            <p className="text-white/70 mb-6">
+              Join community managers creating engaging content that drives member growth and loyalty.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
+                asChild
+              >
+                <a href="https://app.writeworks.ai/sign-up">
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Talk to Sales
+                </a>
+              </Button>
+            </div>
+            <p className="text-xs text-white/50 mt-4">No credit card required • Cancel anytime</p>
+          </div>
+        </div>
+      </section>
+</div>
   )
 }
