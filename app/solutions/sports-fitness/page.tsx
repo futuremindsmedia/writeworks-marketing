@@ -4,7 +4,7 @@ import { ArrowRight, Dumbbell, Trophy, TrendingUp, Calendar } from "lucide-react
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Sports & Fitness Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for Sports & Fitness | WriteWorks",
   description: "Scale fitness content with AI-powered creation tools. Generate workout programs, nutrition guides, and motivational content that engages members and drives retention.",
 }
 
@@ -39,7 +39,7 @@ export default function SportsFitnessPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Sports & Fitness Content Writing &amp; Management Software
+              Content Writing Software for Sports &amp; Fitness
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create motivating workout content and training plans that drive results. Scale your fitness content effortlessly.

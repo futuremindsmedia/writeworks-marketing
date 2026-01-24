@@ -4,7 +4,7 @@ import { ArrowRight, Briefcase, FileText, Lightbulb, Calendar } from "lucide-rea
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "B2B Services Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for B2B Services | WriteWorks",
   description: "Scale B2B content creation with AI-powered tools. Generate white papers, case studies, and thought leadership content that builds credibility and drives enterprise deals.",
 }
 
@@ -39,7 +39,7 @@ export default function B2BServicesPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              B2B Services Content Writing &amp; Management Software
+              Content Writing Software for B2B Services
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create professional proposals, case studies, and thought leadership that wins business. Scale your content production.

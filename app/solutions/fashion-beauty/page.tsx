@@ -4,7 +4,7 @@ import { ArrowRight, Sparkles, TrendingUp, Package, Calendar } from "lucide-reac
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Fashion & Beauty Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for Fashion & Beauty | WriteWorks",
   description: "Scale fashion content with AI-powered creation tools. Generate product descriptions, lookbooks, and editorial content that drives sales and builds brand appeal.",
 }
 
@@ -39,7 +39,7 @@ export default function FashionBeautyPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Fashion & Beauty Content Writing &amp; Management Software
+              Content Writing Software for Fashion &amp; Beauty
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create trend-forward content that converts. Scale product descriptions and brand storytelling effortlessly.

@@ -4,7 +4,7 @@ import { ArrowRight, Code, FileText, Zap, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Technology & SaaS Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for SaaS Companies | WriteWorks",
   description: "Accelerate SaaS content creation with AI-powered tools. Generate product docs, marketing content, and technical materials at scale to drive growth and reduce time-to-market.",
 }
 
@@ -39,7 +39,7 @@ export default function TechnologySaaSPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Technology & SaaS Content Writing &amp; Management Software
+              Content Writing Software for SaaS Companies
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Scale technical content, documentation, and launch materials faster. Keep docs in sync with your product velocity.

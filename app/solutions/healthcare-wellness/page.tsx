@@ -4,7 +4,7 @@ import { ArrowRight, Heart, Shield, Users, Calendar, CheckCircle, Zap, BookOpen,
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Healthcare & Wellness Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for Healthcare & Wellness | WriteWorks",
   description: "Create compliant healthcare content with AI-powered tools. Generate patient education, medical marketing, and clinical materials that maintain accuracy and regulatory compliance.",
 }
 
@@ -94,7 +94,7 @@ export default function HealthcareWellnessPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Healthcare & Wellness Content Writing &amp; Management Software
+              Content Writing Software for Healthcare &amp; Wellness
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create compliant, accurate health content that builds trust. Scale patient education while maintaining medical precision.

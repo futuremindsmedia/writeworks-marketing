@@ -4,7 +4,7 @@ import { ArrowRight, Plane, MapPin, Star, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Travel & Hospitality Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for Travel & Hospitality | WriteWorks",
   description: "Scale travel content with AI-powered creation tools. Generate destination guides, booking content, and marketing materials that inspire travelers and drive bookings.",
 }
 
@@ -39,7 +39,7 @@ export default function TravelHospitalityPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Travel & Hospitality Content Writing &amp; Management Software
+              Content Writing Software for Travel &amp; Hospitality
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create inspiring travel content that drives bookings. Scale destination guides and property descriptions effortlessly.

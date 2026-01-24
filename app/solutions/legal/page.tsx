@@ -4,7 +4,7 @@ import { ArrowRight, Scale, FileText, Shield, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Legal Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for Legal Services | WriteWorks",
   description: "Create accurate legal content with AI-powered tools. Generate client documents, educational materials, and marketing content while maintaining precision and compliance.",
 }
 
@@ -39,7 +39,7 @@ export default function LegalPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Legal Content Writing &amp; Management Software
+              Content Writing Software for Legal Services
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create clear, accurate legal content and client communications faster. Maintain precision while increasing productivity.

@@ -4,7 +4,7 @@ import { ArrowRight, BookOpen, GraduationCap, Users, Calendar } from "lucide-rea
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Education & eLearning Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for Education & eLearning | WriteWorks",
   description: "Accelerate course creation with AI-powered educational content tools. Generate curricula, lesson plans, and learning materials that engage students and improve outcomes.",
 }
 
@@ -39,7 +39,7 @@ export default function EducationElearningPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Education & eLearning Content Writing &amp; Management Software
+              Content Writing Software for Education &amp; eLearning
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create engaging course content faster. Scale educational materials while maintaining quality and accessibility.

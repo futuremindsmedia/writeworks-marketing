@@ -4,7 +4,7 @@ import { ArrowRight, DollarSign, FileCheck, TrendingUp, Calendar } from "lucide-
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Finance Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for Financial Services | WriteWorks",
   description: "Create compliant financial content with AI-powered tools. Generate reports, client communications, and educational materials that maintain accuracy and regulatory compliance.",
 }
 
@@ -39,7 +39,7 @@ export default function FinancePage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Finance Content Writing &amp; Management Software
+              Content Writing Software for Financial Services
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create compliant, clear financial content that builds client confidence. Scale reports and communications without sacrificing accuracy.

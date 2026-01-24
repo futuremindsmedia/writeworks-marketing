@@ -4,7 +4,7 @@ import { ArrowRight, Home, MapPin, TrendingUp, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Real Estate Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for Real Estate | WriteWorks",
   description: "Scale real estate marketing with AI-powered content creation. Generate property listings, market reports, and marketing materials that attract buyers and close deals faster.",
 }
 
@@ -39,7 +39,7 @@ export default function RealEstatePage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Real Estate Content Writing &amp; Management Software
+              Content Writing Software for Real Estate
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create compelling property listings and marketing materials that drive inquiries. Scale your content without sacrificing quality.

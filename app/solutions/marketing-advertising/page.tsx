@@ -4,7 +4,7 @@ import { ArrowRight, Megaphone, Target, Zap, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Marketing & Advertising Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for Marketing & Advertising Agencies | WriteWorks",
   description: "Scale creative output with AI-powered content creation. Generate campaigns, ad copy, and creative briefs faster to deliver more value to clients and grow your agency.",
 }
 
@@ -39,7 +39,7 @@ export default function MarketingAdvertisingPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Marketing & Advertising Content Writing &amp; Management Software
+              Content Writing Software for Marketing &amp; Advertising Agencies
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Scale campaign content and client deliverables without compromising creativity. Focus on strategy, not production.

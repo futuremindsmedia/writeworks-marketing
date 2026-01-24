@@ -4,7 +4,7 @@ import { ArrowRight, Heart, Users, TrendingUp, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Nonprofits & Charities Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for Nonprofits & Charities | WriteWorks",
   description: "Amplify nonprofit impact with AI-powered content creation. Generate compelling fundraising appeals, impact stories, and donor communications that drive donations and engagement.",
 }
 
@@ -39,7 +39,7 @@ export default function NonprofitsCharitiesPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Nonprofits & Charities Content Writing &amp; Management Software
+              Content Writing Software for Nonprofits &amp; Charities
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create compelling fundraising and impact content that inspires action. Scale donor communications effortlessly.

@@ -4,7 +4,7 @@ import { ArrowRight, Clock, AlertTriangle, Target, Calendar, Code, FileText, Zap
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Technology Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for Technology Companies | WriteWorks",
   description: "Scale technical content 10x faster. Create docs, release notes, and developer content that gets cited by AI platforms and drives product adoption.",
 }
 
@@ -70,7 +70,7 @@ export default function TechnologyPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Technology Content Writing &amp; Management Software
+              Content Writing Software for Technology Companies
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Move faster from roadmap to reality. Scale technical content and get cited by AI platforms.

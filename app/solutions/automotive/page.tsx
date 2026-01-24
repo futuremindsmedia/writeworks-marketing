@@ -4,7 +4,7 @@ import { ArrowRight, Car, FileText, Zap, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Automotive Content Writing & Management Software | WriteWorks",
+  title: "Content Writing Software for Automotive | WriteWorks",
   description: "Accelerate automotive content with AI-powered creation tools. Generate vehicle descriptions, marketing materials, and technical content that drives dealership traffic and sales.",
 }
 
@@ -39,7 +39,7 @@ export default function AutomotivePage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Automotive Content Writing &amp; Management Software
+              Content Writing Software for Automotive
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create technical specs, marketing content, and dealer materials that drive test drives and sales.
