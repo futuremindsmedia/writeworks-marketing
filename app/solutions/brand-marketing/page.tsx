@@ -4,7 +4,7 @@ import { ArrowRight, Clock, AlertTriangle, Target, Calendar } from "lucide-react
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Brand Marketing Content Writing & Management Software | WriteWorks",
+  title: "Brand Marketing Content Software | WriteWorks",
   description: "Enforce brand consistency automatically across all content. Reduce review time 90% with AI-powered brand compliance that protects voice, tone, and style at scale.",
 }
 
@@ -69,7 +69,7 @@ export default function BrandMarketingPage() {
               <span className="text-xs text-white/70">Solutions for Brand Teams</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Brand Marketing Content Writing &amp; Management Software
+              Brand Marketing Content Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Automate brand compliance. Protect voice, tone, and style at scale.

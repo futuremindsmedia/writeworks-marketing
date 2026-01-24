@@ -4,7 +4,7 @@ import { ArrowRight, TrendingDown, Users, Target, Zap, Megaphone, CheckCircle, C
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Demand Generation Content Writing & Management Software | WriteWorks",
+  title: "Demand Generation Content Software | WriteWorks",
   description: "Create pipeline 3x faster with AI-powered campaign content. Ship demand gen campaigns in days, not weeks, while improving lead quality and conversion rates.",
 }
 
@@ -90,7 +90,7 @@ export default function DemandGenerationPage() {
               <span className="text-xs text-white/70">Solutions by Role</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Demand Generation Content Writing &amp; Management Software
+              Demand Generation Content Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create pipeline and conversions with high-performing content. Ship campaigns faster and scale lead generation.

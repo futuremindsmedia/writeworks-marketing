@@ -4,7 +4,7 @@ import { ArrowRight, Clock, AlertTriangle, Target, Calendar } from "lucide-react
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Field & Events Marketing Content Writing & Management Software | WriteWorks",
+  title: "Field Events Marketing Content Software | WriteWorks",
   description: "Create all event content 75% faster—from invitations to follow-ups. Maximize registrations and attendance with AI-powered event marketing tools that scale across your entire program.",
 }
 
@@ -70,7 +70,7 @@ export default function FieldEventsMarketingPage() {
               <span className="text-xs text-white/70">Solutions for Event Teams</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Field &amp; Events Marketing Content Writing &amp; Management Software
+              Field Events Marketing Content Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Maximize event attendance and create meaningful experiences. Scale event content without the crunch.

@@ -4,7 +4,7 @@ import { ArrowRight, GraduationCap, BookOpen, Users, Calendar } from "lucide-rea
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Customer Education Content Writing & Management Software | WriteWorks",
+  title: "Customer Education Content Software | WriteWorks",
   description: "Scale customer education with AI-powered content tools. Create training courses, onboarding guides, and help articles faster to drive product adoption and reduce churn.",
 }
 
@@ -39,7 +39,7 @@ export default function CustomerEducationPage() {
               <span className="text-xs text-white/70">Solutions by Role</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Customer Education Content Writing &amp; Management Software
+              Customer Education Content Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Train and onboard users with engaging learning content. Scale customer education and drive product adoption.

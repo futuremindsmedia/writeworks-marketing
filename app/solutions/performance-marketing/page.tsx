@@ -4,7 +4,7 @@ import { ArrowRight, Target, Clock, AlertTriangle, Calendar } from "lucide-react
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Performance Marketing Content Writing & Management Software | WriteWorks",
+  title: "Performance Marketing Content Software | WriteWorks",
   description:
     "Create high-converting campaigns 85% faster with AI-powered ad copy and landing pages. Generate hundreds of variations, test efficiently, and scale personalized content across all channels.",
 }
@@ -70,7 +70,7 @@ export default function PerformanceMarketingPage() {
               <span className="text-xs text-white/70">Solutions for Performance Teams</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Performance Marketing Content Writing &amp; Management Software
+              Performance Marketing Content Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Drive engagement and growth with personalization at scale. Launch more campaigns, faster.

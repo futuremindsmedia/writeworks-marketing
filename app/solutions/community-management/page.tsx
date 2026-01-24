@@ -4,7 +4,7 @@ import { ArrowRight, Users, MessageSquare, TrendingUp, Calendar } from "lucide-r
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Community Management Content Writing & Management Software | WriteWorks",
+  title: "Community Management Content Software | WriteWorks",
   description: "Build thriving communities with AI-powered content creation. Scale engagement, foster conversations, and grow membership with compelling community content.",
 }
 
@@ -39,7 +39,7 @@ export default function CommunityManagementPage() {
               <span className="text-xs text-white/70">Solutions by Role</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Community Management Content Writing &amp; Management Software
+              Community Management Content Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Foster engagement and loyalty with compelling content. Scale community interactions and grow membership.

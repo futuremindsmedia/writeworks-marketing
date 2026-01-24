@@ -4,7 +4,7 @@ import { ArrowRight, Megaphone, Users, AlertTriangle, Calendar } from "lucide-re
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Corporate Communications Content Writing & Management Software | WriteWorks",
+  title: "Corporate Communications Content Software | WriteWorks",
   description: "Transform corporate communications with AI-powered content creation. Align internal messaging, executive content, and company-wide announcements at scale with consistent quality.",
 }
 
@@ -39,7 +39,7 @@ export default function CorporateCommunicationsPage() {
               <span className="text-xs text-white/70">Solutions by Role</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Corporate Communications Content Writing &amp; Management Software
+              Corporate Communications Content Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Align internal messaging and executive content. Keep everyone on the same page with consistent communications.

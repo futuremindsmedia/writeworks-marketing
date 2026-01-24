@@ -4,7 +4,7 @@ import { ArrowRight, Clock, AlertTriangle, Target, Calendar } from "lucide-react
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Content Marketing Content Writing & Management Software | WriteWorks",
+  title: "Content Marketing Software | WriteWorks",
   description:
     "Scale content production 10x faster with AI-powered writing tools. Create high-quality, on-brand content across all channels while maintaining consistency and optimizing for better performance.",
 }
@@ -70,7 +70,7 @@ export default function ContentMarketingPage() {
               <span className="text-xs text-white/70">Solutions for Content Teams</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Content Marketing Content Writing &amp; Management Software
+              Content Marketing Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Plan, create, and scale with ease. Elevate quality and performance across all channels.

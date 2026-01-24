@@ -4,7 +4,7 @@ import { ArrowRight, TrendingUp, FileX, Target, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Sales Enablement Content Writing & Management Software | WriteWorks",
+  title: "Sales Enablement Content Software | WriteWorks",
   description: "Empower sales teams with AI-powered content creation. Generate battlecards, pitch decks, and sales collateral at scale to boost win rates and sales productivity.",
 }
 
@@ -39,7 +39,7 @@ export default function SalesEnablementPage() {
               <span className="text-xs text-white/70">Solutions by Role</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Sales Enablement Content Writing &amp; Management Software
+              Sales Enablement Content Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Equip teams with winning content and battlecards. Scale sales collateral and boost win rates.

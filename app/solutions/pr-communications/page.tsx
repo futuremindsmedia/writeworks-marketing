@@ -4,7 +4,7 @@ import { ArrowRight, Clock, AlertTriangle, Target, Calendar } from "lucide-react
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "PR & Communications Content Writing & Management Software | WriteWorks",
+  title: "PR & Communications Content Software | WriteWorks",
   description: "Craft clear, aligned messaging 70% faster with AI-powered PR tools. Move quickly on announcements and crises while maintaining accuracy and brand consistency.",
 }
 
@@ -68,7 +68,7 @@ export default function PRCommunicationsPage() {
             <div className="inline-block px-3 py-1.5 bg-white/5 border border-white/10 rounded-full mb-4">
               <span className="text-xs text-white/70">Solutions for PR Teams</span>
             </div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">PR & Communications Content Writing &amp; Management Software</h1>
+            <h1 className="text-3xl md:text-4xl font-bold mb-4">PR &amp; Communications Content Software</h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Move fast without losing control. Craft clear, aligned messaging at speed.
             </p>

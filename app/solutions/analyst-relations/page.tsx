@@ -4,7 +4,7 @@ import { ArrowRight, BarChart3, FileText, Award, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Analyst Relations Content Writing & Management Software | WriteWorks",
+  title: "Analyst Relations Content Software | WriteWorks",
   description: "Influence industry analysts with AI-powered content creation. Create compelling briefings, research responses, and thought leadership content to drive analyst coverage.",
 }
 
@@ -39,7 +39,7 @@ export default function AnalystRelationsPage() {
               <span className="text-xs text-white/70">Solutions by Role</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Analyst Relations Content Writing &amp; Management Software
+              Analyst Relations Content Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Position thought leadership with research and briefings. Influence analysts and drive industry recognition.

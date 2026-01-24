@@ -4,7 +4,7 @@ import { ArrowRight, Zap, TrendingDown, FlaskConical, Calendar } from "lucide-re
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Growth Marketing Content Writing & Management Software | WriteWorks",
+  title: "Growth Marketing Content Software | WriteWorks",
   description: "Experiment and scale acquisition 3x faster with data-driven content. Test more variations, iterate quickly, and optimize for sustainable growth across all channels.",
 }
 
@@ -39,7 +39,7 @@ export default function GrowthMarketingPage() {
               <span className="text-xs text-white/70">Solutions by Role</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Growth Marketing Content Writing &amp; Management Software
+              Growth Marketing Content Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Experiment and scale acquisition with data-driven content. Run more tests and find winning growth levers.

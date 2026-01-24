@@ -4,7 +4,7 @@ import { ArrowRight, Users, FileX, Handshake, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Partner Marketing Content Writing & Management Software | WriteWorks",
+  title: "Partner Marketing Content Software | WriteWorks",
   description: "Enable channel partners with co-marketing content created 80% faster. Scale partner programs with consistent, high-quality enablement materials and campaign assets.",
 }
 
@@ -39,7 +39,7 @@ export default function PartnerMarketingPage() {
               <span className="text-xs text-white/70">Solutions by Role</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Partner Marketing Content Writing &amp; Management Software
+              Partner Marketing Content Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Enable channel collaboration with co-marketing content. Scale partner programs and drive revenue.
