@@ -124,7 +124,7 @@ export default function RoleBasedAccessPage() {
             </p>
             <div className="flex flex-wrap gap-3 justify-center mb-8">
               <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
-                Start Free <ArrowRight className="ml-2 h-4 w-4" />
+                <a href="https://app.writeworks.ai/sign-up">Start Free <ArrowRight className="ml-2 h-4 w-4" /></a>
               </Button>
             </div>
 
@@ -295,7 +295,7 @@ export default function RoleBasedAccessPage() {
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
-                Start Free <ArrowRight className="ml-2 h-4 w-4" />
+                <a href="https://app.writeworks.ai/sign-up">Start Free <ArrowRight className="ml-2 h-4 w-4" /></a>
               </Button>
               <Button
                 size="lg"

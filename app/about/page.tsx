@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { ArrowRight, Target, Lightbulb, Users, TrendingUp, Award, Zap } from "lucide-react"
+import { ArrowRight, Target, Lightbulb, Users, TrendingUp, Award, Zap, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
