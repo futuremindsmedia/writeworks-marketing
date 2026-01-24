@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Target, Clock, AlertTriangle, Calendar } from "lucide-react"
+import { ArrowRight, Target, Clock, AlertTriangle, Calendar, Zap, TrendingUp, Users, BarChart3 } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
@@ -30,16 +30,24 @@ export default function PerformanceMarketingPage() {
 
   const solutions = [
     {
-      challenge: "Campaign Bottlenecks",
-      solution: "Generate hundreds of ad variations, landing pages, and email sequences in minutes, not weeks.",
+      icon: Zap,
+      title: "Rapid Variation Generation",
+      description: "Generate hundreds of ad variations, landing pages, and email sequences in minutes, not weeks.",
     },
     {
-      challenge: "Inconsistent Messaging",
-      solution: "Brand knowledge base ensures consistent voice across all channels while allowing personalization.",
+      icon: Target,
+      title: "Consistent Brand Messaging",
+      description: "Brand knowledge base ensures consistent voice across all channels while allowing personalization.",
     },
     {
-      challenge: "Low Conversion Rates",
-      solution: "Audience-specific agents create personalized copy that speaks directly to each segment's pain points.",
+      icon: Users,
+      title: "Audience-Specific Copy",
+      description: "Audience-specific agents create personalized copy that speaks directly to each segment's pain points.",
+    },
+    {
+      icon: TrendingUp,
+      title: "Optimize Conversion",
+      description: "Data-driven content testing and optimization to maximize campaign performance and ROI.",
     },
   ]
 
@@ -52,10 +60,10 @@ export default function PerformanceMarketingPage() {
   ]
 
   const targetAudience = [
-    { role: "Performance Marketers", description: "Scale campaigns without sacrificing quality" },
-    { role: "Growth Managers", description: "Test faster and optimize conversion" },
-    { role: "Paid Media Specialists", description: "Create more ad variations efficiently" },
-    { role: "Demand Gen Leaders", description: "Drive pipeline with personalized content" },
+    { icon: Target, role: "Performance Marketers", description: "Scale campaigns without sacrificing quality" },
+    { icon: TrendingUp, role: "Growth Managers", description: "Test faster and optimize conversion" },
+    { icon: BarChart3, role: "Paid Media Specialists", description: "Create more ad variations efficiently" },
+    { icon: Users, role: "Demand Gen Leaders", description: "Drive pipeline with personalized content" },
   ]
 
   return (
@@ -142,18 +150,17 @@ export default function PerformanceMarketingPage() {
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">How WriteWorks Solves This</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">How WriteWorks Solves It</h2>
+            <p className="text-white/70 max-w-2xl mx-auto">
+              Accelerate testing, personalization, and scale across all performance channels
+            </p>
           </div>
-          <div className="max-w-3xl mx-auto space-y-4">
-            {solutions.map((item, index) => (
-              <div key={index} className="flex gap-4 p-4 rounded-xl border border-white/10 bg-white/5">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] flex items-center justify-center text-sm font-bold">
-                  {index + 1}
-                </div>
-                <div>
-                  <div className="text-sm text-white/50 mb-1">{item.challenge}</div>
-                  <div className="text-white/90">{item.solution}</div>
-                </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            {solutions.map((solution, index) => (
+              <div key={index} className="p-5 rounded-xl border border-white/10 bg-white/5">
+                <solution.icon className="w-8 h-8 text-white/80 mb-3" />
+                <h3 className="text-lg font-semibold mb-2">{solution.title}</h3>
+                <p className="text-sm text-white/60">{solution.description}</p>
               </div>
             ))}
           </div>
@@ -201,12 +208,14 @@ export default function PerformanceMarketingPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold mb-3">Built For</h2>
+            <p className="text-white/70">Performance and growth teams driving measurable results</p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {targetAudience.map((persona, index) => (
-              <div key={index} className="p-4 rounded-xl border border-white/10 bg-white/5 text-center">
-                <div className="text-lg font-semibold mb-1">{persona.role}</div>
-                <div className="text-sm text-white/60">{persona.description}</div>
+              <div key={index} className="p-5 rounded-xl border border-white/10 bg-white/5 text-center">
+                <persona.icon className="w-8 h-8 text-white/80 mb-3 mx-auto" />
+                <h3 className="text-sm font-semibold mb-2">{persona.role}</h3>
+                <p className="text-xs text-white/60">{persona.description}</p>
               </div>
             ))}
           </div>
