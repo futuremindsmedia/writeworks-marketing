@@ -94,6 +94,70 @@ export default function Home() {
       title: "Inconsistent Content Quality",
       description: "Without standardized workflows, content quality varies across team members and projects.",
     },
+    {
+      title: "Lack of Content-to-Revenue Attribution",
+      description:
+        "Difficulty proving ROI and connecting content efforts to actual business outcomes and pipeline growth.",
+    },
+    {
+      title: "Content Governance at Scale",
+      description:
+        "Managing approval workflows, brand compliance, and legal reviews across multiple departments and regions.",
+    },
+    {
+      title: "Competing Priorities Across Departments",
+      description:
+        "Marketing, sales, product, and leadership all want different content, creating resource conflicts.",
+    },
+    {
+      title: "Content Repurposing Bottlenecks",
+      description:
+        "Manually adapting one piece of content for multiple channels and formats is time-intensive.",
+    },
+    {
+      title: "Outdated Content Management",
+      description:
+        "No clear process for identifying, updating, or retiring outdated content across the organization.",
+    },
+    {
+      title: "Siloed Content Assets",
+      description: "Teams can't find or reuse existing content, leading to duplicate work and wasted resources.",
+    },
+    {
+      title: "Talent Acquisition & Retention",
+      description: "Difficulty hiring skilled content creators and high turnover disrupting content operations.",
+    },
+    {
+      title: "Brand Voice Inconsistency Across Markets",
+      description:
+        "Global teams struggle to maintain consistent messaging while adapting to local markets.",
+    },
+    {
+      title: "Compliance & Legal Bottlenecks",
+      description: "Regulatory reviews slow down content publishing, especially in regulated industries.",
+    },
+    {
+      title: "Accessibility & Inclusivity Gaps",
+      description: "Content doesn't meet accessibility standards or diverse audience needs.",
+    },
+    {
+      title: "Tool Sprawl & Integration Issues",
+      description: "Using 10+ disconnected tools creates inefficiencies and data silos.",
+    },
+    {
+      title: "Lack of Real-Time Performance Insights",
+      description:
+        "Teams can't quickly identify what's working and optimize content strategy on the fly.",
+    },
+    {
+      title: "AI Content Detection Concerns",
+      description: "Fear of search engine penalties or audience distrust from AI-generated content.",
+    },
+    {
+      title: "Personalization at Scale",
+      description:
+        "Creating tailored content for different segments, buyer stages, and personas is resource-intensive.",
+    },
   ]
 
   const solutions = [
