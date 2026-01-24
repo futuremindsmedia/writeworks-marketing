@@ -11,7 +11,7 @@ const authors = {
     name: "WriteWorks Team",
     role: "Content Team",
     bio: "The WriteWorks Team creates expert content on AI optimization, LLM visibility, and content strategy to help brands succeed in the age of AI-powered search.",
-    image: "/writeworks-team-avatar.png",
+    image: "/writeworks-team-avatar.svg",
     email: "content@writeworks.ai",
     linkedin: "https://linkedin.com/company/writeworks",
     twitter: "https://twitter.com/writeworks",
