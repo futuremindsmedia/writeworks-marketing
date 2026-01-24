@@ -44,13 +44,13 @@ export default function InfluencerMarketingPage() {
 
   const challenges = [
     {
-      title: "Influencer Marketing Content Writing & Management Software | WriteWorks",
+      title: "Complex Coordination",
       description:
         "Managing multiple influencer partnerships is time-consuming and inefficient.",
     },
     {
       title: "Inconsistent Messaging",
-      description: "Scale influencer campaigns with AI-powered content creation. Generate briefs, collaboration proposals, and campaign content that drives influencer partnerships and ROI.",
+      description: "Brand guidelines aren't followed consistently across influencers.",
     },
     {
       title: "Slow Brief Creation",
@@ -149,7 +149,7 @@ export default function InfluencerMarketingPage() {
               For Influencer Teams
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for Influencer Marketing: Scale Your Collaborations
+              Influencer Marketing Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create influencer briefs, scripts, and brand guidelines that streamline collaborations at scale.
@@ -383,6 +383,7 @@ export default function InfluencerMarketingPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">

@@ -44,13 +44,13 @@ export default function SMSMarketingPage() {
 
   const challenges = [
     {
-      title: "SMS Marketing Content Writing & Management Software | WriteWorks",
+      title: "Character Limitations",
       description:
         "Crafting compelling messages within strict SMS character limits is challenging.",
     },
     {
       title: "Compliance Requirements",
-      description: "Drive conversions with AI-powered SMS campaign creation. Generate compelling text messages, promotional campaigns, and automated sequences that boost engagement and sales.",
+      description: "Mobile marketing must follow strict regulatory guidelines.",
     },
     {
       title: "Low Response Rates",
@@ -149,7 +149,7 @@ export default function SMSMarketingPage() {
               For SMS Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for SMS Marketing: High-Impact Mobile Messages
+              SMS Marketing Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Write concise, compliant SMS and mobile marketing messages that drive conversions.
@@ -383,6 +383,7 @@ export default function SMSMarketingPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">

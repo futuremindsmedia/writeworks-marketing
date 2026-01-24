@@ -44,13 +44,13 @@ export default function VideoMarketingPage() {
 
   const challenges = [
     {
-      title: "Video Marketing Content Writing & Management Software | WriteWorks",
+      title: "Time-Consuming Scripts",
       description:
         "Writing engaging video scripts takes hours and delays production.",
     },
     {
       title: "Low Viewer Retention",
-      description: "Accelerate video content with AI-powered script and description creation. Generate engaging video scripts, titles, and descriptions that boost views and engagement.",
+      description: "Videos fail to hook viewers and maintain engagement.",
     },
     {
       title: "Poor SEO Optimization",
@@ -149,7 +149,7 @@ export default function VideoMarketingPage() {
               For Video Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for Video Marketing: Scripts & Content That Converts
+              Video Marketing Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Write video scripts, YouTube descriptions, and video marketing content with AI assistance.
@@ -383,11 +383,12 @@ export default function VideoMarketingPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Scale Video Marketing?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Video Marketing?</h2>
             <p className="text-white/70 mb-6">
               Join video marketers creating compelling scripts and content that drives views and engagement.
             </p>

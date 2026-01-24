@@ -44,13 +44,13 @@ export default function DisplayAdvertisingPage() {
 
   const challenges = [
     {
-      title: "Display Advertising Content Writing & Management Software | WriteWorks",
+      title: "Low Click-Through Rates",
       description:
         "Banner ads fail to capture attention and drive clicks.",
     },
     {
       title: "Creative Fatigue",
-      description: "Optimize display campaigns with AI-powered ad creation. Generate compelling banner copy, landing pages, and remarketing content that drives clicks and conversions.",
+      description: "Constantly need fresh ad creative to maintain performance.",
     },
     {
       title: "Size Variations",
@@ -149,7 +149,7 @@ export default function DisplayAdvertisingPage() {
               For Display Ad Teams
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for Display Advertising: Banner Copy That Converts
+              Display Advertising Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create banner ads and display copy that drives clicks and conversions across all networks.
@@ -383,11 +383,12 @@ export default function DisplayAdvertisingPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Boost Display Advertising?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Display Advertising?</h2>
             <p className="text-white/70 mb-6">
               Join display advertising teams creating high-performing ad content that maximizes CTR and conversions.
             </p>

@@ -44,13 +44,13 @@ export default function PaidAdvertisingPage() {
 
   const challenges = [
     {
-      title: "Paid Advertising Content Writing & Management Software | WriteWorks",
+      title: "Low Click-Through Rates",
       description:
         "Ad copy fails to capture attention and drive clicks in competitive auctions.",
     },
     {
       title: "High Cost Per Acquisition",
-      description: "Optimize ad performance with AI-powered ad copy creation. Generate high-converting PPC ads, landing pages, and campaign content that maximizes ROI and reduces CPA.",
+      description: "Ineffective ad messaging leads to wasted budget and poor ROI.",
     },
     {
       title: "Slow Campaign Creation",
@@ -149,7 +149,7 @@ export default function PaidAdvertisingPage() {
               For Paid Ad Teams
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for Paid Advertising: High-Converting Ad Copy at Scale
+              Paid Advertising Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create ad copy that converts for Google, Meta, LinkedIn, and display networks with AI.
@@ -383,11 +383,12 @@ export default function PaidAdvertisingPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Boost Ad Performance?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Paid Advertising?</h2>
             <p className="text-white/70 mb-6">
               Join advertising teams creating high-converting ad copy that maximizes ROI.
             </p>

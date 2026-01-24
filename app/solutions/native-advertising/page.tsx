@@ -44,13 +44,13 @@ export default function NativeAdvertisingPage() {
 
   const challenges = [
     {
-      title: "Native Advertising Content Writing & Management Software | WriteWorks",
+      title: "Balancing Promotion & Value",
       description:
         "Native ads must blend seamlessly while still driving conversions.",
     },
     {
       title: "Maintaining Editorial Quality",
-      description: "Scale native advertising with AI-powered content creation. Generate authentic sponsored content, native ads, and editorial pieces that blend seamlessly and convert.",
+      description: "Sponsored content needs to match the quality of editorial content.",
     },
     {
       title: "Time-Consuming Production",
@@ -149,7 +149,7 @@ export default function NativeAdvertisingPage() {
               For Native Ad Teams
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for Native Advertising: Sponsored Content That Blends
+              Native Advertising Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create sponsored content and advertorials that blend seamlessly with editorial content.
@@ -383,11 +383,12 @@ export default function NativeAdvertisingPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Scale Native Advertising?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Native Advertising?</h2>
             <p className="text-white/70 mb-6">
               Join native advertising teams creating authentic content that drives engagement and conversions.
             </p>

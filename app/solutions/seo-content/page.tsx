@@ -44,13 +44,13 @@ export default function SEOContentPage() {
 
   const challenges = [
     {
-      title: "SEO Content Content Writing & Management Software | WriteWorks",
+      title: "Content Doesn't Rank",
       description:
         "Your SEO content struggles to break into top positions despite keyword optimization.",
     },
     {
       title: "AI Platforms Ignore You",
-      description: "Dominate search rankings with AI-powered SEO content creation. Generate optimized articles, landing pages, and web content at scale to drive organic traffic and conversions.",
+      description: "ChatGPT, Claude, and AI Overviews cite competitors, not your content.",
     },
     {
       title: "Slow Content Production",
@@ -149,7 +149,7 @@ export default function SEOContentPage() {
               For SEO Teams
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for SEO Content: Rank Higher, Get Cited More
+              SEO Content Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create search-optimized content that dominates SERPs and gets cited by ChatGPT, Claude, and AI Overviews.
@@ -383,11 +383,12 @@ export default function SEOContentPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Scale Your SEO Content?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform SEO Content?</h2>
             <p className="text-white/70 mb-6">
               Join SEO teams creating high-ranking content that drives organic traffic and revenue.
             </p>

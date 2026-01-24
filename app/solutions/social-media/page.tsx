@@ -44,13 +44,13 @@ export default function SocialMediaPage() {
 
   const challenges = [
     {
-      title: "Social Media Content Writing & Management Software | WriteWorks",
+      title: "Constant Content Demands",
       description:
         "Social platforms require daily posting across multiple channels to maintain engagement.",
     },
     {
       title: "Inconsistent Brand Voice",
-      description: "Scale social media presence with AI-powered content creation. Generate engaging posts, captions, and campaigns across all platforms to boost engagement and follower growth.",
+      description: "Different team members create posts that don't align with your brand identity.",
     },
     {
       title: "Low Engagement Rates",
@@ -149,7 +149,7 @@ export default function SocialMediaPage() {
               For Social Media Teams
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for Social Media: Create Engaging Content at Scale
+              Social Media Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Generate high-performing social content for LinkedIn, Twitter, Instagram, and more with AI.
@@ -383,11 +383,12 @@ export default function SocialMediaPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Your Social Media?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Social Media?</h2>
             <p className="text-white/70 mb-6">
               Join social media teams creating viral content that drives engagement and growth.
             </p>

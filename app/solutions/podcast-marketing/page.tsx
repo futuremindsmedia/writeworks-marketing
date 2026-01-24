@@ -44,13 +44,13 @@ export default function PodcastMarketingPage() {
 
   const challenges = [
     {
-      title: "Podcast Marketing Content Writing & Management Software | WriteWorks",
+      title: "Time-Consuming Scripts",
       description:
         "Writing engaging podcast scripts and outlines takes hours per episode.",
     },
     {
       title: "Show Notes Backlog",
-      description: "Accelerate podcast growth with AI-powered content creation. Generate episode scripts, show notes, and promotional content that boosts listeners and engagement.",
+      description: "Creating comprehensive show notes consistently falls behind.",
     },
     {
       title: "Limited Discoverability",
@@ -149,7 +149,7 @@ export default function PodcastMarketingPage() {
               For Podcast Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for Podcast Marketing: Scripts & Show Notes Made Easy
+              Podcast Marketing Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create podcast scripts, show notes, and promotional content that grows your audience.
@@ -383,11 +383,12 @@ export default function PodcastMarketingPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Scale Your Podcast?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Podcast Marketing?</h2>
             <p className="text-white/70 mb-6">
               Join podcasters creating compelling content that grows audiences and drives engagement.
             </p>

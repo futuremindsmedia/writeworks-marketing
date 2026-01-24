@@ -44,13 +44,13 @@ export default function EmailMarketingPage() {
 
   const challenges = [
     {
-      title: "Email Marketing Content Writing & Management Software | WriteWorks",
+      title: "Low Open Rates",
       description:
         "Email subject lines and preview text fail to capture attention in crowded inboxes.",
     },
     {
       title: "Poor Conversion Rates",
-      description: "Drive conversions with AI-powered email content creation. Generate compelling campaigns, newsletters, and drip sequences that boost open rates, clicks, and revenue.",
+      description: "Email copy doesn't drive clicks, signups, or purchases effectively.",
     },
     {
       title: "Time-Consuming Campaigns",
@@ -149,7 +149,7 @@ export default function EmailMarketingPage() {
               For Email Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for Email Marketing: High-Converting Campaigns, Faster
+              Email Marketing Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Write email campaigns that convert. AI-powered copywriting for newsletters, drips, and sequences.
@@ -383,11 +383,12 @@ export default function EmailMarketingPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Accelerate Email Marketing?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Email Marketing?</h2>
             <p className="text-white/70 mb-6">
               Join email marketers creating high-converting campaigns that drive revenue.
             </p>

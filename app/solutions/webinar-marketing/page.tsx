@@ -44,13 +44,13 @@ export default function WebinarMarketingPage() {
 
   const challenges = [
     {
-      title: "Webinar Marketing Content Writing & Management Software | WriteWorks",
+      title: "Low Registration Rates",
       description:
         "Webinar promotional content fails to drive signups and attendance.",
     },
     {
       title: "Engagement Drop-Off",
-      description: "Drive webinar attendance with AI-powered content creation. Generate compelling invites, landing pages, and follow-up sequences that maximize registrations and attendance.",
+      description: "Webinar scripts don't maintain audience engagement throughout.",
     },
     {
       title: "Time-Intensive Scripts",
@@ -149,7 +149,7 @@ export default function WebinarMarketingPage() {
               For Webinar Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for Webinar Marketing: Scripts That Drive Registrations
+              Webinar Marketing Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Write webinar scripts and promotional content that drives registrations and engagement.
@@ -383,11 +383,12 @@ export default function WebinarMarketingPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Fill Your Webinars?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Webinar Marketing?</h2>
             <p className="text-white/70 mb-6">
               Join webinar marketers creating high-converting content that drives registrations and attendance.
             </p>

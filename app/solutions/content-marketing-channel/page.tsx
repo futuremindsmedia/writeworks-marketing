@@ -44,13 +44,13 @@ export default function ContentMarketingChannelPage() {
 
   const challenges = [
     {
-      title: "Content Marketing Channel Content Writing & Management Software | WriteWorks",
+      title: "Slow Content Production",
       description:
         "Creating high-quality blog posts and articles takes days or weeks.",
     },
     {
       title: "Inconsistent Publishing",
-      description: "Scale content distribution with AI-powered multi-channel creation. Generate blog posts, videos, podcasts, and social content optimized for each channel to maximize reach.",
+      description: "Content calendars fall behind due to production bottlenecks.",
     },
     {
       title: "Low Search Rankings",
@@ -149,7 +149,7 @@ export default function ContentMarketingChannelPage() {
               For Content Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for Content Marketing: Scale Your Content Strategy
+              Content Marketing Channel Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create blog posts, articles, and thought leadership content that drives traffic and engagement.
@@ -383,11 +383,12 @@ export default function ContentMarketingChannelPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Scale Content Marketing?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Content Marketing Channel?</h2>
             <p className="text-white/70 mb-6">
               Join content marketers creating multi-channel content that drives traffic and conversions.
             </p>

@@ -44,13 +44,13 @@ export default function AffiliateMarketingPage() {
 
   const challenges = [
     {
-      title: "Affiliate Marketing Content Writing & Management Software | WriteWorks",
+      title: "Low Conversion Rates",
       description:
         "Affiliate content fails to convince readers to click through and purchase.",
     },
     {
       title: "Time-Consuming Reviews",
-      description: "Drive affiliate revenue with AI-powered content creation. Generate compelling product reviews, comparison guides, and promotional content that boosts affiliate commissions.",
+      description: "Writing detailed product reviews takes hours or days per product.",
     },
     {
       title: "Content Saturation",
@@ -149,7 +149,7 @@ export default function AffiliateMarketingPage() {
               For Affiliate Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for Affiliate Marketing: Content That Converts
+              Affiliate Marketing Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create product reviews, comparisons, and promotional content that drives affiliate conversions.
@@ -383,11 +383,12 @@ export default function AffiliateMarketingPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Accelerate Affiliate Marketing?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Affiliate Marketing?</h2>
             <p className="text-white/70 mb-6">
               Join affiliate marketers creating high-converting content that maximizes commission revenue.
             </p>

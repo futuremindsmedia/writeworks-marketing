@@ -44,13 +44,13 @@ export default function LLMOptimizationPage() {
 
   const challenges = [
     {
-      title: "LLM Optimization Content Writing & Management Software | WriteWorks",
+      title: "AI Platforms Ignore Your Content",
       description:
         "ChatGPT, Claude, and Perplexity cite competitors when answering questions about your space.",
     },
     {
       title: "No LLM Citation Strategy",
-      description: "Maximize AI visibility with LLM-optimized content creation. Ensure your brand gets cited by ChatGPT, Claude, and Perplexity with AI-native content strategies.",
+      description: "You're optimizing for Google, but not for how LLMs consume and cite content.",
     },
     {
       title: "Can't Measure AI Visibility",
@@ -149,7 +149,7 @@ export default function LLMOptimizationPage() {
               For LLM Visibility
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for LLM Optimization: Get Cited by AI Platforms
+              LLM Optimization Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Optimize content for ChatGPT, Claude, Perplexity, and AI Overviews. Maximize LLM citations.
@@ -383,11 +383,12 @@ export default function LLMOptimizationPage() {
         </div>
       </section>
     
+
       {/* CTA Section */}
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Dominate AI Search?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform LLM Optimization?</h2>
             <p className="text-white/70 mb-6">
               Join forward-thinking brands getting cited by ChatGPT, Claude, and Perplexity.
             </p>
