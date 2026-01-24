@@ -32,6 +32,15 @@ import {
   Lock,
   Layout,
   ArrowRight,
+  Search,
+  Share2,
+  Mail,
+  DollarSign,
+  Link as LinkIcon,
+  Image,
+  Smartphone,
+  Mic,
+  Presentation,
 } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { usePathname, useRouter } from "next/navigation"
@@ -165,6 +174,23 @@ export function Header() {
       icon: Newspaper,
       description: "Feed every channel with fresh content",
     },
+  ]
+
+  const solutionsByChannel = [
+    { name: "SEO Content", href: "/solutions/seo-content", icon: Search, description: "Search-optimized content" },
+    { name: "LLM Optimization", href: "/solutions/llm-optimization", icon: Bot, description: "AI citation optimization" },
+    { name: "Social Media", href: "/solutions/social-media", icon: Share2, description: "Multi-platform social content" },
+    { name: "Email Marketing", href: "/solutions/email-marketing", icon: Mail, description: "High-converting emails" },
+    { name: "Paid Advertising", href: "/solutions/paid-advertising", icon: DollarSign, description: "Ad copy that converts" },
+    { name: "Content Marketing", href: "/solutions/content-marketing-channel", icon: FileText, description: "Blog & thought leadership" },
+    { name: "Video Marketing", href: "/solutions/video-marketing", icon: Video, description: "Scripts & descriptions" },
+    { name: "Affiliate Marketing", href: "/solutions/affiliate-marketing", icon: LinkIcon, description: "Reviews & comparisons" },
+    { name: "Influencer Marketing", href: "/solutions/influencer-marketing", icon: Users, description: "Briefs & collaboration" },
+    { name: "Display Advertising", href: "/solutions/display-advertising", icon: Image, description: "Banner & display ads" },
+    { name: "Native Advertising", href: "/solutions/native-advertising", icon: Newspaper, description: "Sponsored content" },
+    { name: "SMS Marketing", href: "/solutions/sms-marketing", icon: Smartphone, description: "Mobile messaging" },
+    { name: "Podcast Marketing", href: "/solutions/podcast-marketing", icon: Mic, description: "Scripts & show notes" },
+    { name: "Webinar Marketing", href: "/solutions/webinar-marketing", icon: Presentation, description: "Webinar scripts & promos" },
   ]
 
   const platformFeatures = [
@@ -344,14 +370,28 @@ export function Header() {
                           ))}
                         </ul>
                       </div>
-                      <div className="hidden md:block">
-                        <div className="rounded-lg overflow-hidden border border-white/10 h-full">
-                          <img
-                            src="/images/screenshot-202025-10-27-20at-2016.png"
-                            alt="WriteWorks Content Editor with LLM Visibility Score"
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
+                      <div>
+                        <h3 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
+                          <div className="w-1 h-4 bg-gradient-to-b from-[#6366F1] to-[#8B5CF6] rounded-full"></div>
+                          Solutions by Channel
+                        </h3>
+                        <ul className="space-y-0.5 max-h-[400px] overflow-y-auto pr-2">
+                          {solutionsByChannel.map((solution) => (
+                            <Link
+                              key={solution.href}
+                              href={solution.href}
+                              className="group flex items-start gap-2.5 p-2 rounded-lg hover:bg-white/5 transition-all duration-200"
+                            >
+                              <solution.icon className="w-4 h-4 text-white/70 mt-0.5 flex-shrink-0 group-hover:text-white group-hover:scale-110 transition-all" />
+                              <div>
+                                <div className="text-sm font-medium text-white group-hover:text-white transition-colors">
+                                  {solution.name}
+                                </div>
+                                <div className="text-xs text-white/60 mt-0.5">{solution.description}</div>
+                              </div>
+                            </Link>
+                          ))}
+                        </ul>
                       </div>
                     </div>
                     <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
@@ -522,6 +562,22 @@ export function Header() {
                     <div className="text-xs font-semibold text-white/70 mb-3 uppercase tracking-wider">By Industry</div>
                     <div className="space-y-1">
                       {solutionsByIndustry.map((solution) => (
+                        <Link
+                          key={solution.href}
+                          href={solution.href}
+                          className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
+                          onClick={closeMobileMenu}
+                        >
+                          <solution.icon className="w-5 h-5 text-white flex-shrink-0" />
+                          <span>{solution.name}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-xs font-semibold text-white/70 mb-3 uppercase tracking-wider">By Channel</div>
+                    <div className="space-y-1">
+                      {solutionsByChannel.map((solution) => (
                         <Link
                           key={solution.href}
                           href={solution.href}

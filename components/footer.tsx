@@ -19,6 +19,17 @@ export function Footer() {
       ],
     },
     {
+      title: "Solutions by Channel",
+      links: [
+        { label: "SEO Content", href: "/solutions/seo-content" },
+        { label: "Social Media", href: "/solutions/social-media" },
+        { label: "Email Marketing", href: "/solutions/email-marketing" },
+        { label: "Paid Advertising", href: "/solutions/paid-advertising" },
+        { label: "Video Marketing", href: "/solutions/video-marketing" },
+        { label: "Podcast Marketing", href: "/solutions/podcast-marketing" },
+      ],
+    },
+    {
       title: "Platform",
       links: [
         { label: "Features Overview", href: "/platform/features" },
@@ -56,7 +67,7 @@ export function Footer() {
     <footer className="border-t border-white/10 mt-20 bg-black">
       <div className="max-w-7xl mx-auto px-3 md:px-4 py-12 md:py-16">
         {/* Desktop Navigation */}
-        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {footerSections.map((section) => (
             <div key={section.title}>
               <h4 className="font-semibold text-white mb-4 text-sm">{section.title}</h4>

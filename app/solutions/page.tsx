@@ -13,6 +13,19 @@ import {
   Zap,
   Target,
   TrendingUp,
+  Search,
+  Bot,
+  Share2,
+  Mail,
+  DollarSign,
+  Video,
+  Link as LinkIcon,
+  Users,
+  Image,
+  Newspaper,
+  Smartphone,
+  Mic,
+  Presentation,
 } from "lucide-react"
 
 const solutions = [
@@ -67,6 +80,107 @@ const solutions = [
   },
 ]
 
+const channelSolutions = [
+  {
+    title: "SEO Content",
+    description: "Create search-optimized content that ranks and gets cited by AI platforms.",
+    href: "/solutions/seo-content",
+    icon: Search,
+    stats: "85% faster content",
+  },
+  {
+    title: "LLM Optimization",
+    description: "Optimize content for ChatGPT, Claude, Perplexity, and AI Overviews.",
+    href: "/solutions/llm-optimization",
+    icon: Bot,
+    stats: "6x more citations",
+  },
+  {
+    title: "Social Media",
+    description: "Create engaging social media content at scale for all platforms.",
+    href: "/solutions/social-media",
+    icon: Share2,
+    stats: "3x engagement",
+  },
+  {
+    title: "Email Marketing",
+    description: "Write high-converting email campaigns faster with AI assistance.",
+    href: "/solutions/email-marketing",
+    icon: Mail,
+    stats: "2x open rates",
+  },
+  {
+    title: "Paid Advertising",
+    description: "Create high-converting ad copy for Google, Meta, and LinkedIn.",
+    href: "/solutions/paid-advertising",
+    icon: DollarSign,
+    stats: "4x CTR",
+  },
+  {
+    title: "Content Marketing",
+    description: "Scale your blog posts, articles, and thought leadership content.",
+    href: "/solutions/content-marketing-channel",
+    icon: FileText,
+    stats: "4x traffic",
+  },
+  {
+    title: "Video Marketing",
+    description: "Write video scripts, YouTube descriptions, and marketing content.",
+    href: "/solutions/video-marketing",
+    icon: Video,
+    stats: "3x views",
+  },
+  {
+    title: "Affiliate Marketing",
+    description: "Create compelling product reviews and comparison content.",
+    href: "/solutions/affiliate-marketing",
+    icon: LinkIcon,
+    stats: "3x conversions",
+  },
+  {
+    title: "Influencer Marketing",
+    description: "Streamline influencer collaboration with AI-powered briefs.",
+    href: "/solutions/influencer-marketing",
+    icon: Users,
+    stats: "4x ROI",
+  },
+  {
+    title: "Display Advertising",
+    description: "Create banner ads and display copy that converts.",
+    href: "/solutions/display-advertising",
+    icon: Image,
+    stats: "3x CTR",
+  },
+  {
+    title: "Native Advertising",
+    description: "Create sponsored content that blends seamlessly.",
+    href: "/solutions/native-advertising",
+    icon: Newspaper,
+    stats: "3x engagement",
+  },
+  {
+    title: "SMS Marketing",
+    description: "Write high-impact SMS and mobile marketing messages.",
+    href: "/solutions/sms-marketing",
+    icon: Smartphone,
+    stats: "4x response rate",
+  },
+  {
+    title: "Podcast Marketing",
+    description: "Create podcast scripts, show notes, and promotional content.",
+    href: "/solutions/podcast-marketing",
+    icon: Mic,
+    stats: "3x listeners",
+  },
+  {
+    title: "Webinar Marketing",
+    description: "Write compelling webinar scripts and promotional content.",
+    href: "/solutions/webinar-marketing",
+    icon: Presentation,
+    stats: "3x registrations",
+  },
+]
+
 export default function SolutionsPage() {
   return (
     <div className="min-h-screen bg-black">
@@ -106,6 +220,36 @@ export default function SolutionsPage() {
       <section className="max-w-7xl mx-auto px-4 pb-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {solutions.map((solution) => (
+            <Link
+              key={solution.href}
+              href={solution.href}
+              className="group bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 hover:border-white/20 transition-all"
+            >
+              <div className="flex items-start justify-between mb-4">
+                <div className="p-2 bg-white/10 rounded-lg">
+                  <solution.icon className="w-5 h-5 text-white" />
+                </div>
+                <span className="text-xs text-white/50 bg-white/5 px-2 py-1 rounded">{solution.stats}</span>
+              </div>
+              <h2 className="text-lg font-semibold text-white mb-2 group-hover:text-white/90">{solution.title}</h2>
+              <p className="text-sm text-white/60 mb-4">{solution.description}</p>
+              <div className="flex items-center text-sm text-white/70 group-hover:text-white transition-colors">
+                <span>Learn more</span>
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {/* Channel Solutions Section */}
+      <section className="max-w-7xl mx-auto px-4 pb-16">
+        <div className="mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 text-center">Solutions by Channel</h2>
+          <p className="text-white/70 text-center">AI-powered content creation for every marketing channel</p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {channelSolutions.map((solution) => (
             <Link
               key={solution.href}
               href={solution.href}
