@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { BookOpen, Search, CheckCircle2, Lightbulb, Share2, Home, ChevronRight, AlertTriangle, Zap } from "lucide-react"
+import { BookOpen, Search, CheckCircle2, Lightbulb, Share2, Home, ChevronRight, AlertTriangle, Zap, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
@@ -124,7 +124,7 @@ export default function KnowledgeBasePage() {
             </p>
             <div className="flex flex-wrap gap-3 justify-center mb-8">
               <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial
+                Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
 
@@ -295,7 +295,7 @@ export default function KnowledgeBasePage() {
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial
+                Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button
                 size="lg"

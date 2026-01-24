@@ -11,6 +11,7 @@ import {
   Search,
   CheckCircle,
   Users,
+  ArrowRight,
 } from "lucide-react"
 import Link from "next/link"
 
@@ -122,7 +123,7 @@ export default function AIChatAssistantPage() {
             </p>
             <div className="flex flex-wrap gap-3 justify-center mb-8">
               <Button asChild size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] hover:opacity-90">
-                <Link href="https://app.writeworks.ai/sign-up">Start Free Trial</Link>
+                <Link href="https://app.writeworks.ai/sign-up">Start Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" /></Link>
               </Button>
               <Button
                 asChild
@@ -282,7 +283,7 @@ export default function AIChatAssistantPage() {
             Start using the AI chat assistant today and get instant help with your content.
           </p>
           <Button asChild size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] hover:opacity-90">
-            <Link href="https://app.writeworks.ai/sign-up">Get Started Free</Link>
+            <Link href="https://app.writeworks.ai/sign-up">Get Started Free <ArrowRight className="ml-2 w-4 h-4 inline" /></Link>
           </Button>
         </div>
       </section>

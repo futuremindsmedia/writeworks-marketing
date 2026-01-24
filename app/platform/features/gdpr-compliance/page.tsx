@@ -1,6 +1,6 @@
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Button } from "@/components/ui/button"
-import { Shield, Lock, FileCheck, AlertCircle, CheckCircle, Globe, Users } from "lucide-react"
+import { Shield, Lock, FileCheck, AlertCircle, CheckCircle, Globe, Users, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata = {
@@ -110,7 +110,7 @@ export default function GDPRCompliancePage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               <Button asChild size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] hover:opacity-90">
-                <Link href="https://app.writeworks.ai/sign-up">Start Free Trial</Link>
+                <Link href="https://app.writeworks.ai/sign-up">Start Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" /></Link>
               </Button>
               <Button
                 asChild
@@ -267,7 +267,7 @@ export default function GDPRCompliancePage() {
             Start using GDPR-compliant content tools today and protect your users' data.
           </p>
           <Button asChild size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] hover:opacity-90">
-            <Link href="https://app.writeworks.ai/sign-up">Get Started Free</Link>
+            <Link href="https://app.writeworks.ai/sign-up">Get Started Free <ArrowRight className="ml-2 w-4 h-4 inline" /></Link>
           </Button>
         </div>
       </section>
