@@ -1,6 +1,9 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import Link from "next/link"
+import { useState } from "react"
 import {
   FileText,
   BarChart3,
@@ -26,23 +29,15 @@ import {
   Smartphone,
   Mic,
   Presentation,
+  Shield,
+  MessageSquare,
+  Cpu,
+  ShoppingCart,
+  Building2,
+  ChevronDown,
 } from "lucide-react"
 
-const solutions = [
-  {
-    title: "Content Marketing",
-    description: "Create LLM-optimized blog posts, articles, and guides that get cited by AI platforms.",
-    href: "/solutions/content-marketing",
-    icon: FileText,
-    stats: "70% faster content creation",
-  },
-  {
-    title: "Performance Marketing",
-    description: "Optimize ad copy and landing pages for AI search visibility and conversions.",
-    href: "/solutions/performance-marketing",
-    icon: BarChart3,
-    stats: "3x more AI citations",
-  },
+const solutionsByRole = [
   {
     title: "Product Marketing",
     description: "Launch products faster with AI-optimized positioning, messaging, and collateral.",
@@ -51,39 +46,77 @@ const solutions = [
     stats: "75% faster launches",
   },
   {
+    title: "Content Marketing",
+    description: "Create blog posts, articles, and guides that drive traffic and engagement.",
+    href: "/solutions/content-marketing",
+    icon: FileText,
+    stats: "70% faster content creation",
+  },
+  {
+    title: "Performance Marketing",
+    description: "Optimize ad copy and landing pages for maximum conversions and ROI.",
+    href: "/solutions/performance-marketing",
+    icon: BarChart3,
+    stats: "3x more conversions",
+  },
+  {
     title: "Field & Events Marketing",
-    description: "Create event content that drives attendance and gets cited in AI responses.",
+    description: "Create event content that drives attendance and engagement.",
     href: "/solutions/field-events-marketing",
     icon: Calendar,
     stats: "65% time saved",
   },
   {
     title: "Brand Marketing",
-    description: "Maintain brand consistency while optimizing for LLM visibility across all content.",
+    description: "Maintain brand consistency across all content and channels.",
     href: "/solutions/brand-marketing",
     icon: Palette,
     stats: "100% brand compliance",
   },
   {
     title: "PR & Communications",
-    description: "Craft press releases and communications that AI platforms cite and reference.",
+    description: "Craft press releases and communications that get picked up by media.",
     href: "/solutions/pr-communications",
     icon: Megaphone,
     stats: "4x media mentions",
   },
+]
+
+const solutionsByIndustry = [
   {
     title: "Technology",
-    description: "Technical documentation and developer content optimized for AI discoverability.",
+    description: "Technical documentation and developer content for tech companies.",
     href: "/solutions/technology",
     icon: Code,
     stats: "80% faster docs",
+  },
+  {
+    title: "eCommerce & Retail",
+    description: "Product descriptions and marketing content that drives sales.",
+    href: "/solutions/ecommerce-retail",
+    icon: ShoppingCart,
+    stats: "3x conversions",
+  },
+  {
+    title: "Insurance",
+    description: "Clear, compliant content that simplifies complex insurance products.",
+    href: "/solutions/insurance",
+    icon: Building2,
+    stats: "70% faster content",
+  },
+  {
+    title: "Media & Publishing",
+    description: "Scale content production across multiple channels and platforms.",
+    href: "/solutions/media-publishing",
+    icon: Newspaper,
+    stats: "5x content output",
   },
 ]
 
 const channelSolutions = [
   {
     title: "SEO Content",
-    description: "Create search-optimized content that ranks and gets cited by AI platforms.",
+    description: "Create search-optimized content that ranks on Google and drives organic traffic.",
     href: "/solutions/seo-content",
     icon: Search,
     stats: "85% faster content",
@@ -182,6 +215,14 @@ const channelSolutions = [
 ]
 
 export default function SolutionsPage() {
+  const [showAllRole, setShowAllRole] = useState(false)
+  const [showAllChannel, setShowAllChannel] = useState(false)
+  const [showAllIndustry, setShowAllIndustry] = useState(false)
+
+  const visibleRoleSolutions = showAllRole ? solutionsByRole : solutionsByRole.slice(0, 6)
+  const visibleChannelSolutions = showAllChannel ? channelSolutions : channelSolutions.slice(0, 6)
+  const visibleIndustrySolutions = showAllIndustry ? solutionsByIndustry : solutionsByIndustry.slice(0, 6)
+
   return (
     <div className="min-h-screen bg-black">
       {/* Breadcrumbs */}
@@ -193,11 +234,10 @@ export default function SolutionsPage() {
       <section className="max-w-7xl mx-auto px-4 pt-8 pb-12 md:pt-10 md:pb-16">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4 text-balance">
-            The AI Content Platform Built for Enterprise Marketing Teams
+            AI-Powered Content Solutions for Every Marketing Team
           </h1>
           <p className="text-base text-white/70 mb-6 text-pretty">
-            WriteWorks helps marketing teams create content that gets cited by ChatGPT, Claude, Perplexity, and all
-            major AI platforms.
+            WriteWorks helps marketing teams create high-quality content faster. From SEO to social media, email to events—find the perfect solution for your marketing needs.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/60">
             <div className="flex items-center gap-2">
@@ -206,50 +246,24 @@ export default function SolutionsPage() {
             </div>
             <div className="flex items-center gap-2">
               <Target className="w-4 h-4 text-white" />
-              <span>4x AI citations</span>
+              <span>Enterprise-grade AI</span>
             </div>
             <div className="flex items-center gap-2">
               <TrendingUp className="w-4 h-4 text-white" />
-              <span>300% visibility increase</span>
+              <span>Proven ROI</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Solutions Grid */}
-      <section className="max-w-7xl mx-auto px-4 pb-16">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {solutions.map((solution) => (
-            <Link
-              key={solution.href}
-              href={solution.href}
-              className="group bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 hover:border-white/20 transition-all"
-            >
-              <div className="flex items-start justify-between mb-4">
-                <div className="p-2 bg-white/10 rounded-lg">
-                  <solution.icon className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-xs text-white/50 bg-white/5 px-2 py-1 rounded">{solution.stats}</span>
-              </div>
-              <h2 className="text-lg font-semibold text-white mb-2 group-hover:text-white/90">{solution.title}</h2>
-              <p className="text-sm text-white/60 mb-4">{solution.description}</p>
-              <div className="flex items-center text-sm text-white/70 group-hover:text-white transition-colors">
-                <span>Learn more</span>
-                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* Channel Solutions Section */}
+      {/* Solutions by Role */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
         <div className="mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2 text-center">Solutions by Channel</h2>
-          <p className="text-white/70 text-center">AI-powered content creation for every marketing channel</p>
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Solutions by Role</h2>
+          <p className="text-white/70">Tailored solutions for every marketing function</p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {channelSolutions.map((solution) => (
+          {visibleRoleSolutions.map((solution) => (
             <Link
               key={solution.href}
               href={solution.href}
@@ -270,6 +284,99 @@ export default function SolutionsPage() {
             </Link>
           ))}
         </div>
+        {solutionsByRole.length > 6 && (
+          <div className="mt-6 text-center">
+            <button
+              onClick={() => setShowAllRole(!showAllRole)}
+              className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
+            >
+              {showAllRole ? "Show less" : `View all ${solutionsByRole.length} solutions`}
+              <ChevronDown className={`w-4 h-4 transition-transform ${showAllRole ? "rotate-180" : ""}`} />
+            </button>
+          </div>
+        )}
+      </section>
+
+      {/* Solutions by Channel */}
+      <section className="max-w-7xl mx-auto px-4 pb-16">
+        <div className="mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Solutions by Channel</h2>
+          <p className="text-white/70">AI-powered content creation for every marketing channel</p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {visibleChannelSolutions.map((solution) => (
+            <Link
+              key={solution.href}
+              href={solution.href}
+              className="group bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 hover:border-white/20 transition-all"
+            >
+              <div className="flex items-start justify-between mb-4">
+                <div className="p-2 bg-white/10 rounded-lg">
+                  <solution.icon className="w-5 h-5 text-white" />
+                </div>
+                <span className="text-xs text-white/50 bg-white/5 px-2 py-1 rounded">{solution.stats}</span>
+              </div>
+              <h2 className="text-lg font-semibold text-white mb-2 group-hover:text-white/90">{solution.title}</h2>
+              <p className="text-sm text-white/60 mb-4">{solution.description}</p>
+              <div className="flex items-center text-sm text-white/70 group-hover:text-white transition-colors">
+                <span>Learn more</span>
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+          ))}
+        </div>
+        {channelSolutions.length > 6 && (
+          <div className="mt-6 text-center">
+            <button
+              onClick={() => setShowAllChannel(!showAllChannel)}
+              className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
+            >
+              {showAllChannel ? "Show less" : `View all ${channelSolutions.length} solutions`}
+              <ChevronDown className={`w-4 h-4 transition-transform ${showAllChannel ? "rotate-180" : ""}`} />
+            </button>
+          </div>
+        )}
+      </section>
+
+      {/* Solutions by Industry */}
+      <section className="max-w-7xl mx-auto px-4 pb-16">
+        <div className="mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Solutions by Industry</h2>
+          <p className="text-white/70">Industry-specific content solutions</p>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {visibleIndustrySolutions.map((solution) => (
+            <Link
+              key={solution.href}
+              href={solution.href}
+              className="group bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 hover:border-white/20 transition-all"
+            >
+              <div className="flex items-start justify-between mb-4">
+                <div className="p-2 bg-white/10 rounded-lg">
+                  <solution.icon className="w-5 h-5 text-white" />
+                </div>
+                <span className="text-xs text-white/50 bg-white/5 px-2 py-1 rounded">{solution.stats}</span>
+              </div>
+              <h2 className="text-lg font-semibold text-white mb-2 group-hover:text-white/90">{solution.title}</h2>
+              <p className="text-sm text-white/60 mb-4">{solution.description}</p>
+              <div className="flex items-center text-sm text-white/70 group-hover:text-white transition-colors">
+                <span>Learn more</span>
+                <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
+          ))}
+        </div>
+        {solutionsByIndustry.length > 6 && (
+          <div className="mt-6 text-center">
+            <button
+              onClick={() => setShowAllIndustry(!showAllIndustry)}
+              className="inline-flex items-center gap-2 text-sm text-white/70 hover:text-white transition-colors"
+            >
+              {showAllIndustry ? "Show less" : `View all ${solutionsByIndustry.length} solutions`}
+              <ChevronDown className={`w-4 h-4 transition-transform ${showAllIndustry ? "rotate-180" : ""}`} />
+            </button>
+          </div>
+        )}
       </section>
 
       {/* CTA Section - Compact */}
@@ -277,7 +384,7 @@ export default function SolutionsPage() {
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-xl md:text-2xl font-bold text-white mb-3">Ready to Get Started?</h2>
           <p className="text-sm text-white/60 mb-6 max-w-lg mx-auto">
-            Join thousands of marketing teams creating AI-optimized content with WriteWorks.
+            Join thousands of marketing teams creating high-quality content with WriteWorks AI.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button
