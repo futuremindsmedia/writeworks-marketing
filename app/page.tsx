@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Sparkles, Zap, Users, Check, FileText, Target, Eye } from "lucide-react"
+import { Sparkles, Zap, Users, Check, FileText, Target, Eye, ArrowRight } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 import { AnimatedChat } from "@/components/animated-chat"
 
@@ -108,7 +108,9 @@ export default function Home() {
               className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90 px-8"
               asChild
             >
-              <a href="https://app.writeworks.ai/sign-up">Free Trial</a>
+              <a href="https://app.writeworks.ai/sign-up">
+                Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
+              </a>
             </Button>
           </div>
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-white/60">

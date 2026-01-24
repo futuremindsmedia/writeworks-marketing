@@ -31,6 +31,7 @@ import {
   LineChart,
   Lock,
   Layout,
+  ArrowRight,
 } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { usePathname, useRouter } from "next/navigation"
@@ -466,7 +467,9 @@ export function Header() {
             <Link href="https://app.writeworks.ai/login">Sign In</Link>
           </Button>
           <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
-            <Link href="https://app.writeworks.ai/sign-up">Free Trial</Link>
+            <Link href="https://app.writeworks.ai/sign-up">
+              Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
+            </Link>
           </Button>
         </div>
 
@@ -498,14 +501,15 @@ export function Header() {
                     <div className="text-xs font-semibold text-white/70 mb-3 uppercase tracking-wider">By Role</div>
                     <div className="space-y-1">
                       {solutionsByRole.map((solution) => (
-                        <div
+                        <Link
                           key={solution.href}
-                          onClick={() => handleMobileLinkClick(solution.href)}
+                          href={solution.href}
                           className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
+                          onClick={closeMobileMenu}
                         >
                           <solution.icon className="w-5 h-5 text-white flex-shrink-0" />
                           <span>{solution.name}</span>
-                        </div>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -513,23 +517,25 @@ export function Header() {
                     <div className="text-xs font-semibold text-white/70 mb-3 uppercase tracking-wider">By Industry</div>
                     <div className="space-y-1">
                       {solutionsByIndustry.map((solution) => (
-                        <div
+                        <Link
                           key={solution.href}
-                          onClick={() => handleMobileLinkClick(solution.href)}
+                          href={solution.href}
                           className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
+                          onClick={closeMobileMenu}
                         >
                           <solution.icon className="w-5 h-5 text-white flex-shrink-0" />
                           <span>{solution.name}</span>
-                        </div>
+                        </Link>
                       ))}
                     </div>
                   </div>
-                  <div
-                    onClick={() => handleMobileLinkClick("/solutions")}
+                  <Link
+                    href="/solutions"
                     className="flex items-center justify-center gap-2 text-sm text-[#6366F1] hover:text-[#8B5CF6] transition-colors py-3 px-3 rounded-lg border border-white/20 hover:border-white/40 cursor-pointer"
+                    onClick={closeMobileMenu}
                   >
                     View all solutions <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
-                  </div>
+                  </Link>
                 </div>
               )}
             </div>
@@ -543,14 +549,15 @@ export function Header() {
               {platformOpen && (
                 <div className="mt-3 space-y-1 animate-in slide-in-from-top-2 duration-200">
                   {platformFeatures.map((feature) => (
-                    <div
+                    <Link
                       key={feature.href}
-                      onClick={() => handleMobileLinkClick(feature.href)}
+                      href={feature.href}
                       className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
+                      onClick={closeMobileMenu}
                     >
                       <feature.icon className="w-5 h-5 text-white flex-shrink-0" />
                       <span>{feature.name}</span>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -572,14 +579,15 @@ export function Header() {
               {resourcesOpen && (
                 <div className="mt-3 space-y-1 animate-in slide-in-from-top-2 duration-200">
                   {resourceCategories.map((resource) => (
-                    <div
+                    <Link
                       key={resource.href}
-                      onClick={() => handleMobileLinkClick(resource.href)}
+                      href={resource.href}
                       className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
+                      onClick={closeMobileMenu}
                     >
                       <resource.icon className="w-5 h-5 text-white flex-shrink-0" />
                       <span>{resource.name}</span>
-                    </div>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -598,7 +606,9 @@ export function Header() {
                 className="w-full bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90 h-12"
                 asChild
               >
-                <Link href="https://app.writeworks.ai/sign-up">Free Trial</Link>
+                <Link href="https://app.writeworks.ai/sign-up">
+                  Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
+                </Link>
               </Button>
             </div>
           </nav>

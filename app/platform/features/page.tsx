@@ -237,7 +237,9 @@ export default function PlatformFeaturesPage() {
             collaboration and analytics.
           </p>
           <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
-            <a href="https://app.writeworks.ai/sign-up">Free Trial</a>
+            <a href="https://app.writeworks.ai/sign-up">
+              Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
+            </a>
           </Button>
         </div>
 
@@ -313,7 +315,9 @@ export default function PlatformFeaturesPage() {
               className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
               asChild
             >
-              <a href="https://app.writeworks.ai/sign-up">Free Trial</a>
+              <a href="https://app.writeworks.ai/sign-up">
+                Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
+              </a>
             </Button>
             <Button
               variant="outline"
