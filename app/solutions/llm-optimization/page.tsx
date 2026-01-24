@@ -149,7 +149,7 @@ export default function LLMOptimizationPage() {
               For LLM Visibility
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              LLM Optimization Content Writing &amp; Management Software
+              LLM Optimization Content Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Optimize content for ChatGPT, Claude, Perplexity, and AI Overviews. Maximize LLM citations.

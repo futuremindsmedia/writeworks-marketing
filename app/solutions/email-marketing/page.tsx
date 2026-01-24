@@ -149,7 +149,7 @@ export default function EmailMarketingPage() {
               For Email Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              Email Marketing Content Writing &amp; Management Software
+              Email Marketing Content Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Write email campaigns that convert. AI-powered copywriting for newsletters, drips, and sequences.

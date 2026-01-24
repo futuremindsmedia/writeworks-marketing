@@ -149,7 +149,7 @@ export default function VideoMarketingPage() {
               For Video Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              Video Marketing Content Writing &amp; Management Software
+              Video Marketing Content Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Write video scripts, YouTube descriptions, and video marketing content with AI assistance.

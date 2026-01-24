@@ -149,7 +149,7 @@ export default function SocialMediaPage() {
               For Social Media Teams
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              Social Media Content Writing &amp; Management Software
+              Social Media Content Writing Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Generate high-performing social content for LinkedIn, Twitter, Instagram, and more with AI.

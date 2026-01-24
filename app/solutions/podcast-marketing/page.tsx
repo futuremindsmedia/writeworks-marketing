@@ -149,7 +149,7 @@ export default function PodcastMarketingPage() {
               For Podcast Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              Podcast Marketing Content Writing &amp; Management Software
+              Podcast Marketing Content Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create podcast scripts, show notes, and promotional content that grows your audience.

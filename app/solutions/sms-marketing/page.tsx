@@ -149,7 +149,7 @@ export default function SMSMarketingPage() {
               For SMS Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              SMS Marketing Content Writing &amp; Management Software
+              SMS Marketing Content Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Write concise, compliant SMS and mobile marketing messages that drive conversions.

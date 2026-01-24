@@ -149,7 +149,7 @@ export default function PaidAdvertisingPage() {
               For Paid Ad Teams
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              Paid Advertising Content Writing &amp; Management Software
+              Paid Advertising Content Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create ad copy that converts for Google, Meta, LinkedIn, and display networks with AI.

@@ -149,7 +149,7 @@ export default function AffiliateMarketingPage() {
               For Affiliate Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              Affiliate Marketing Content Writing &amp; Management Software
+              Affiliate Marketing Content Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create product reviews, comparisons, and promotional content that drives affiliate conversions.

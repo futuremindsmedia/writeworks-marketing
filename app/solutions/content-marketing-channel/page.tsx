@@ -149,7 +149,7 @@ export default function ContentMarketingChannelPage() {
               For Content Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              Content Marketing Channel Content Writing &amp; Management Software
+              Content Marketing Channel Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create blog posts, articles, and thought leadership content that drives traffic and engagement.

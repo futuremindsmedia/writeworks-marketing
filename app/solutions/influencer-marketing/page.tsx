@@ -149,7 +149,7 @@ export default function InfluencerMarketingPage() {
               For Influencer Teams
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              Influencer Marketing Content Writing &amp; Management Software
+              Influencer Marketing Content Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create influencer briefs, scripts, and brand guidelines that streamline collaborations at scale.
