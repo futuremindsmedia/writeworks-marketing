@@ -1,8 +1,12 @@
 import type React from "react"
 import type { Metadata } from "next"
+import { Geist, Geist_Mono } from "next/font/google"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import "./globals.css"
+
+const geist = Geist({ subsets: ["latin"] })
+const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "WriteWorks AI - LLM Content Optimization Platform",
@@ -46,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`font-sans antialiased`}>
+      <body className={`${geist.className} antialiased`}>
         <Header />
         {children}
         <Footer />
