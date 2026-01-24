@@ -319,7 +319,7 @@ export default function SocialMediaPage() {
               <h2 className="text-2xl md:text-3xl font-bold mb-2">Built For</h2>
               <p className="text-white/70">Social media professionals driving engagement</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               {audiences.map((audience, index) => (
                 <div
                   key={index}

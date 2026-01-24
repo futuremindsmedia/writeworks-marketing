@@ -200,7 +200,7 @@ export default function FieldEventsMarketingPage() {
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold mb-3">Built For</h2>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
             {targetAudience.map((persona, index) => (
               <div key={index} className="p-4 rounded-xl border border-white/10 bg-white/5 text-center">
                 <div className="text-lg font-semibold mb-1">{persona.role}</div>
