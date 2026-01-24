@@ -5,11 +5,6 @@ import Link from "next/link"
 import { ArrowRight, Video, Zap, XCircle, Users, TrendingUp, Award, ChevronRight, Home, Calendar, Play, Film } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
-export const metadata = {
-  title: "Video Marketing Writing Platform | WriteWorks AI",
-  description: "Write video scripts, YouTube descriptions, and video marketing content. AI-powered video copywriting platform.",
-}
-
 function useInView(options = {}) {
   const ref = useRef(null)
   const [isInView, setIsInView] = useState(false)

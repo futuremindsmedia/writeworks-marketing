@@ -5,11 +5,6 @@ import Link from "next/link"
 import { ArrowRight, Monitor, Zap, XCircle, Users, TrendingUp, Award, ChevronRight, Home, Calendar, Layout, MousePointer } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
-export const metadata = {
-  title: "Display Advertising Copy Platform | WriteWorks AI",
-  description: "Create banner ads and display copy that converts. AI-powered display advertising content at scale.",
-}
-
 function useInView(options = {}) {
   const ref = useRef(null)
   const [isInView, setIsInView] = useState(false)

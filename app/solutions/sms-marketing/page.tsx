@@ -5,11 +5,6 @@ import Link from "next/link"
 import { ArrowRight, Smartphone, Zap, XCircle, Users, TrendingUp, Award, ChevronRight, Home, Calendar, MessageSquare, Send } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
-export const metadata = {
-  title: "SMS & Mobile Marketing Platform | WriteWorks AI",
-  description: "Write high-impact SMS and mobile marketing messages. Concise, compliant mobile content that converts.",
-}
-
 function useInView(options = {}) {
   const ref = useRef(null)
   const [isInView, setIsInView] = useState(false)

@@ -5,11 +5,6 @@ import Link from "next/link"
 import { ArrowRight, Brain, Zap, XCircle, Users, TrendingUp, Award, ChevronRight, Home, Calendar, Sparkles, Target } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
-export const metadata = {
-  title: "LLM Writing & Optimization Platform | WriteWorks AI",
-  description: "Optimize content for ChatGPT, Claude, Perplexity, and AI Overviews. Get cited by large language models.",
-}
-
 function useInView(options = {}) {
   const ref = useRef(null)
   const [isInView, setIsInView] = useState(false)

@@ -5,11 +5,6 @@ import Link from "next/link"
 import { ArrowRight, Mail, Zap, XCircle, Users, TrendingUp, Award, ChevronRight, Home, Calendar, Target, Send } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
-export const metadata = {
-  title: "Email Marketing Writing Platform | WriteWorks AI",
-  description: "Write high-converting email campaigns faster. AI-powered email copywriting for newsletters, drip campaigns, and more.",
-}
-
 function useInView(options = {}) {
   const ref = useRef(null)
   const [isInView, setIsInView] = useState(false)

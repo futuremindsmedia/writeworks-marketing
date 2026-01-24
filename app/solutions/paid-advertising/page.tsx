@@ -5,11 +5,6 @@ import Link from "next/link"
 import { ArrowRight, Target, Zap, XCircle, Users, TrendingUp, Award, ChevronRight, Home, Calendar, MousePointer, DollarSign } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
-export const metadata = {
-  title: "Paid Advertising Copywriting Platform | WriteWorks AI",
-  description: "Create high-converting ad copy for Google, Meta, LinkedIn, and display networks. AI-powered ad copywriting at scale.",
-}
-
 function useInView(options = {}) {
   const ref = useRef(null)
   const [isInView, setIsInView] = useState(false)
