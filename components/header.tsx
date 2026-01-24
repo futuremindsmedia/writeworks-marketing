@@ -32,6 +32,34 @@ import {
   Lock,
   Layout,
   ArrowRight,
+  Search,
+  Share2,
+  Mail,
+  DollarSign,
+  Link as LinkIcon,
+  Image,
+  Smartphone,
+  Mic,
+  Presentation,
+  Heart,
+  Briefcase,
+  Home,
+  Dumbbell,
+  Plane,
+  Utensils,
+  Car,
+  HandHeart,
+  Scale,
+  Shirt,
+  Zap,
+  UserPlus,
+  Handshake,
+  Building,
+  FileCode,
+  Presentation as PresentationIcon,
+  UserCheck,
+  Users2,
+  Award,
 } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { usePathname, useRouter } from "next/navigation"
@@ -138,33 +166,170 @@ export function Header() {
       icon: MessageSquare,
       description: "Craft clear, aligned messaging",
     },
+    {
+      name: "Demand Generation",
+      href: "/solutions/demand-generation",
+      icon: Zap,
+      description: "Create pipeline and conversions",
+    },
+    {
+      name: "Customer Marketing",
+      href: "/solutions/customer-marketing",
+      icon: UserPlus,
+      description: "Drive adoption and advocacy",
+    },
+    {
+      name: "Partner Marketing",
+      href: "/solutions/partner-marketing",
+      icon: Handshake,
+      description: "Enable channel collaboration",
+    },
+    {
+      name: "Growth Marketing",
+      href: "/solutions/growth-marketing",
+      icon: TrendingUp,
+      description: "Experiment and scale acquisition",
+    },
+    {
+      name: "Corporate Communications",
+      href: "/solutions/corporate-communications",
+      icon: Building,
+      description: "Align internal messaging",
+    },
+    {
+      name: "Technical Writing",
+      href: "/solutions/technical-writing",
+      icon: FileCode,
+      description: "Document products and processes",
+    },
+    {
+      name: "Sales Enablement",
+      href: "/solutions/sales-enablement",
+      icon: PresentationIcon,
+      description: "Equip teams with winning content",
+    },
+    {
+      name: "Customer Education",
+      href: "/solutions/customer-education",
+      icon: GraduationCap,
+      description: "Train and onboard users",
+    },
+    {
+      name: "Community Management",
+      href: "/solutions/community-management",
+      icon: Users2,
+      description: "Foster engagement and loyalty",
+    },
+    {
+      name: "Analyst Relations",
+      href: "/solutions/analyst-relations",
+      icon: Award,
+      description: "Position thought leadership",
+    },
   ]
 
   const solutionsByIndustry = [
     {
-      name: "Technology",
-      href: "/solutions/technology",
+      name: "Technology & SaaS",
+      href: "/solutions/technology-saas",
       icon: Cpu,
-      description: "Move faster from roadmap to reality",
+      description: "Scale technical content faster",
     },
     {
-      name: "eCommerce & Retail",
-      href: "/solutions/ecommerce-retail",
-      icon: ShoppingCart,
-      description: "Turn browsers into buyers",
+      name: "Healthcare & Wellness",
+      href: "/solutions/healthcare-wellness",
+      icon: Heart,
+      description: "Compliant, accurate health content",
     },
     {
-      name: "Insurance",
-      href: "/solutions/insurance",
+      name: "Finance",
+      href: "/solutions/finance",
+      icon: Briefcase,
+      description: "Clear, compliant financial content",
+    },
+    {
+      name: "Real Estate",
+      href: "/solutions/real-estate",
+      icon: Home,
+      description: "Compelling property content",
+    },
+    {
+      name: "Marketing & Advertising",
+      href: "/solutions/marketing-advertising",
+      icon: Megaphone,
+      description: "Scale campaign content",
+    },
+    {
+      name: "Education & E-learning",
+      href: "/solutions/education-elearning",
+      icon: GraduationCap,
+      description: "Engaging course content",
+    },
+    {
+      name: "B2B Services",
+      href: "/solutions/b2b-services",
       icon: Building2,
-      description: "Simplify complexity with smart content",
+      description: "Professional proposals & case studies",
     },
     {
-      name: "Media & Publishing",
-      href: "/solutions/media-publishing",
-      icon: Newspaper,
-      description: "Feed every channel with fresh content",
+      name: "Legal",
+      href: "/solutions/legal",
+      icon: Scale,
+      description: "Clear, accurate legal content",
     },
+    {
+      name: "Fashion & Beauty",
+      href: "/solutions/fashion-beauty",
+      icon: Shirt,
+      description: "Trend-forward brand content",
+    },
+    {
+      name: "Travel & Hospitality",
+      href: "/solutions/travel-hospitality",
+      icon: Plane,
+      description: "Inspiring travel content",
+    },
+    {
+      name: "Food & Culinary",
+      href: "/solutions/food-culinary",
+      icon: Utensils,
+      description: "Mouth-watering food content",
+    },
+    {
+      name: "Automotive",
+      href: "/solutions/automotive",
+      icon: Car,
+      description: "Technical specs & marketing",
+    },
+    {
+      name: "Non-profits & Charities",
+      href: "/solutions/nonprofits-charities",
+      icon: HandHeart,
+      description: "Compelling fundraising content",
+    },
+    {
+      name: "Sports & Fitness",
+      href: "/solutions/sports-fitness",
+      icon: Dumbbell,
+      description: "Motivating fitness content",
+    },
+  ]
+
+  const solutionsByChannel = [
+    { name: "SEO Content", href: "/solutions/seo-content", icon: Search, description: "Search-optimized content" },
+    { name: "LLM Optimization", href: "/solutions/llm-optimization", icon: Bot, description: "AI citation optimization" },
+    { name: "Social Media", href: "/solutions/social-media", icon: Share2, description: "Multi-platform social content" },
+    { name: "Email Marketing", href: "/solutions/email-marketing", icon: Mail, description: "High-converting emails" },
+    { name: "Paid Advertising", href: "/solutions/paid-advertising", icon: DollarSign, description: "Ad copy that converts" },
+    { name: "Content Marketing", href: "/solutions/content-marketing-channel", icon: FileText, description: "Blog & thought leadership" },
+    { name: "Video Marketing", href: "/solutions/video-marketing", icon: Video, description: "Scripts & descriptions" },
+    { name: "Affiliate Marketing", href: "/solutions/affiliate-marketing", icon: LinkIcon, description: "Reviews & comparisons" },
+    { name: "Influencer Marketing", href: "/solutions/influencer-marketing", icon: Users, description: "Briefs & collaboration" },
+    { name: "Display Advertising", href: "/solutions/display-advertising", icon: Image, description: "Banner & display ads" },
+    { name: "Native Advertising", href: "/solutions/native-advertising", icon: Newspaper, description: "Sponsored content" },
+    { name: "SMS Marketing", href: "/solutions/sms-marketing", icon: Smartphone, description: "Mobile messaging" },
+    { name: "Podcast Marketing", href: "/solutions/podcast-marketing", icon: Mic, description: "Scripts & show notes" },
+    { name: "Webinar Marketing", href: "/solutions/webinar-marketing", icon: Presentation, description: "Webinar scripts & promos" },
   ]
 
   const platformFeatures = [
@@ -344,14 +509,28 @@ export function Header() {
                           ))}
                         </ul>
                       </div>
-                      <div className="hidden md:block">
-                        <div className="rounded-lg overflow-hidden border border-white/10 h-full">
-                          <img
-                            src="/images/screenshot-202025-10-27-20at-2016.png"
-                            alt="WriteWorks Content Editor with LLM Visibility Score"
-                            className="w-full h-full object-contain"
-                          />
-                        </div>
+                      <div>
+                        <h3 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
+                          <div className="w-1 h-4 bg-gradient-to-b from-[#6366F1] to-[#8B5CF6] rounded-full"></div>
+                          Solutions by Channel
+                        </h3>
+                        <ul className="space-y-0.5 max-h-[400px] overflow-y-auto pr-2">
+                          {solutionsByChannel.map((solution) => (
+                            <Link
+                              key={solution.href}
+                              href={solution.href}
+                              className="group flex items-start gap-2.5 p-2 rounded-lg hover:bg-white/5 transition-all duration-200"
+                            >
+                              <solution.icon className="w-4 h-4 text-white/70 mt-0.5 flex-shrink-0 group-hover:text-white group-hover:scale-110 transition-all" />
+                              <div>
+                                <div className="text-sm font-medium text-white group-hover:text-white transition-colors">
+                                  {solution.name}
+                                </div>
+                                <div className="text-xs text-white/60 mt-0.5">{solution.description}</div>
+                              </div>
+                            </Link>
+                          ))}
+                        </ul>
                       </div>
                     </div>
                     <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
@@ -522,6 +701,22 @@ export function Header() {
                     <div className="text-xs font-semibold text-white/70 mb-3 uppercase tracking-wider">By Industry</div>
                     <div className="space-y-1">
                       {solutionsByIndustry.map((solution) => (
+                        <Link
+                          key={solution.href}
+                          href={solution.href}
+                          className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
+                          onClick={closeMobileMenu}
+                        >
+                          <solution.icon className="w-5 h-5 text-white flex-shrink-0" />
+                          <span>{solution.name}</span>
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                  <div>
+                    <div className="text-xs font-semibold text-white/70 mb-3 uppercase tracking-wider">By Channel</div>
+                    <div className="space-y-1">
+                      {solutionsByChannel.map((solution) => (
                         <Link
                           key={solution.href}
                           href={solution.href}
