@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Sparkles, Zap, Users, Check, FileText, Target, ArrowRight, XCircle, Megaphone, Award, TrendingUp, Clock, Globe, Briefcase, Building2, PenTool, BarChart3 } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
-import Image from "next/image"
 
 function useInView(options = {}) {
   const ref = useRef(null)
