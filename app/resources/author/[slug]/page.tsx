@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import Pagination from "@/components/pagination"
 import type { Metadata } from "next"
+import { getResourceUrlBySlugAndCategory } from "@/lib/resources-data"
 
 const authors = {
   "writeworks-team": {
@@ -213,7 +214,7 @@ export default function AuthorPage({
             </h2>
             <div className="grid gap-6">
               {paginatedArticles.map((article) => (
-                <Link key={article.slug} href={`/resources/${article.slug}`}>
+                <Link key={article.slug} href={getResourceUrlBySlugAndCategory(article.slug, article.category)}>
                   <div className="group rounded-xl bg-white/5 border border-white/10 hover:border-white/20 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden flex flex-col md:flex-row">
                     <div className="md:w-64 aspect-video overflow-hidden flex-shrink-0">
                       <img

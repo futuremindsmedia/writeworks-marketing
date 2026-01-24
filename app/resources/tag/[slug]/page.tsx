@@ -3,7 +3,7 @@ import { User, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import type { Metadata } from "next"
-import { getResourcesByTag } from "@/lib/data/resources"
+import { getResourcesByTag, getResourceUrl } from "@/lib/data/resources"
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const { slug } = params
@@ -54,7 +54,7 @@ export default async function TagPage({ params }: { params: { slug: string } }) 
           <div className="max-w-6xl mx-auto">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {resources.map((resource) => (
-                <Link key={resource.slug} href={`/resources/${resource.slug}`}>
+                <Link key={resource.slug} href={getResourceUrl(resource)}>
                   <article className="group rounded-xl bg-white/5 border border-white/10 hover:border-white/20 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden h-full flex flex-col">
                     <div className="aspect-video overflow-hidden">
                       <img

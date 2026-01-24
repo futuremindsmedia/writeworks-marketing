@@ -660,3 +660,34 @@ export function getResourcesByCategory(category: string): Resource[] {
   if (category === "all") return resources
   return resources.filter((r) => r.category === category)
 }
+
+// Helper function to generate resource URL with category
+export function getResourceUrl(resource: Resource): string {
+  // Convert category to URL-friendly format (plural form)
+  const categoryMap: Record<string, string> = {
+    blog: "blogs",
+    guide: "guides",
+    "case-study": "case-studies",
+    whitepaper: "whitepapers",
+    video: "videos",
+    webinar: "webinars",
+    news: "news",
+  }
+  const categorySlug = categoryMap[resource.category] || resource.category
+  return `/resources/${categorySlug}/${resource.slug}`
+}
+
+// Helper function to generate resource URL by slug and category
+export function getResourceUrlBySlugAndCategory(slug: string, category: string): string {
+  const categoryMap: Record<string, string> = {
+    blog: "blogs",
+    guide: "guides",
+    "case-study": "case-studies",
+    whitepaper: "whitepapers",
+    video: "videos",
+    webinar: "webinars",
+    news: "news",
+  }
+  const categorySlug = categoryMap[category] || category
+  return `/resources/${categorySlug}/${slug}`
+}
