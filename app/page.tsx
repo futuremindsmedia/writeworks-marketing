@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Sparkles, Zap, Users, Check, FileText, Target, ArrowRight, XCircle, Megaphone, Award, TrendingUp, Clock, Globe, Briefcase, Building2, PenTool, BarChart3 } from "lucide-react"
+import { Sparkles, Zap, Users, Check, FileText, Target, ArrowRight, XCircle, Megaphone, Award, TrendingUp, Globe, Briefcase, Building2, PenTool } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 function useInView(options = {}) {
@@ -504,7 +504,7 @@ export default function Home() {
                 Optimize Content as You Write
               </h2>
               <p className="text-base text-white/70 mb-6 text-pretty leading-relaxed">
-                Our intelligent editor helps you write better content faster. Get real-time suggestions for clarity, tone, structure, and engagement—ensuring every piece meets your quality standards.
+                Our intelligent writing assistant helps you write better content faster. Get real-time suggestions for clarity, tone, structure, and engagement—ensuring every piece meets your quality standards.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
@@ -815,7 +815,7 @@ export default function Home() {
                     name: "Rachel Kim",
                     role: "Head of Content",
                     quote:
-                      "Our content output has doubled since implementing WriteWorks. The intelligent editor is incredibly powerful.",
+                      "Our content output has doubled since implementing WriteWorks. The intelligent writing assistant is incredibly powerful.",
                   },
                   {
                     heading: "Clear ROI",
@@ -888,7 +888,7 @@ export default function Home() {
                     name: "Rachel Kim",
                     role: "Head of Content",
                     quote:
-                      "Our content output has doubled since implementing WriteWorks. The intelligent editor is incredibly powerful.",
+                      "Our content output has doubled since implementing WriteWorks. The intelligent writing assistant is incredibly powerful.",
                   },
                   {
                     heading: "Clear ROI",
