@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Utensils, BookOpen, Star } from "lucide-react"
+import { ArrowRight, Utensils, BookOpen, Star, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Food & Culinary Writing Software | WriteWorks AI",
-  description: "AI-powered writing software for food and culinary businesses. Create mouth-watering content that drives orders.",
+  title: "Content Writing Software for Food & Culinary | WriteWorks",
+  description: "Scale culinary content with AI-powered creation tools. Generate recipes, menu descriptions, and food content that engages audiences and drives restaurant traffic.",
 }
 
 export default function FoodCulinaryPage() {
@@ -39,7 +39,7 @@ export default function FoodCulinaryPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              AI Writing Software for Food & Culinary Businesses
+              Content Writing Software for Food &amp; Culinary
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create mouth-watering content that drives orders. Scale menu descriptions and culinary content effortlessly.
@@ -71,6 +71,16 @@ export default function FoodCulinaryPage() {
                   Start Free <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
+              </Button>
             </div>
           </div>
         </div>
@@ -96,6 +106,40 @@ export default function FoodCulinaryPage() {
           </div>
         </div>
       </section>
-    </div>
+    
+      {/* CTA Section */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Culinary Content?</h2>
+            <p className="text-white/70 mb-6">
+              Join culinary brands creating mouth-watering content that attracts diners and builds brand loyalty.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
+                asChild
+              >
+                <a href="https://app.writeworks.ai/sign-up">
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Talk to Sales
+                </a>
+              </Button>
+            </div>
+            <p className="text-xs text-white/50 mt-4">No credit card required • Cancel anytime</p>
+          </div>
+        </div>
+      </section>
+</div>
   )
 }

@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Clock, AlertTriangle, Target } from "lucide-react"
+import { ArrowRight, Clock, AlertTriangle, Target, Calendar, Shield, Zap, BookOpen, Award } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Brand Marketing Solutions | WriteWorks AI",
-  description: "Automate brand compliance. Protect voice, tone, and style at scale with AI-powered brand management.",
+  title: "Brand Marketing Content Software | WriteWorks",
+  description: "Enforce brand consistency automatically across all content. Reduce review time 90% with AI-powered brand compliance that protects voice, tone, and style at scale.",
 }
 
 export default function BrandMarketingPage() {
@@ -29,16 +29,24 @@ export default function BrandMarketingPage() {
 
   const solutions = [
     {
-      challenge: "Brand Inconsistency",
-      solution: "AI learns your brand guidelines and automatically enforces voice, tone, and style in all content.",
+      icon: Shield,
+      title: "Automated Brand Enforcement",
+      description: "AI learns your brand guidelines and automatically enforces voice, tone, and style in all content.",
     },
     {
-      challenge: "Manual Reviews",
-      solution: "Real-time brand compliance scoring catches issues before content reaches review stage.",
+      icon: Zap,
+      title: "Real-Time Compliance Scoring",
+      description: "Real-time brand compliance scoring catches issues before content reaches review stage.",
     },
     {
-      challenge: "Scaling Challenges",
-      solution: "Centralized brand knowledge base ensures consistency regardless of who creates the content.",
+      icon: BookOpen,
+      title: "Centralized Brand Knowledge",
+      description: "Centralized brand knowledge base ensures consistency regardless of who creates the content.",
+    },
+    {
+      icon: Award,
+      title: "Quality at Scale",
+      description: "Maintain brand excellence across all channels, teams, and content types with intelligent automation.",
     },
   ]
 
@@ -51,10 +59,10 @@ export default function BrandMarketingPage() {
   ]
 
   const targetAudience = [
-    { role: "Brand Managers", description: "Enforce guidelines automatically" },
-    { role: "Creative Directors", description: "Maintain creative consistency" },
-    { role: "Marketing Ops", description: "Scale brand compliance" },
-    { role: "Content Leads", description: "Ensure on-brand output" },
+    { icon: Shield, role: "Brand Managers", description: "Enforce guidelines automatically" },
+    { icon: Award, role: "Creative Directors", description: "Maintain creative consistency" },
+    { icon: Target, role: "Marketing Ops", description: "Scale brand compliance" },
+    { icon: BookOpen, role: "Content Leads", description: "Ensure on-brand output" },
   ]
 
   return (
@@ -69,7 +77,7 @@ export default function BrandMarketingPage() {
               <span className="text-xs text-white/70">Solutions for Brand Teams</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              AI Brand Content Tool: Consistent Voice, Every Channel
+              Brand Marketing Content Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Automate brand compliance. Protect voice, tone, and style at scale.
@@ -101,6 +109,16 @@ export default function BrandMarketingPage() {
                   Start Free <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
+              </Button>
             </div>
           </div>
         </div>
@@ -131,18 +149,17 @@ export default function BrandMarketingPage() {
       <section className="py-12 md:py-16 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3">How WriteWorks Solves This</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">How WriteWorks Solves It</h2>
+            <p className="text-white/70 max-w-2xl mx-auto">
+              AI-powered brand compliance that protects your voice and scales with your team
+            </p>
           </div>
-          <div className="max-w-3xl mx-auto space-y-4">
-            {solutions.map((item, index) => (
-              <div key={index} className="flex gap-4 p-4 rounded-xl border border-white/10 bg-white/5">
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] flex items-center justify-center text-sm font-bold">
-                  {index + 1}
-                </div>
-                <div>
-                  <div className="text-sm text-white/50 mb-1">{item.challenge}</div>
-                  <div className="text-white/90">{item.solution}</div>
-                </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            {solutions.map((solution, index) => (
+              <div key={index} className="p-5 rounded-xl border border-white/10 bg-white/5">
+                <solution.icon className="w-8 h-8 text-white/80 mb-3" />
+                <h3 className="text-lg font-semibold mb-2">{solution.title}</h3>
+                <p className="text-sm text-white/60">{solution.description}</p>
               </div>
             ))}
           </div>
@@ -190,12 +207,14 @@ export default function BrandMarketingPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold mb-3">Built For</h2>
+            <p className="text-white/70">Brand and marketing teams who demand consistency</p>
           </div>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {targetAudience.map((persona, index) => (
-              <div key={index} className="p-4 rounded-xl border border-white/10 bg-white/5 text-center">
-                <div className="text-lg font-semibold mb-1">{persona.role}</div>
-                <div className="text-sm text-white/60">{persona.description}</div>
+              <div key={index} className="p-5 rounded-xl border border-white/10 bg-white/5 text-center">
+                <persona.icon className="w-8 h-8 text-white/80 mb-3 mx-auto" />
+                <h3 className="text-sm font-semibold mb-2">{persona.role}</h3>
+                <p className="text-xs text-white/60">{persona.description}</p>
               </div>
             ))}
           </div>
@@ -208,15 +227,28 @@ export default function BrandMarketingPage() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Protect Your Brand</h2>
             <p className="text-white/70 mb-6">Join brand teams using WriteWorks to maintain consistency at scale</p>
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
-              asChild
-            >
-              <Link href="https://app.writeworks.ai/sign-up">
-                Start Free <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
+                asChild
+              >
+                <Link href="https://app.writeworks.ai/sign-up">
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
+              </Button>
+            </div>
+            <p className="text-xs text-white/50 mt-4">No credit card required • Cancel anytime</p>
           </div>
         </div>
       </section>

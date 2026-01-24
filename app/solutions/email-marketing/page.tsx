@@ -149,7 +149,7 @@ export default function EmailMarketingPage() {
               For Email Marketers
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              AI for Email Marketing: High-Converting Campaigns, Faster
+              Email Marketing Content Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Write email campaigns that convert. AI-powered copywriting for newsletters, drips, and sequences.
@@ -252,19 +252,12 @@ export default function EmailMarketingPage() {
               <h2 className="text-2xl md:text-3xl font-bold mb-2">How WriteWorks Solves It</h2>
               <p className="text-white/70">AI-powered email writing that converts</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-4">
               {solutions.map((solution, index) => (
-                <div
-                  key={index}
-                  className="flex items-start gap-3 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors"
-                >
-                  <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366F1]/20 to-[#8B5CF6]/20 flex items-center justify-center flex-shrink-0">
-                    <solution.icon className="w-5 h-5 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-white mb-1">{solution.title}</h3>
-                    <p className="text-sm text-white/60">{solution.description}</p>
-                  </div>
+                <div key={index} className="p-5 rounded-xl border border-white/10 bg-white/5">
+                  <solution.icon className="w-8 h-8 text-white/80 mb-3" />
+                  <h3 className="text-lg font-semibold mb-2">{solution.title}</h3>
+                  <p className="text-sm text-white/60">{solution.description}</p>
                 </div>
               ))}
             </div>
@@ -326,7 +319,7 @@ export default function EmailMarketingPage() {
               <h2 className="text-2xl md:text-3xl font-bold mb-2">Built For</h2>
               <p className="text-white/70">Email marketing professionals driving conversions</p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
               {audiences.map((audience, index) => (
                 <div
                   key={index}
@@ -382,6 +375,41 @@ export default function EmailMarketingPage() {
           </div>
         </div>
       </section>
-    </div>
+    
+
+      {/* CTA Section */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Ready to Transform Email Marketing?</h2>
+            <p className="text-white/70 mb-6">
+              Join email marketers creating high-converting campaigns that drive revenue.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
+                asChild
+              >
+                <a href="https://app.writeworks.ai/sign-up">
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                </a>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Talk to Sales
+                </a>
+              </Button>
+            </div>
+            <p className="text-xs text-white/50 mt-4">No credit card required • Cancel anytime</p>
+          </div>
+        </div>
+      </section>
+</div>
   )
 }
