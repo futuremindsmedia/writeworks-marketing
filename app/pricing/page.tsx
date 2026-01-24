@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Breadcrumbs } from "@/components/breadcrumbs"
-import { Check, Sparkles, HelpCircle, X, ArrowRight } from "lucide-react"
+import { Check, Sparkles, HelpCircle, X, ArrowRight, Calendar } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 function useInView(options = {}) {
