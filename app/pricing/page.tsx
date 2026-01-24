@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Breadcrumbs } from "@/components/breadcrumbs"
-import { Check, Sparkles, HelpCircle, X } from "lucide-react"
+import { Check, Sparkles, HelpCircle, X, ArrowRight, Calendar } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 function useInView(options = {}) {
@@ -185,8 +185,16 @@ export default function PricingPage() {
                   }
                   asChild
                 >
-                  <a href="https://app.writeworks.ai/sign-up">
-                    {plan.price === "Custom" ? "Contact Sales" : "Free Trial"}
+                  <a href={plan.price === "Custom" ? "/demo" : "https://app.writeworks.ai/sign-up"}>
+                    {plan.price === "Custom" ? (
+                      <>
+                        <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                      </>
+                    ) : (
+                      <>
+                        Start Free <ArrowRight className="ml-2 w-4 h-4 inline" />
+                      </>
+                    )}
                   </a>
                 </Button>
               </Card>
@@ -380,7 +388,9 @@ export default function PricingPage() {
             className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90 px-10"
             asChild
           >
-            <a href="https://app.writeworks.ai/sign-up">Start Free Trial</a>
+            <a href="https://app.writeworks.ai/sign-up">
+              Start Free <ArrowRight className="ml-2 w-4 h-4 inline" />
+            </a>
           </Button>
           <p className="text-sm text-white/70 mt-4">14-day free trial • No credit card required • Cancel anytime</p>
         </Card>

@@ -11,7 +11,7 @@ import {
   Lightbulb,
   ArrowRight,
   Home,
-} from "lucide-react"
+  Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
@@ -126,8 +126,8 @@ export default function AITextActionsPage() {
               optimized for LLM visibility.
             </p>
             <div className="flex flex-wrap gap-3 justify-center mb-8">
-              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial
+              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
+                <a href="https://app.writeworks.ai/sign-up">Start Free <ArrowRight className="ml-2 h-4 w-4" /></a>
               </Button>
             </div>
 
@@ -284,10 +284,10 @@ export default function AITextActionsPage() {
             <p className="text-white/70 mb-6 text-sm">Experience the power of one-click AI optimization.</p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
+                Start Free <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button variant="outline" className="border-white/20 text-white hover:bg-white/5 bg-transparent" asChild>
-                <Link href="/contact">Contact Sales</Link>
+                <Link href="/demo">Book Demo</Link>
               </Button>
             </div>
           </div>

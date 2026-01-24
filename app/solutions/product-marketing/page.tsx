@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Target, Zap, XCircle, Users, Megaphone, TrendingUp, Award, ChevronRight, Home } from "lucide-react"
+import { ArrowRight, Target, Zap, XCircle, Users, Megaphone, TrendingUp, Award, ChevronRight, Home, Calendar } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 function useInView(options = {}) {
@@ -161,7 +161,7 @@ export default function ProductMarketingPage() {
                 asChild
               >
                 <a href="https://app.writeworks.ai/sign-up">
-                  Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
               <Button
@@ -170,7 +170,9 @@ export default function ProductMarketingPage() {
                 className="border-white/20 text-white bg-transparent hover:bg-white/5"
                 asChild
               >
-                <a href="https://app.writeworks.ai/demo">Book Demo</a>
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
               </Button>
             </div>
           </div>
@@ -362,7 +364,7 @@ export default function ProductMarketingPage() {
                 asChild
               >
                 <a href="https://app.writeworks.ai/sign-up">
-                  Start Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
               <Button
@@ -371,7 +373,9 @@ export default function ProductMarketingPage() {
                 className="border-white/20 text-white bg-transparent hover:bg-white/5"
                 asChild
               >
-                <a href="https://app.writeworks.ai/demo">Talk to Sales</a>
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Talk to Sales
+                </a>
               </Button>
             </div>
             <p className="text-xs text-white/50 mt-4">No credit card required • Cancel anytime</p>

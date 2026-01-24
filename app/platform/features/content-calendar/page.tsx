@@ -1,7 +1,7 @@
 import React from "react"
 import type { Metadata } from "next"
 import Link from "next/link"
-import { Calendar, Clock, TrendingUp, CheckCircle2, Users, Home, ChevronRight, AlertTriangle, Zap } from "lucide-react"
+import { Calendar, Clock, TrendingUp, CheckCircle2, Users, Home, ChevronRight, AlertTriangle, Zap, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
@@ -123,8 +123,8 @@ export default function ContentCalendarPage() {
               content pipeline, coordinate with your team, and never miss a deadline.
             </p>
             <div className="flex flex-wrap gap-3 justify-center mb-8">
-              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial
+              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
+                <a href="https://app.writeworks.ai/sign-up">Start Free <ArrowRight className="ml-2 h-4 w-4" /></a>
               </Button>
             </div>
 
@@ -294,8 +294,8 @@ export default function ContentCalendarPage() {
               Get organized with a visual content calendar. Try content planning free for 14 days.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial
+              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
+                <a href="https://app.writeworks.ai/sign-up">Start Free <ArrowRight className="ml-2 h-4 w-4" /></a>
               </Button>
               <Button
                 size="lg"
@@ -303,7 +303,7 @@ export default function ContentCalendarPage() {
                 className="border-white/20 text-white hover:bg-white/5 bg-transparent"
                 asChild
               >
-                <Link href="/contact">Contact Sales</Link>
+                <Link href="/demo">Book Demo</Link>
               </Button>
             </div>
           </div>

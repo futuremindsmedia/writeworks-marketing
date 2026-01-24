@@ -12,7 +12,8 @@ import {
   AlertTriangle,
   Lightbulb,
   Users,
-} from "lucide-react"
+  ArrowRight,
+  Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
@@ -164,8 +165,8 @@ export default function AnalyticsPage() {
               visibility scores, and ROI to optimize your content strategy.
             </p>
             <div className="flex flex-wrap gap-3 justify-center mb-10">
-              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial
+              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
+                <a href="https://app.writeworks.ai/sign-up">Start Free <ArrowRight className="ml-2 h-4 w-4" /></a>
               </Button>
             </div>
 
@@ -333,8 +334,8 @@ export default function AnalyticsPage() {
               Track, measure, and optimize your content performance across AI platforms.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial
+              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
+                <a href="https://app.writeworks.ai/sign-up">Start Free <ArrowRight className="ml-2 h-4 w-4" /></a>
               </Button>
               <Button
                 size="lg"
@@ -342,7 +343,7 @@ export default function AnalyticsPage() {
                 className="border-white/20 text-white hover:bg-white/5 bg-transparent"
                 asChild
               >
-                <Link href="/contact">Contact Sales</Link>
+                <Link href="/demo">Book Demo</Link>
               </Button>
             </div>
           </div>

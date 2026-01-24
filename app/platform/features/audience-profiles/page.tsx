@@ -1,6 +1,6 @@
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { Button } from "@/components/ui/button"
-import { Users, Target, TrendingUp, BarChart, UserCheck, Globe, CheckCircle } from "lucide-react"
+import { Users, Target, TrendingUp, BarChart, UserCheck, Globe, CheckCircle, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 export const metadata = {
@@ -108,7 +108,7 @@ export default function AudienceProfilesPage() {
             </p>
             <div className="flex flex-wrap justify-center gap-3 mb-8">
               <Button asChild size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] hover:opacity-90">
-                <Link href="https://app.writeworks.ai/sign-up">Start Free Trial</Link>
+                <Link href="https://app.writeworks.ai/sign-up">Start Free <ArrowRight className="ml-2 w-4 h-4 inline" /></Link>
               </Button>
               <Button
                 asChild
@@ -116,7 +116,7 @@ export default function AudienceProfilesPage() {
                 size="lg"
                 className="border-white/20 text-white hover:bg-white/5 bg-transparent"
               >
-                <Link href="/contact">Contact Sales</Link>
+                <Link href="/demo">Book Demo</Link>
               </Button>
             </div>
             {/* Stats Bar */}
@@ -265,7 +265,7 @@ export default function AudienceProfilesPage() {
             Start creating audience profiles today and deliver more targeted, effective content.
           </p>
           <Button asChild size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] hover:opacity-90">
-            <Link href="https://app.writeworks.ai/sign-up">Get Started Free</Link>
+            <Link href="https://app.writeworks.ai/sign-up">Start Free <ArrowRight className="ml-2 w-4 h-4 inline" /></Link>
           </Button>
         </div>
       </section>

@@ -5,8 +5,8 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import "./globals.css"
 
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
+const geist = Geist({ subsets: ["latin"] })
+const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "WriteWorks AI - LLM Content Optimization Platform",
@@ -50,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`font-sans antialiased`}>
+      <body className={`${geist.className} antialiased`}>
         <Header />
         {children}
         <Footer />

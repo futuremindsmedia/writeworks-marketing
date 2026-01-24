@@ -140,14 +140,16 @@ export default function SolutionsPage() {
               className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
               asChild
             >
-              <a href="https://app.writeworks.ai/sign-up">Free Trial</a>
+              <a href="https://app.writeworks.ai/sign-up">
+                Start Free <ArrowRight className="ml-2 w-4 h-4 inline" />
+              </a>
             </Button>
             <Button
               variant="outline"
               className="w-full sm:w-auto border-white/20 text-white hover:bg-white/5 bg-transparent"
               asChild
             >
-              <Link href="/platform">See Platform</Link>
+              <Link href="/demo"><Calendar className="mr-2 w-4 h-4 inline" /> Book Demo</Link>
             </Button>
           </div>
         </div>

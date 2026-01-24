@@ -1,6 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { BookOpen, Search, CheckCircle2, Lightbulb, Share2, Home, ChevronRight, AlertTriangle, Zap } from "lucide-react"
+import { BookOpen, Search, CheckCircle2, Lightbulb, Share2, Home, ChevronRight, AlertTriangle, Zap, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {
@@ -123,8 +123,8 @@ export default function KnowledgeBasePage() {
               guides, and research to power consistent AI outputs.
             </p>
             <div className="flex flex-wrap gap-3 justify-center mb-8">
-              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial
+              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
+                <a href="https://app.writeworks.ai/sign-up">Start Free <ArrowRight className="ml-2 h-4 w-4" /></a>
               </Button>
             </div>
 
@@ -294,8 +294,8 @@ export default function KnowledgeBasePage() {
               Centralize team knowledge and improve AI outputs. Try knowledge base free for 14 days.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial
+              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
+                <a href="https://app.writeworks.ai/sign-up">Start Free <ArrowRight className="ml-2 h-4 w-4" /></a>
               </Button>
               <Button
                 size="lg"
@@ -303,7 +303,7 @@ export default function KnowledgeBasePage() {
                 className="border-white/20 text-white hover:bg-white/5 bg-transparent"
                 asChild
               >
-                <Link href="/contact">Contact Sales</Link>
+                <Link href="/demo">Book Demo</Link>
               </Button>
             </div>
           </div>

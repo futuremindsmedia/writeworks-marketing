@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Clock, AlertTriangle, Target } from "lucide-react"
+import { ArrowRight, Clock, AlertTriangle, Target, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
@@ -99,7 +99,7 @@ export default function ContentMarketingPage() {
                 asChild
               >
                 <Link href="https://app.writeworks.ai/sign-up">
-                  Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
               <Button
@@ -108,7 +108,9 @@ export default function ContentMarketingPage() {
                 className="border-white/20 text-white bg-transparent hover:bg-white/5"
                 asChild
               >
-                <a href="https://app.writeworks.ai/demo">Book Demo</a>
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
               </Button>
             </div>
           </div>
@@ -223,7 +225,7 @@ export default function ContentMarketingPage() {
               asChild
             >
               <Link href="https://app.writeworks.ai/sign-up">
-                Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+                Start Free <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
           </div>
