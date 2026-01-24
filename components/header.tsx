@@ -100,14 +100,15 @@ export function Header() {
       }
     }
 
-    if (solutionsOpen || platformOpen || resourcesOpen) {
+    // Only register click outside handler for desktop dropdowns (when mobile menu is closed)
+    if ((solutionsOpen || platformOpen || resourcesOpen) && !mobileMenuOpen) {
       document.addEventListener("mousedown", handleClickOutside)
     }
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside)
     }
-  }, [solutionsOpen, platformOpen, resourcesOpen])
+  }, [solutionsOpen, platformOpen, resourcesOpen, mobileMenuOpen])
 
   const closeAllDropdowns = () => {
     setSolutionsOpen(false)
