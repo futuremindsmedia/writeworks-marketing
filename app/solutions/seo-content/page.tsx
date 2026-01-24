@@ -149,7 +149,7 @@ export default function SEOContentPage() {
               For SEO Teams
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
-              SEO Content Content Writing &amp; Management Software
+              SEO Content Writing &amp; Management Software
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Create search-optimized content that dominates SERPs and gets cited by ChatGPT, Claude, and AI Overviews.
