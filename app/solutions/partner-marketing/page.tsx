@@ -39,7 +39,8 @@ export default function PartnerMarketingPage() {
               <span className="text-xs text-white/70">Solutions by Role</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Partner Marketing Content Writing &amp; Management Software</h1>
+              Partner Marketing Content Writing &amp; Management Software
+            </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Enable channel collaboration with co-marketing content. Scale partner programs and drive revenue.
             </p>
