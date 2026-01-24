@@ -62,7 +62,7 @@ import {
   Award,
 } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
-import { usePathname, useRouter } from "next/navigation"
+import { usePathname } from "next/navigation"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -73,7 +73,6 @@ export function Header() {
   const platformDropdownRef = useRef<HTMLDivElement>(null)
   const resourcesDropdownRef = useRef<HTMLDivElement>(null)
   const pathname = usePathname()
-  const router = useRouter()
 
   useEffect(() => {
     closeAllDropdowns()
@@ -114,19 +113,6 @@ export function Header() {
     setSolutionsOpen(false)
     setPlatformOpen(false)
     setResourcesOpen(false)
-  }
-
-  const closeMobileMenu = () => {
-    closeAllDropdowns()
-    setMobileMenuOpen(false)
-  }
-
-  const handleMobileLinkClick = (href: string) => {
-    router.push(href)
-    setTimeout(() => {
-      closeAllDropdowns()
-      setMobileMenuOpen(false)
-    }, 100)
   }
 
   const solutionsByRole = [
@@ -689,7 +675,6 @@ export function Header() {
                           key={solution.href}
                           href={solution.href}
                           className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
-                          onClick={closeMobileMenu}
                         >
                           <solution.icon className="w-5 h-5 text-white flex-shrink-0" />
                           <span>{solution.name}</span>
@@ -705,7 +690,6 @@ export function Header() {
                           key={solution.href}
                           href={solution.href}
                           className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
-                          onClick={closeMobileMenu}
                         >
                           <solution.icon className="w-5 h-5 text-white flex-shrink-0" />
                           <span>{solution.name}</span>
@@ -721,7 +705,6 @@ export function Header() {
                           key={solution.href}
                           href={solution.href}
                           className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
-                          onClick={closeMobileMenu}
                         >
                           <solution.icon className="w-5 h-5 text-white flex-shrink-0" />
                           <span>{solution.name}</span>
@@ -732,7 +715,6 @@ export function Header() {
                   <Link
                     href="/solutions"
                     className="flex items-center justify-center gap-2 text-sm text-[#6366F1] hover:text-[#8B5CF6] transition-colors py-3 px-3 rounded-lg border border-white/20 hover:border-white/40 cursor-pointer"
-                    onClick={closeMobileMenu}
                   >
                     View all solutions <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
                   </Link>
@@ -753,7 +735,6 @@ export function Header() {
                       key={feature.href}
                       href={feature.href}
                       className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
-                      onClick={closeMobileMenu}
                     >
                       <feature.icon className="w-5 h-5 text-white flex-shrink-0" />
                       <span>{feature.name}</span>
@@ -765,7 +746,6 @@ export function Header() {
             <Link
               href="/enterprise"
               className="text-base text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg"
-              onClick={closeMobileMenu}
             >
               Enterprise
             </Link>
@@ -784,7 +764,6 @@ export function Header() {
                       key={resource.href}
                       href={resource.href}
                       className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
-                      onClick={closeMobileMenu}
                     >
                       <resource.icon className="w-5 h-5 text-white flex-shrink-0" />
                       <span>{resource.name}</span>
@@ -796,7 +775,6 @@ export function Header() {
             <Link
               href="/pricing"
               className="text-base text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg"
-              onClick={closeMobileMenu}
             >
               Pricing
             </Link>
