@@ -1,6 +1,5 @@
 "use client"
 
-import type { Metadata } from "next"
 import { Calendar, CheckCircle2, Users, Video, Clock, Send } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import { useState } from "react"
