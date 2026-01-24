@@ -29,8 +29,6 @@ import {
   Smartphone,
   Mic,
   Presentation,
-  Shield,
-  MessageSquare,
   Cpu,
   ShoppingCart,
   Building2,
