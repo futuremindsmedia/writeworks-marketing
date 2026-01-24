@@ -2,9 +2,9 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Sparkles, Zap, Users, Check, FileText, Target, Eye, ArrowRight, XCircle, Megaphone, Award, TrendingUp } from "lucide-react"
+import { Sparkles, Zap, Users, Check, FileText, Target, ArrowRight, XCircle, Megaphone, Award, TrendingUp, Clock, Globe, Briefcase, Building2, PenTool, BarChart3 } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
-import { AnimatedChat } from "@/components/animated-chat"
+import Image from "next/image"
 
 function useInView(options = {}) {
   const ref = useRef(null)
@@ -70,84 +70,128 @@ export default function Home() {
   const [challengesRef, challengesInView] = useInView()
   const [solutionRef, solutionInView] = useInView()
   const [jobsRef, jobsInView] = useInView()
-  const [audienceRef, audienceInView] = useInView()
+  const [industriesRef, industriesInView] = useInView()
+  const [rolesRef, rolesInView] = useInView()
+  const [sizesRef, sizesInView] = useInView()
+  const [featuresRef, featuresInView] = useInView()
   const [testimonialsRef, testimonialsInView] = useInView()
   const [ctaRef, ctaInView] = useInView()
 
   const challenges = [
     {
-      title: "Content Doesn't Reach AI Platforms",
-      description:
-        "Your brand isn't being cited by ChatGPT, Claude, or Perplexity when users search for solutions in your space.",
-    },
-    {
       title: "Slow Content Production",
-      description: "Creating high-quality content takes weeks, not days, limiting your ability to scale output.",
+      description:
+        "Creating high-quality content takes weeks, not days, limiting your ability to scale and meet deadlines.",
     },
     {
-      title: "No Visibility into Performance",
-      description: "You can't predict how content will perform before publishing it across AI platforms.",
+      title: "Disconnected Research Process",
+      description: "Teams waste hours gathering information from multiple sources, slowing down the entire workflow.",
     },
     {
-      title: "Disconnected Tools & Workflows",
-      description: "Teams struggle with fragmented tools, making collaboration and consistency nearly impossible.",
+      title: "Fragmented Collaboration",
+      description: "Writers, editors, and stakeholders struggle with version control and unclear feedback loops.",
+    },
+    {
+      title: "Inconsistent Content Quality",
+      description: "Without standardized workflows, content quality varies across team members and projects.",
     },
   ]
 
   const solutions = [
     {
-      title: "LLM-Optimized Content",
+      title: "Accelerated Research",
       description:
-        "Human-built frameworks ensure your content gets cited by ChatGPT, Claude, and Perplexity, driving 300% more visibility.",
+        "Intelligent research tools gather and organize information instantly, cutting research time by 75%.",
       icon: Target,
     },
     {
-      title: "Real-Time Visibility Scoring",
-      description: "LLM Visibility Scoring (0-100) predicts content performance across AI platforms before you publish.",
-      icon: Eye,
+      title: "Seamless Collaboration",
+      description: "Real-time editing, commenting, and approval workflows keep your entire team aligned and productive.",
+      icon: Users,
     },
     {
-      title: "80+ Content Writing Agents",
-      description: "Specialized agents generate blog posts, technical docs, social media, emails, and more in hours, not weeks.",
+      title: "80+ Content Templates",
+      description: "Pre-built templates for blog posts, technical docs, social media, emails, and more ensure consistency.",
       icon: Zap,
     },
     {
       title: "Complete Content Platform",
-      description: "End-to-end platform for creation, collaboration, optimization, and performance tracking in one place.",
+      description: "End-to-end platform for research, creation, collaboration, and optimization in one place.",
       icon: Award,
     },
   ]
 
-  const audiences = [
+  const industries = [
     {
-      role: "Content Teams",
-      description: "Scale content production 10X while maintaining quality and brand consistency.",
+      name: "Technology",
+      description: "Technical documentation, product announcements, and developer content at scale.",
+      icon: Globe,
+    },
+    {
+      name: "E-commerce",
+      description: "Product descriptions, category pages, and promotional content that converts.",
+      icon: Briefcase,
+    },
+    {
+      name: "Media & Publishing",
+      description: "News articles, editorial content, and multimedia storytelling workflows.",
+      icon: PenTool,
+    },
+    {
+      name: "Enterprise",
+      description: "Internal communications, reports, and cross-functional team content.",
+      icon: Building2,
+    },
+  ]
+
+  const roles = [
+    {
+      role: "Content Writers",
+      description: "Write better content faster with AI-powered research and intelligent writing assistance.",
       icon: FileText,
     },
     {
       role: "Marketing Teams",
-      description: "Drive measurable LLM visibility and capture AI-driven demand for your brand.",
+      description: "Produce more campaigns, landing pages, and promotional content without hiring more writers.",
       icon: Megaphone,
     },
     {
-      role: "Enterprise Teams",
-      description: "Streamline workflows, collaboration, and performance tracking across departments.",
-      icon: Users,
+      role: "Product Managers",
+      description: "Create product documentation, release notes, and feature announcements in minutes.",
+      icon: Target,
     },
     {
-      role: "Growth Leaders",
-      description: "Demonstrate clear ROI with analytics tracking AI-driven traffic and engagement.",
+      role: "Content Leaders",
+      description: "Streamline workflows, maintain quality standards, and scale your content operation.",
       icon: TrendingUp,
     },
   ]
 
+  const businessSizes = [
+    {
+      size: "Startups",
+      description: "Move fast with limited resources. Produce professional content from day one.",
+      metric: "2-10 team members",
+    },
+    {
+      size: "SMBs",
+      description: "Scale your content without scaling headcount. Compete with larger competitors.",
+      metric: "10-100 team members",
+    },
+    {
+      size: "Enterprise",
+      description: "Standardize workflows across teams and regions. Maintain brand consistency at scale.",
+      metric: "100+ team members",
+    },
+  ]
+
   const jobs = [
-    { task: "Blog posts & articles", time: "3 hours", saved: "85%" },
-    { task: "Technical documentation", time: "2 hours", saved: "80%" },
-    { task: "Social media content", time: "1 hour", saved: "90%" },
-    { task: "Email campaigns", time: "2 hours", saved: "75%" },
-    { task: "Product announcements", time: "3 hours", saved: "70%" },
-    { task: "Case studies & whitepapers", time: "4 hours", saved: "65%" },
+    { task: "Blog posts & articles", time: "2 hours", saved: "75%" },
+    { task: "Technical documentation", time: "1.5 hours", saved: "80%" },
+    { task: "Social media content", time: "30 min", saved: "85%" },
+    { task: "Email campaigns", time: "1 hour", saved: "70%" },
+    { task: "Product announcements", time: "2 hours", saved: "65%" },
+    { task: "Case studies & whitepapers", time: "3 hours", saved: "60%" },
   ]
 
   return (
@@ -163,13 +207,13 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-white/80 mb-4">
               <Sparkles className="w-3 h-3 text-white" />
-              Intelligent Content Writing Platform
+              Content Writing Platform for Modern Teams
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-balance text-white">
-              AI-Powered Content Platform Built for Performance
+              Write Better Content, Faster
             </h1>
             <p className="text-base md:text-lg text-white/70 mb-6 max-w-2xl mx-auto">
-              Simplify content writing, streamline collaboration, and drive performance across ChatGPT, Claude, Perplexity, and all major AI platforms. Powered by human-built frameworks and 80+ specialized content agents.
+              Accelerate your content workflow from research to publication. Collaborate seamlessly, optimize efficiently, and boost team productivity with the all-in-one content writing platform.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button
@@ -221,20 +265,20 @@ export default function Home() {
         <div className="container mx-auto px-3 md:px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 max-w-4xl mx-auto text-center">
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-white">300%</div>
-              <div className="text-sm text-white/60">Avg Visibility Increase</div>
+              <div className="text-2xl md:text-3xl font-bold text-white">75%</div>
+              <div className="text-sm text-white/60">Time Saved</div>
             </div>
             <div>
               <div className="text-2xl md:text-3xl font-bold text-white">10K+</div>
-              <div className="text-sm text-white/60">Enterprise Teams</div>
+              <div className="text-sm text-white/60">Content Pieces Created</div>
             </div>
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-white">80+</div>
-              <div className="text-sm text-white/60">Content Agents</div>
+              <div className="text-2xl md:text-3xl font-bold text-white">5x</div>
+              <div className="text-sm text-white/60">Productivity Increase</div>
             </div>
             <div>
-              <div className="text-2xl md:text-3xl font-bold text-white">90</div>
-              <div className="text-sm text-white/60">Days to Results</div>
+              <div className="text-2xl md:text-3xl font-bold text-white">90%</div>
+              <div className="text-sm text-white/60">Team Satisfaction</div>
             </div>
           </div>
         </div>
@@ -260,8 +304,8 @@ export default function Home() {
         <div className="container mx-auto px-3 md:px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">The Content Performance Challenge</h2>
-              <p className="text-white/70">Why traditional content strategies fail in the AI era</p>
+              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">Content Creation Challenges</h2>
+              <p className="text-white/70">Common pain points slowing down content teams</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {challenges.map((challenge, index) => (
@@ -291,8 +335,8 @@ export default function Home() {
         <div className="container mx-auto px-3 md:px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">How WriteWorks Solves It</h2>
-              <p className="text-white/70">Complete platform for high-performance content at scale</p>
+              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">How WriteWorks Accelerates Content</h2>
+              <p className="text-white/70">Complete platform for streamlined content creation and collaboration</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {solutions.map((solution, index) => (
@@ -355,27 +399,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Feature Showcase with AnimatedChat - Human-Built Frameworks */}
+      {/* Feature Showcase - Research & Speed */}
       <section className="py-16 md:py-20 bg-black border-y border-white/10">
         <div className="container mx-auto px-3 md:px-4">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-stretch max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
             <div className="flex flex-col justify-center">
               <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80 text-xs font-medium mb-4 w-fit">
-                Human-Built LLM Frameworks
+                Accelerated Research
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-balance">
-                Proven Frameworks Drive 300% More AI Visibility
+                Speed Up Research, Focus on Writing
               </h2>
               <p className="text-base text-white/70 mb-6 text-pretty leading-relaxed">
-                WriteWorks delivers human-built frameworks based on analyzing AI platform behavior patterns—creating
-                authoritative content that LLMs trust and recommend when users search for solutions.
+                Stop wasting hours gathering information. Our intelligent research tools aggregate, organize, and summarize content from multiple sources instantly—cutting research time by 75% so you can focus on creating great content.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
-                  "Frameworks built on actual LLM behavior analysis, eliminating guesswork",
-                  "Authority signals increase brand mentions and recommendations by 300%",
-                  "Content structures optimized for AI platform discovery and trust",
-                  "Proven methodology drives measurable traffic and qualified leads from AI search",
+                  "Instant information gathering from multiple trusted sources",
+                  "Smart summarization and organization of research materials",
+                  "Automatic citation tracking and source management",
+                  "Contextual research suggestions as you write",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
@@ -387,77 +430,51 @@ export default function Home() {
                 className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
                 asChild
               >
-                <a href="/platform">Increase Brand Visibility</a>
+                <a href="/platform">Learn About Research Tools</a>
               </Button>
             </div>
             <div className="relative flex items-center">
-              <AnimatedChat
-                messages={[
-                  { role: "user", content: "Why doesn't the brand appear in ChatGPT responses?", delay: 500 },
-                  {
-                    role: "assistant",
-                    content:
-                      "The content lacks authority signals that LLMs recognize. WriteWorks provides proven frameworks that AI platforms trust and recommend to enterprise customers.",
-                    delay: 800,
-                  },
-                  { role: "user", content: "What makes content trustworthy to AI platforms?", delay: 1000 },
-                  {
-                    role: "assistant",
-                    content:
-                      "The platform structures content with authority signals, data, and patterns that ChatGPT, Claude, and Perplexity recognize as credible—based on analyzing thousands of AI platform responses.",
-                    delay: 1200,
-                  },
-                ]}
-                className="w-full min-h-[400px]"
-              />
+              <div className="relative rounded-lg overflow-hidden border border-white/10 w-full">
+                <img
+                  src="/images/research-dashboard.jpg"
+                  alt="Research dashboard showing organized content sources and summaries"
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Feature Showcase with AnimatedChat - Content Writing Agents */}
+      {/* Feature Showcase - Collaboration */}
       <section className="py-16 md:py-20 bg-black">
         <div className="container mx-auto px-3 md:px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-stretch max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="order-2 md:order-1 relative flex items-center">
-              <AnimatedChat
-                messages={[
-                  { role: "user", content: "The team needs to scale content while maintaining quality", delay: 500 },
-                  {
-                    role: "assistant",
-                    content:
-                      "WriteWorks provides Content Writing agents that create high-performance content at enterprise scale. Each agent understands LLM behavior patterns for specific content types.",
-                    delay: 800,
-                  },
-                  { role: "user", content: "Will the content actually perform on AI platforms?", delay: 1000 },
-                  {
-                    role: "assistant",
-                    content:
-                      "Yes. The Content Writing agents structure content with authority signals and patterns that ChatGPT, Claude, and Perplexity recognize. Teams see real-time visibility scores before publication.",
-                    delay: 1200,
-                  },
-                ]}
-                className="w-full min-h-[400px]"
-              />
+              <div className="relative rounded-lg overflow-hidden border border-white/10 w-full">
+                <img
+                  src="/images/collaboration-team.jpg"
+                  alt="Team collaboration interface with real-time comments and editing"
+                  className="w-full h-auto"
+                />
+              </div>
             </div>
             <div className="order-1 md:order-2 flex flex-col justify-center">
               <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80 text-xs font-medium mb-4 w-fit">
-                80+ Content Writing Agents
+                Seamless Collaboration
               </div>
               <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-balance">
-                Scale Content Production 10X with AI Agents
+                Collaborate Seamlessly Across Teams
               </h2>
               <p className="text-base text-white/70 mb-6 text-pretty leading-relaxed">
-                WriteWorks enables 10X content production without proportional resource investment. The platform
-                provides 80+ Content Writing agents trained on LLM behavior patterns—ensuring every piece performs
-                across ChatGPT, Claude, and Perplexity.
+                Keep writers, editors, and stakeholders aligned with real-time collaboration tools. No more version control nightmares or lost feedback—everyone works together in one unified workspace.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
-                  "Blog Writer: Authority content drives organic AI traffic and qualified leads",
-                  "Technical Writer: Expert content establishes trust with AI platforms",
-                  "Social Media Creator: Platform-optimized posts increase engagement rates",
-                  "Email Copywriter: Campaigns convert prospects and drive measurable conversions",
+                  "Real-time collaborative editing with multiple team members",
+                  "Threaded comments and contextual feedback on specific sections",
+                  "Streamlined approval workflows with clear status tracking",
+                  "Version history and change tracking for complete transparency",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
@@ -469,37 +486,84 @@ export default function Home() {
                 className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
                 asChild
               >
-                <a href="/platform/features/ai-agents">Explore Content Writing Agents</a>
+                <a href="/platform/features/collaboration">Explore Collaboration Features</a>
               </Button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Target Audience */}
+      {/* Feature Showcase - Content Editor */}
+      <section className="py-16 md:py-20 bg-black border-y border-white/10">
+        <div className="container mx-auto px-3 md:px-4">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
+            <div className="flex flex-col justify-center">
+              <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80 text-xs font-medium mb-4 w-fit">
+                Intelligent Writing Assistant
+              </div>
+              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-balance">
+                Optimize Content as You Write
+              </h2>
+              <p className="text-base text-white/70 mb-6 text-pretty leading-relaxed">
+                Our intelligent editor helps you write better content faster. Get real-time suggestions for clarity, tone, structure, and engagement—ensuring every piece meets your quality standards.
+              </p>
+              <ul className="space-y-3 mb-8">
+                {[
+                  "Smart writing suggestions for clarity and readability",
+                  "Tone and style consistency checks across all content",
+                  "SEO optimization recommendations built into the editor",
+                  "80+ pre-built templates for every content type",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <Check className="w-5 h-5 text-white mt-0.5 flex-shrink-0" />
+                    <span className="text-sm text-white/80">{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button
+                className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
+                asChild
+              >
+                <a href="/platform/features/content-editor">See Content Editor</a>
+              </Button>
+            </div>
+            <div className="relative flex items-center">
+              <div className="relative rounded-lg overflow-hidden border border-white/10 w-full">
+                <img
+                  src="/images/content-editor-ui.jpg"
+                  alt="Content editor interface with writing suggestions and optimization tools"
+                  className="w-full h-auto"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Target Audience - Industries */}
       <section
-        ref={audienceRef}
+        ref={industriesRef}
         className={`py-12 md:py-16 border-y border-white/10 transition-all duration-700 ${
-          audienceInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          industriesInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
         <div className="container mx-auto px-3 md:px-4">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">Built For</h2>
-              <p className="text-white/70">Teams who need to create high-performance content at scale</p>
+              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">Built for Every Industry</h2>
+              <p className="text-white/70">Trusted by content teams across diverse sectors</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-              {audiences.map((audience, index) => (
+              {industries.map((industry, index) => (
                 <div
                   key={index}
-                  className="p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors text-center"
+                  className="p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors"
                 >
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#6366F1]/20 to-[#8B5CF6]/20 flex items-center justify-center mx-auto mb-3">
-                    <audience.icon className="w-6 h-6 text-white" />
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#6366F1]/20 to-[#8B5CF6]/20 flex items-center justify-center mb-3">
+                    <industry.icon className="w-6 h-6 text-white" />
                   </div>
-                  <h3 className="font-semibold text-white mb-1 text-sm">{audience.role}</h3>
-                  <p className="text-xs text-white/60">{audience.description}</p>
+                  <h3 className="font-semibold text-white mb-2 text-sm">{industry.name}</h3>
+                  <p className="text-xs text-white/60">{industry.description}</p>
                 </div>
               ))}
             </div>
@@ -507,25 +571,64 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Real-Time LLM Visibility Scoring Feature */}
-      <section className="py-16 md:py-20 bg-black">
+      {/* Target Audience - Roles */}
+      <section
+        ref={rolesRef}
+        className={`py-12 md:py-16 transition-all duration-700 ${
+          rolesInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
+      >
         <div className="container mx-auto px-3 md:px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="inline-block px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80 text-xs font-medium mb-4">
-                Real-Time LLM Visibility Scoring
-              </div>
-              <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 text-balance">
-                Real-Time Scoring Predicts AI Platform Performance
-              </h2>
-              <p className="text-base text-white/70 mb-8 text-pretty leading-relaxed max-w-2xl mx-auto">
-                The LLM Visibility Scoring system eliminates guesswork. Real-time scoring (0-100) shows exactly how
-                content will perform across ChatGPT, Claude, and Perplexity—enabling teams to optimize for maximum
-                business impact before publishing.
-              </p>
-              <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
-                <a href="/platform/features/content-editor">Start Optimizing Content</a>
-              </Button>
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">Built for Every Role</h2>
+              <p className="text-white/70">Empower your entire content team</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {roles.map((role, index) => (
+                <div
+                  key={index}
+                  className="p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors"
+                >
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#6366F1]/20 to-[#8B5CF6]/20 flex items-center justify-center mb-3">
+                    <role.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-white mb-2 text-sm">{role.role}</h3>
+                  <p className="text-xs text-white/60">{role.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Target Audience - Business Sizes */}
+      <section
+        ref={sizesRef}
+        className={`py-12 md:py-16 border-y border-white/10 transition-all duration-700 ${
+          sizesInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
+      >
+        <div className="container mx-auto px-3 md:px-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">Scales With Your Business</h2>
+              <p className="text-white/70">From startup to enterprise, we grow with you</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {businessSizes.map((size, index) => (
+                <div
+                  key={index}
+                  className="p-6 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors"
+                >
+                  <h3 className="font-semibold text-white mb-2 text-lg">{size.size}</h3>
+                  <p className="text-sm text-white/70 mb-3">{size.description}</p>
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs text-white/60">
+                    <Users className="w-3 h-3" />
+                    {size.metric}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -550,9 +653,9 @@ export default function Home() {
 
           <div className="text-center mb-12 max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Thousands trust WriteWorks</h2>
-            <p className="text-base text-white/70 mb-2">See how marketing teams are driving LLM visibility</p>
+            <p className="text-base text-white/70 mb-2">See how content teams are boosting productivity</p>
             <p className="text-sm text-white/60">
-              Real results from content teams optimizing for ChatGPT, Claude, Perplexity, and AI Overviews
+              Real results from teams streamlining their content workflows
             </p>
           </div>
 
@@ -562,31 +665,31 @@ export default function Home() {
               <div className="flex gap-4 animate-scroll-testimonials">
                 {[
                   {
-                    heading: "300% Increase in Citations",
+                    heading: "Productivity Transformed",
                     name: "Sarah Chen",
                     role: "Content Director",
                     quote:
-                      "We've seen a 300% increase in citations from ChatGPT and Perplexity since using WriteWorks. The LLM frameworks actually work.",
+                      "Our team's productivity has increased by 75% since using WriteWorks. The research tools alone save us hours every day.",
                   },
                   {
                     heading: "Game Changer",
                     name: "Marcus Rodriguez",
                     role: "Marketing Manager",
-                    quote: "Finally, a platform that understands LLM optimization. Game changer for our team.",
+                    quote: "Finally, a platform that streamlines our entire content workflow. Game changer for our team.",
                   },
                   {
-                    heading: "Data-Driven Results",
+                    heading: "Faster Time to Market",
                     name: "Emily Watson",
                     role: "CEO",
                     quote:
-                      "The human-built frameworks make all the difference. We're not guessing anymore, we're optimizing based on what actually gets cited by AI models.",
+                      "We're publishing 3x more content without adding headcount. WriteWorks lets us move at the speed our business needs.",
                   },
                   {
                     heading: "Scales with Quality",
                     name: "David Park",
                     role: "Growth Lead",
                     quote:
-                      "WriteWorks helped us scale our content production while maintaining quality. The Content Writing agents understand our brand voice perfectly.",
+                      "WriteWorks helped us scale our content production while maintaining quality. The templates ensure brand consistency across all pieces.",
                   },
                   {
                     heading: "Best Investment",
@@ -595,11 +698,11 @@ export default function Home() {
                     quote: "Best investment we've made for our content strategy this year. ROI has been incredible.",
                   },
                   {
-                    heading: "Consistent Citations",
+                    heading: "Seamless Collaboration",
                     name: "James Wilson",
                     role: "VP Marketing",
                     quote:
-                      "The research-backed approach to LLM optimization is what sets WriteWorks apart. We're seeing consistent citations across all platforms.",
+                      "The collaboration features have eliminated version control chaos. Our entire team works together seamlessly now.",
                   },
                 ].map((testimonial, index) => (
                   <div
@@ -633,31 +736,31 @@ export default function Home() {
                 {/* Duplicate for seamless loop */}
                 {[
                   {
-                    heading: "300% Increase in Citations",
+                    heading: "Productivity Transformed",
                     name: "Sarah Chen",
                     role: "Content Director",
                     quote:
-                      "We've seen a 300% increase in citations from ChatGPT and Perplexity since using WriteWorks. The LLM frameworks actually work.",
+                      "Our team's productivity has increased by 75% since using WriteWorks. The research tools alone save us hours every day.",
                   },
                   {
                     heading: "Game Changer",
                     name: "Marcus Rodriguez",
                     role: "Marketing Manager",
-                    quote: "Finally, a platform that understands LLM optimization. Game changer for our team.",
+                    quote: "Finally, a platform that streamlines our entire content workflow. Game changer for our team.",
                   },
                   {
-                    heading: "Data-Driven Results",
+                    heading: "Faster Time to Market",
                     name: "Emily Watson",
                     role: "CEO",
                     quote:
-                      "The human-built frameworks make all the difference. We're not guessing anymore, we're optimizing based on what actually gets cited by AI models.",
+                      "We're publishing 3x more content without adding headcount. WriteWorks lets us move at the speed our business needs.",
                   },
                   {
                     heading: "Scales with Quality",
                     name: "David Park",
                     role: "Growth Lead",
                     quote:
-                      "WriteWorks helped us scale our content production while maintaining quality. The AI agents understand our brand voice perfectly.",
+                      "WriteWorks helped us scale our content production while maintaining quality. The templates ensure brand consistency across all pieces.",
                   },
                   {
                     heading: "Best Investment",
@@ -666,11 +769,11 @@ export default function Home() {
                     quote: "Best investment we've made for our content strategy this year. ROI has been incredible.",
                   },
                   {
-                    heading: "Consistent Citations",
+                    heading: "Seamless Collaboration",
                     name: "James Wilson",
                     role: "VP Marketing",
                     quote:
-                      "The research-backed approach to LLM optimization is what sets WriteWorks apart. We're seeing consistent citations across all platforms.",
+                      "The collaboration features have eliminated version control chaos. Our entire team works together seamlessly now.",
                   },
                 ].map((testimonial, index) => (
                   <div
@@ -709,39 +812,39 @@ export default function Home() {
               <div className="flex gap-4 animate-scroll-testimonials-reverse">
                 {[
                   {
-                    heading: "Doubled Productivity",
+                    heading: "Doubled Output",
                     name: "Rachel Kim",
                     role: "Head of Content",
                     quote:
-                      "Our team productivity has doubled since implementing WriteWorks. The Content Writing agents are incredibly powerful.",
+                      "Our content output has doubled since implementing WriteWorks. The intelligent editor is incredibly powerful.",
                   },
                   {
-                    heading: "Actionable Insights",
+                    heading: "Clear ROI",
                     name: "Tom Anderson",
                     role: "Marketing Director",
                     quote:
-                      "The data-informed optimization tools give us insights we never had before. We know exactly what content will perform.",
+                      "We can finally measure the efficiency of our content process. WriteWorks gives us clarity on what's working.",
                   },
                   {
-                    heading: "Transformed Our Approach",
+                    heading: "Transformed Workflow",
                     name: "Jennifer Lee",
                     role: "Content Manager",
                     quote:
-                      "WriteWorks transformed how we approach content creation. The LLM visibility scores are a game changer.",
+                      "WriteWorks transformed how we approach content creation. The streamlined workflow is a game changer.",
                   },
                   {
-                    heading: "Ranking in AI Platforms",
+                    heading: "Research Made Easy",
                     name: "Michael Brown",
-                    role: "SEO Specialist",
+                    role: "Content Specialist",
                     quote:
-                      "The keyword research integration is brilliant. We're ranking in AI platforms we never thought possible.",
+                      "The research integration is brilliant. What used to take hours now takes minutes.",
                   },
                   {
-                    heading: "Consistent Brand Mentions",
+                    heading: "Better Communication",
                     name: "Amanda White",
                     role: "Brand Manager",
                     quote:
-                      "Finally seeing our brand mentioned consistently across ChatGPT and Claude. The frameworks really work.",
+                      "Feedback loops are so much clearer now. Everyone knows exactly what needs to be done.",
                   },
                   {
                     heading: "All-in-One Platform",
@@ -782,39 +885,39 @@ export default function Home() {
                 {/* Duplicate for seamless loop */}
                 {[
                   {
-                    heading: "Doubled Productivity",
+                    heading: "Doubled Output",
                     name: "Rachel Kim",
                     role: "Head of Content",
                     quote:
-                      "Our team productivity has doubled since implementing WriteWorks. The specialized AI agents are incredibly powerful.",
+                      "Our content output has doubled since implementing WriteWorks. The intelligent editor is incredibly powerful.",
                   },
                   {
-                    heading: "Actionable Insights",
+                    heading: "Clear ROI",
                     name: "Tom Anderson",
                     role: "Marketing Director",
                     quote:
-                      "The data-informed optimization tools give us insights we never had before. We know exactly what content will perform.",
+                      "We can finally measure the efficiency of our content process. WriteWorks gives us clarity on what's working.",
                   },
                   {
-                    heading: "Transformed Our Approach",
+                    heading: "Transformed Workflow",
                     name: "Jennifer Lee",
                     role: "Content Manager",
                     quote:
-                      "WriteWorks transformed how we approach content creation. The LLM visibility scores are a game changer.",
+                      "WriteWorks transformed how we approach content creation. The streamlined workflow is a game changer.",
                   },
                   {
-                    heading: "Ranking in AI Platforms",
+                    heading: "Research Made Easy",
                     name: "Michael Brown",
-                    role: "SEO Specialist",
+                    role: "Content Specialist",
                     quote:
-                      "The keyword research integration is brilliant. We're ranking in AI platforms we never thought possible.",
+                      "The research integration is brilliant. What used to take hours now takes minutes.",
                   },
                   {
-                    heading: "Consistent Brand Mentions",
+                    heading: "Better Communication",
                     name: "Amanda White",
                     role: "Brand Manager",
                     quote:
-                      "Finally seeing our brand mentioned consistently across ChatGPT and Claude. The frameworks really work.",
+                      "Feedback loops are so much clearer now. Everyone knows exactly what needs to be done.",
                   },
                   {
                     heading: "All-in-One Platform",
@@ -867,9 +970,9 @@ export default function Home() {
       >
         <div className="container mx-auto px-3 md:px-4">
           <div className="max-w-2xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-3 text-white">Ready to Transform Your Content Performance?</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-3 text-white">Ready to Transform Your Content Workflow?</h2>
             <p className="text-white/70 mb-6">
-              Join 10,000+ teams driving 300% more visibility across ChatGPT, Claude, Perplexity, and all major AI platforms.
+              Join 10,000+ teams streamlining content creation, boosting productivity, and scaling their content operations.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Button
@@ -890,7 +993,7 @@ export default function Home() {
                 <a href="https://app.writeworks.ai/demo">Talk to Sales</a>
               </Button>
             </div>
-            <p className="text-xs text-white/50 mt-4">No credit card required • 300% avg visibility increase • 90 days to results</p>
+            <p className="text-xs text-white/50 mt-4">No credit card required • 75% time saved • Instant results</p>
           </div>
         </div>
       </section>
