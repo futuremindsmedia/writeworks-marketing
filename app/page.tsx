@@ -1,8 +1,8 @@
-"use client"
+use client
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Sparkles, Zap, Users, Check, FileText, Target, ArrowRight, XCircle, Megaphone, Award, TrendingUp, Globe, Briefcase, Building2, PenTool, Calendar } from "lucide-react"
+import { Sparkles, Zap, Users, Check, FileText, Target, ArrowRight, XCircle, Megaphone, Award, TrendingUp, Globe, Briefcase, Building2, PenTool, Calendar, ChevronDown, ChevronUp, Shield, BarChart3, RefreshCw, Layers, Clock, Settings, Accessibility, Puzzle, Bot, UserCheck } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 function useInView(options = {}) {
@@ -75,6 +75,9 @@ export default function Home() {
   const [featuresRef, featuresInView] = useInView()
   const [testimonialsRef, testimonialsInView] = useInView()
   const [ctaRef, ctaInView] = useInView()
+  
+  const [showAllChallenges, setShowAllChallenges] = useState(false)
+  const [showAllSolutions, setShowAllSolutions] = useState(false)
 
   const challenges = [
     {
@@ -182,6 +185,61 @@ export default function Home() {
       description: "End-to-end platform for research, creation, collaboration, and optimization in one place.",
       icon: Award,
     },
+    {
+      title: "Content Governance & Compliance",
+      description: "Automated approval workflows, brand guidelines enforcement, and compliance checks for regulated industries.",
+      icon: Shield,
+    },
+    {
+      title: "Performance Analytics & ROI Tracking",
+      description: "Real-time insights connecting content efforts to business outcomes and pipeline growth.",
+      icon: BarChart3,
+    },
+    {
+      title: "Smart Content Repurposing",
+      description: "Automatically adapt one piece of content for multiple channels, formats, and audiences in minutes.",
+      icon: RefreshCw,
+    },
+    {
+      title: "Centralized Content Library",
+      description: "Searchable asset management so teams can find and reuse existing content, eliminating duplicate work.",
+      icon: Layers,
+    },
+    {
+      title: "Content Lifecycle Management",
+      description: "Automated tracking to identify, update, or retire outdated content across your organization.",
+      icon: Clock,
+    },
+    {
+      title: "Priority & Workflow Management",
+      description: "Centralized request intake and prioritization tools to manage competing departmental needs.",
+      icon: Settings,
+    },
+    {
+      title: "Global Brand Voice Control",
+      description: "AI-powered tone consistency with localization support for global teams and diverse markets.",
+      icon: Globe,
+    },
+    {
+      title: "Accessibility-First Content",
+      description: "Built-in accessibility checks and inclusive writing suggestions for diverse audience needs.",
+      icon: Accessibility,
+    },
+    {
+      title: "Unified Tool Integration",
+      description: "Connect your existing tools into one seamless workflow, eliminating tool sprawl and data silos.",
+      icon: Puzzle,
+    },
+    {
+      title: "AI Content Humanization",
+      description: "Advanced editing tools to ensure AI-assisted content reads naturally and passes detection tools.",
+      icon: Bot,
+    },
+    {
+      title: "Personalization at Scale",
+      description: "Dynamic content generation for different segments, buyer stages, and personas with minimal effort.",
+      icon: UserCheck,
+    },
   ]
 
   const industries = [
@@ -256,6 +314,9 @@ export default function Home() {
     { task: "Product announcements", time: "2 hours", saved: "65%" },
     { task: "Case studies & whitepapers", time: "3 hours", saved: "60%" },
   ]
+
+  const displayedChallenges = showAllChallenges ? challenges : challenges.slice(0, 6)
+  const displayedSolutions = showAllSolutions ? solutions : solutions.slice(0, 6)
 
   return (
     <div className="min-h-screen bg-black">
@@ -373,7 +434,7 @@ export default function Home() {
               <p className="text-white/70">Common pain points slowing down content teams</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {challenges.map((challenge, index) => (
+              {displayedChallenges.map((challenge, index) => (
                 <div
                   key={index}
                   className="flex items-start gap-3 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors"
@@ -386,6 +447,20 @@ export default function Home() {
                 </div>
               ))}
             </div>
+            {challenges.length > 6 && (
+              <div className="text-center mt-6">
+                <button
+                  onClick={() => setShowAllChallenges(!showAllChallenges)}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white/80 hover:bg-white/10 hover:border-white/20 transition-all text-sm font-medium"
+                >
+                  {showAllChallenges ? (
+                    <>Show less <ChevronUp className="w-4 h-4" /></>
+                  ) : (
+                    <>View all challenges ({challenges.length - 6} more) <ChevronDown className="w-4 h-4" /></>
+                  )}
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -404,7 +479,7 @@ export default function Home() {
               <p className="text-white/70">Complete platform for streamlined content creation and collaboration</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {solutions.map((solution, index) => (
+              {displayedSolutions.map((solution, index) => (
                 <div
                   key={index}
                   className="flex items-start gap-3 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors"
@@ -419,6 +494,20 @@ export default function Home() {
                 </div>
               ))}
             </div>
+            {solutions.length > 6 && (
+              <div className="text-center mt-6">
+                <button
+                  onClick={() => setShowAllSolutions(!showAllSolutions)}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white/80 hover:bg-white/10 hover:border-white/20 transition-all text-sm font-medium"
+                >
+                  {showAllSolutions ? (
+                    <>Show less <ChevronUp className="w-4 h-4" /></>
+                  ) : (
+                    <>View all solutions ({solutions.length - 6} more) <ChevronDown className="w-4 h-4" /></>
+                  )}
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -433,7 +522,7 @@ export default function Home() {
         <div className="container mx-auto px-3 md:px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-8">
-              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">Jobs To Be Done</h2>
+              <h2 className="text-2xl md:text-3xl font-bold mb-2 text-white">Accelerate Your Content Workflow</h2>
               <p className="text-white/70">Time saved on common content creation tasks</p>
             </div>
             <div className="rounded-lg border border-white/10 overflow-hidden">
@@ -447,7 +536,7 @@ export default function Home() {
                   key={index}
                   className={`grid grid-cols-3 gap-4 p-4 text-sm ${
                     index !== jobs.length - 1 ? "border-b border-white/10" : ""
-                  }`}
+                  }}
                 >
                   <div className="text-white">{job.task}</div>
                   <div className="text-center text-white/70">{job.time}</div>
@@ -476,7 +565,7 @@ export default function Home() {
                 Speed Up Research, Focus on Writing
               </h2>
               <p className="text-base text-white/70 mb-6 text-pretty leading-relaxed">
-                Stop wasting hours gathering information. Our intelligent research tools aggregate, organize, and summarize content from multiple sources instantly—cutting research time by 75% so you can focus on creating great content.
+                Stop wasting hours gathering information. Our intelligent research tools aggregate, organize, and summarize content from multiple sources instantly—cutting research time by 75%.
               </p>
               <ul className="space-y-3 mb-8">
                 {[
