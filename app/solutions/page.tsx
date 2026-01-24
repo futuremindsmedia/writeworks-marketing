@@ -256,7 +256,7 @@ export default function SolutionsPage() {
 
       {/* Solutions by Role */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
-        <div className="mb-8">
+        <div className="mb-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Solutions by Role</h2>
           <p className="text-white/70">Tailored solutions for every marketing function</p>
         </div>
@@ -297,7 +297,7 @@ export default function SolutionsPage() {
 
       {/* Solutions by Channel */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
-        <div className="mb-8">
+        <div className="mb-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Solutions by Channel</h2>
           <p className="text-white/70">AI-powered content creation for every marketing channel</p>
         </div>
@@ -338,7 +338,7 @@ export default function SolutionsPage() {
 
       {/* Solutions by Industry */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
-        <div className="mb-8">
+        <div className="mb-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Solutions by Industry</h2>
           <p className="text-white/70">Industry-specific content solutions</p>
         </div>
