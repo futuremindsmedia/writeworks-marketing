@@ -456,7 +456,7 @@ export function Header() {
                           Solutions by Role
                         </h3>
                         <ul className="space-y-0.5">
-                          {solutionsByRole.map((solution) => (
+                          {solutionsByRole.slice(0, 5).map((solution) => (
                             <Link
                               key={solution.href}
                               href={solution.href}
@@ -479,7 +479,7 @@ export function Header() {
                           Solutions by Industry
                         </h3>
                         <ul className="space-y-0.5">
-                          {solutionsByIndustry.map((solution) => (
+                          {solutionsByIndustry.slice(0, 5).map((solution) => (
                             <Link
                               key={solution.href}
                               href={solution.href}
@@ -502,7 +502,7 @@ export function Header() {
                           Solutions by Channel
                         </h3>
                         <ul className="space-y-0.5 max-h-[400px] overflow-y-auto pr-2">
-                          {solutionsByChannel.map((solution) => (
+                          {solutionsByChannel.slice(0, 5).map((solution) => (
                             <Link
                               key={solution.href}
                               href={solution.href}
@@ -671,7 +671,7 @@ export function Header() {
                   <div>
                     <div className="text-xs font-semibold text-white/70 mb-3 uppercase tracking-wider">By Role</div>
                     <div className="space-y-1">
-                      {solutionsByRole.map((solution) => (
+                      {solutionsByRole.slice(0, 5).map((solution) => (
                         <Link
                           key={solution.href}
                           href={solution.href}
@@ -686,7 +686,7 @@ export function Header() {
                   <div>
                     <div className="text-xs font-semibold text-white/70 mb-3 uppercase tracking-wider">By Industry</div>
                     <div className="space-y-1">
-                      {solutionsByIndustry.map((solution) => (
+                      {solutionsByIndustry.slice(0, 5).map((solution) => (
                         <Link
                           key={solution.href}
                           href={solution.href}
@@ -701,7 +701,7 @@ export function Header() {
                   <div>
                     <div className="text-xs font-semibold text-white/70 mb-3 uppercase tracking-wider">By Channel</div>
                     <div className="space-y-1">
-                      {solutionsByChannel.map((solution) => (
+                      {solutionsByChannel.slice(0, 5).map((solution) => (
                         <Link
                           key={solution.href}
                           href={solution.href}
