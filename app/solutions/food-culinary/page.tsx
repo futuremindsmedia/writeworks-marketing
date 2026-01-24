@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, UtensilsCrossed, BookOpen, Star } from "lucide-react"
+import { ArrowRight, Utensils, BookOpen, Star } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
@@ -11,7 +11,7 @@ export const metadata = {
 export default function FoodCulinaryPage() {
   const challenges = [
     {
-      icon: UtensilsCrossed,
+      icon: Utensils,
       title: "Menu Descriptions",
       description: "Creating appetizing descriptions for every dish that stand out and drive orders takes extensive time.",
     },
