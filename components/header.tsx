@@ -51,6 +51,15 @@ import {
   HandHeart,
   Scale,
   Shirt,
+  Zap,
+  UserPlus,
+  Handshake,
+  Building,
+  FileCode,
+  Presentation as PresentationIcon,
+  UserCheck,
+  Users2,
+  Award,
 } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { usePathname, useRouter } from "next/navigation"
@@ -156,6 +165,66 @@ export function Header() {
       href: "/solutions/pr-communications",
       icon: MessageSquare,
       description: "Craft clear, aligned messaging",
+    },
+    {
+      name: "Demand Generation",
+      href: "/solutions/demand-generation",
+      icon: Zap,
+      description: "Create pipeline and conversions",
+    },
+    {
+      name: "Customer Marketing",
+      href: "/solutions/customer-marketing",
+      icon: UserPlus,
+      description: "Drive adoption and advocacy",
+    },
+    {
+      name: "Partner Marketing",
+      href: "/solutions/partner-marketing",
+      icon: Handshake,
+      description: "Enable channel collaboration",
+    },
+    {
+      name: "Growth Marketing",
+      href: "/solutions/growth-marketing",
+      icon: TrendingUp,
+      description: "Experiment and scale acquisition",
+    },
+    {
+      name: "Corporate Communications",
+      href: "/solutions/corporate-communications",
+      icon: Building,
+      description: "Align internal messaging",
+    },
+    {
+      name: "Technical Writing",
+      href: "/solutions/technical-writing",
+      icon: FileCode,
+      description: "Document products and processes",
+    },
+    {
+      name: "Sales Enablement",
+      href: "/solutions/sales-enablement",
+      icon: PresentationIcon,
+      description: "Equip teams with winning content",
+    },
+    {
+      name: "Customer Education",
+      href: "/solutions/customer-education",
+      icon: GraduationCap,
+      description: "Train and onboard users",
+    },
+    {
+      name: "Community Management",
+      href: "/solutions/community-management",
+      icon: Users2,
+      description: "Foster engagement and loyalty",
+    },
+    {
+      name: "Analyst Relations",
+      href: "/solutions/analyst-relations",
+      icon: Award,
+      description: "Position thought leadership",
     },
   ]
 

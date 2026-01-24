@@ -112,13 +112,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Solution pages
   const solutionPages: MetadataRoute.Sitemap = [
+    // Role solutions
     "content-marketing",
     "performance-marketing",
     "field-events-marketing",
     "brand-marketing",
     "pr-communications",
-    "technology",
     "product-marketing",
+    "demand-generation",
+    "customer-marketing",
+    "partner-marketing",
+    "growth-marketing",
+    "corporate-communications",
+    "technical-writing",
+    "sales-enablement",
+    "customer-education",
+    "community-management",
+    "analyst-relations",
     // Channel solutions
     "seo-content",
     "llm-optimization",
@@ -135,6 +145,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "podcast-marketing",
     "webinar-marketing",
     // Industry solutions
+    "technology",
     "technology-saas",
     "healthcare-wellness",
     "finance",
