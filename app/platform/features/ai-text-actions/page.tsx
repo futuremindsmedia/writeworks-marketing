@@ -11,7 +11,7 @@ import {
   Lightbulb,
   ArrowRight,
   Home,
-, Calendar } from "lucide-react"
+  Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export const metadata: Metadata = {

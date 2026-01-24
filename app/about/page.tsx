@@ -281,21 +281,22 @@ export default function AboutPage() {
             you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="https://app.writeworks.ai/sign-up">
-              <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90 h-12 px-8">
+            <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90 h-12 px-8" asChild>
+              <Link href="https://app.writeworks.ai/sign-up">
                 Start Free
                 <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-            </Link>
-            <Link href="/demo">
-              <Button
-                variant="outline"
-                className="border-white/20 text-white hover:bg-white/5 bg-transparent hover:border-white/40 h-12 px-8"
-              >
+              </Link>
+            </Button>
+            <Button
+              variant="outline"
+              className="border-white/20 text-white hover:bg-white/5 bg-transparent hover:border-white/40 h-12 px-8"
+              asChild
+            >
+              <Link href="/demo">
                 <Calendar className="mr-2 w-4 h-4" />
                 Book Demo
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
