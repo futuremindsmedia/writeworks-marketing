@@ -44,8 +44,6 @@ import {
   Scale,
   Shirt,
   GraduationCap,
-  Shield,
-  MessageSquare,
   UserPlus,
   Handshake,
   Building,
