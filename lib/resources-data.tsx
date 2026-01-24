@@ -29,11 +29,11 @@ export const resources: Resource[] = [
     modifiedDate: "2025-01-15T14:30:00Z",
     readTime: "3 min read",
     image: "/ai-technology-announcement.jpg",
-    author: "Sarah Chen",
-    authorRole: "AI Technology Reporter",
-    authorSlug: "sarah-chen",
+    author: "WriteWorks Team",
+    authorRole: "Content Team",
+    authorSlug: "writeworks-team",
     authorBio:
-      "Sarah Chen is an AI technology reporter with over 8 years of experience covering artificial intelligence, machine learning, and emerging technologies.",
+      "The WriteWorks Team creates expert content on AI optimization, LLM visibility, and content strategy to help brands succeed in the age of AI-powered search.",
     tags: ["OpenAI", "GPT-5", "AI News", "Citations", "Technology"],
     keyHighlights: [
       "GPT-5 introduces advanced source attribution and citation tracking",
@@ -76,11 +76,11 @@ export const resources: Resource[] = [
     modifiedDate: "2025-01-12T16:45:00Z",
     readTime: "4 min read",
     image: "/google-search-ai-technology.jpg",
-    author: "Michael Rodriguez",
-    authorRole: "Search Technology Analyst",
-    authorSlug: "michael-rodriguez",
+    author: "WriteWorks Team",
+    authorRole: "Content Team",
+    authorSlug: "writeworks-team",
     authorBio:
-      "Michael Rodriguez is a search technology analyst specializing in AI-powered search engines and their impact on digital marketing strategies.",
+      "The WriteWorks Team creates expert content on AI optimization, LLM visibility, and content strategy to help brands succeed in the age of AI-powered search.",
     tags: ["Google", "AI Overviews", "Search", "SEO", "Technology News"],
     keyHighlights: [
       "AI Overviews now available in 100+ countries worldwide",
@@ -120,11 +120,11 @@ export const resources: Resource[] = [
     modifiedDate: "2025-01-10T12:15:00Z",
     readTime: "3 min read",
     image: "/anthropic-ai-technology.jpg",
-    author: "Sarah Chen",
-    authorRole: "AI Technology Reporter",
-    authorSlug: "sarah-chen",
+    author: "WriteWorks Team",
+    authorRole: "Content Team",
+    authorSlug: "writeworks-team",
     authorBio:
-      "Sarah Chen is an AI technology reporter with over 8 years of experience covering artificial intelligence, machine learning, and emerging technologies.",
+      "The WriteWorks Team creates expert content on AI optimization, LLM visibility, and content strategy to help brands succeed in the age of AI-powered search.",
     tags: ["Anthropic", "Claude", "AI Citations", "Technology", "Innovation"],
     keyHighlights: [
       "Claude 3.5 features inline citations for all generated content",
@@ -167,11 +167,11 @@ export const resources: Resource[] = [
     modifiedDate: "2025-01-08T15:30:00Z",
     readTime: "4 min read",
     image: "/perplexity-ai-partnership.jpg",
-    author: "Michael Rodriguez",
-    authorRole: "Search Technology Analyst",
-    authorSlug: "michael-rodriguez",
+    author: "WriteWorks Team",
+    authorRole: "Content Team",
+    authorSlug: "writeworks-team",
     authorBio:
-      "Michael Rodriguez is a search technology analyst specializing in AI-powered search engines and their impact on digital marketing strategies.",
+      "The WriteWorks Team creates expert content on AI optimization, LLM visibility, and content strategy to help brands succeed in the age of AI-powered search.",
     tags: ["Perplexity", "Publishers", "AI Citations", "Partnerships", "Industry News"],
     keyHighlights: [
       "New program compensates publishers for cited content",
@@ -214,11 +214,11 @@ export const resources: Resource[] = [
     date: "2024-12-15",
     readTime: "12 min read",
     image: "/ai-optimization-guide.jpg",
-    author: "Sarah Chen",
-    authorRole: "Head of Content Strategy",
-    authorSlug: "sarah-chen",
+    author: "WriteWorks Team",
+    authorRole: "Content Team",
+    authorSlug: "writeworks-team",
     authorBio:
-      "Sarah Chen is the Head of Content Strategy at WriteWorks with over 10 years of experience in digital marketing and AI-powered content optimization.",
+      "The WriteWorks Team creates expert content on AI optimization, LLM visibility, and content strategy to help brands succeed in the age of AI-powered search.",
     tags: ["LLM", "Optimization", "AI", "Content Strategy", "SEO"],
     keyHighlights: [
       "Understand how LLMs select and cite content sources",
@@ -283,11 +283,11 @@ export const resources: Resource[] = [
     date: "2024-12-10",
     readTime: "15 min read",
     image: "/chatgpt-citations.jpg",
-    author: "Dr. Emily Watson",
-    authorRole: "AI Research Lead",
-    authorSlug: "emily-watson",
+    author: "WriteWorks Team",
+    authorRole: "Content Team",
+    authorSlug: "writeworks-team",
     authorBio:
-      "Dr. Emily Watson leads AI research at WriteWorks, focusing on understanding and optimizing content for large language models.",
+      "The WriteWorks Team creates expert content on AI optimization, LLM visibility, and content strategy to help brands succeed in the age of AI-powered search.",
     tags: ["ChatGPT", "Research", "Citations", "Data Analysis", "AI"],
     keyHighlights: [
       "Analysis of 10,000+ ChatGPT queries reveals citation patterns",
@@ -348,11 +348,11 @@ export const resources: Resource[] = [
     date: "2024-12-05",
     readTime: "8 min read",
     image: "/case-study-success.jpg",
-    author: "Marcus Rodriguez",
-    authorRole: "Customer Success Manager",
-    authorSlug: "marcus-rodriguez",
+    author: "WriteWorks Team",
+    authorRole: "Content Team",
+    authorSlug: "writeworks-team",
     authorBio:
-      "Marcus Rodriguez is a Customer Success Manager at WriteWorks, helping companies optimize their content for maximum AI visibility.",
+      "The WriteWorks Team creates expert content on AI optimization, LLM visibility, and content strategy to help brands succeed in the age of AI-powered search.",
     tags: ["Case Study", "SaaS", "Success Story", "ROI", "AI Citations"],
     keyHighlights: [
       "300% increase in AI citations within 3 months",
@@ -421,11 +421,11 @@ export const resources: Resource[] = [
     date: "2024-12-01",
     readTime: "10 min read",
     image: "/research-paper-ai.jpg",
-    author: "Dr. Emily Watson",
-    authorRole: "AI Research Lead",
-    authorSlug: "emily-watson",
+    author: "WriteWorks Team",
+    authorRole: "Content Team",
+    authorSlug: "writeworks-team",
     authorBio:
-      "Dr. Emily Watson leads AI research at WriteWorks, focusing on understanding and optimizing content for large language models.",
+      "The WriteWorks Team creates expert content on AI optimization, LLM visibility, and content strategy to help brands succeed in the age of AI-powered search.",
     tags: ["AI Search", "Trends", "Predictions", "Future", "Technology"],
     keyHighlights: [
       "AI search expected to handle 50% of all queries by end of 2025",
@@ -488,11 +488,11 @@ export const resources: Resource[] = [
     date: "2024-11-28",
     readTime: "45 min watch",
     image: "/webinar-presentation.png",
-    author: "Sarah Chen",
-    authorRole: "Head of Content Strategy",
-    authorSlug: "sarah-chen",
+    author: "WriteWorks Team",
+    authorRole: "Content Team",
+    authorSlug: "writeworks-team",
     authorBio:
-      "Sarah Chen is the Head of Content Strategy at WriteWorks with over 10 years of experience in digital marketing and AI-powered content optimization.",
+      "The WriteWorks Team creates expert content on AI optimization, LLM visibility, and content strategy to help brands succeed in the age of AI-powered search.",
     tags: ["Webinar", "Content Strategy", "AI", "Training", "Education"],
     keyHighlights: [
       "Learn to develop comprehensive AI content strategies",
@@ -561,11 +561,11 @@ export const resources: Resource[] = [
     date: "2024-11-25",
     readTime: "20 min watch",
     image: "/ai-video-tutorial.png",
-    author: "Marcus Rodriguez",
-    authorRole: "Customer Success Manager",
-    authorSlug: "marcus-rodriguez",
+    author: "WriteWorks Team",
+    authorRole: "Content Team",
+    authorSlug: "writeworks-team",
     authorBio:
-      "Marcus Rodriguez is a Customer Success Manager at WriteWorks, helping companies optimize their content for maximum AI visibility.",
+      "The WriteWorks Team creates expert content on AI optimization, LLM visibility, and content strategy to help brands succeed in the age of AI-powered search.",
     tags: ["Video", "Tutorial", "LLM", "Optimization", "How-To"],
     keyHighlights: [
       "Step-by-step walkthrough of content optimization process",
@@ -659,4 +659,35 @@ export function getRelatedResources(currentSlug: string, limit = 3): Resource[] 
 export function getResourcesByCategory(category: string): Resource[] {
   if (category === "all") return resources
   return resources.filter((r) => r.category === category)
+}
+
+// Helper function to generate resource URL with category
+export function getResourceUrl(resource: Resource): string {
+  // Convert category to URL-friendly format (plural form)
+  const categoryMap: Record<string, string> = {
+    blog: "blogs",
+    guide: "guides",
+    "case-study": "case-studies",
+    whitepaper: "whitepapers",
+    video: "videos",
+    webinar: "webinars",
+    news: "news",
+  }
+  const categorySlug = categoryMap[resource.category] || resource.category
+  return `/resources/${categorySlug}/${resource.slug}`
+}
+
+// Helper function to generate resource URL by slug and category
+export function getResourceUrlBySlugAndCategory(slug: string, category: string): string {
+  const categoryMap: Record<string, string> = {
+    blog: "blogs",
+    guide: "guides",
+    "case-study": "case-studies",
+    whitepaper: "whitepapers",
+    video: "videos",
+    webinar: "webinars",
+    news: "news",
+  }
+  const categorySlug = categoryMap[category] || category
+  return `/resources/${categorySlug}/${slug}`
 }

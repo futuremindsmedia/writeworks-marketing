@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next"
-import { getResources } from "@/lib/data/resources"
+import { getResources, getResourceUrl } from "@/lib/data/resources"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://www.writeworks.ai"
@@ -169,7 +169,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Resource articles (dynamically generated)
   const resourcePages: MetadataRoute.Sitemap = resourceArticles.map((resource) => ({
-    url: `${baseUrl}/resources/${resource.slug}`,
+    url: `${baseUrl}${getResourceUrl(resource)}`,
     lastModified: new Date(resource.modifiedDate || resource.date),
     changeFrequency: "monthly" as const,
     priority: 0.6,

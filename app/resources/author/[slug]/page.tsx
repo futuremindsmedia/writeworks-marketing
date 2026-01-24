@@ -4,43 +4,97 @@ import Link from "next/link"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import Pagination from "@/components/pagination"
 import type { Metadata } from "next"
+import { getResourceUrlBySlugAndCategory } from "@/lib/resources-data"
 
 const authors = {
-  "sarah-chen": {
-    name: "Sarah Chen",
-    role: "Content Director",
-    bio: "Sarah is a content strategist specializing in AI optimization with over 10 years of experience in digital marketing and SEO. She leads the content team at WriteWorks and has helped hundreds of brands increase their LLM visibility.",
-    image: "/professional-woman-portrait.png",
-    email: "sarah@writeworks.ai",
-    linkedin: "https://linkedin.com/in/sarahchen",
-    twitter: "https://twitter.com/sarahchen",
+  "writeworks-team": {
+    name: "WriteWorks Team",
+    role: "Content Team",
+    bio: "The WriteWorks Team creates expert content on AI optimization, LLM visibility, and content strategy to help brands succeed in the age of AI-powered search.",
+    image: "/writeworks-team-avatar.svg",
+    email: "content@writeworks.ai",
+    linkedin: "https://linkedin.com/company/writeworks",
+    twitter: "https://twitter.com/writeworks",
     articles: [
+      {
+        slug: "openai-launches-gpt-5-enhanced-citation-capabilities",
+        title: "OpenAI Launches GPT-5 with Enhanced Citation Capabilities",
+        category: "news",
+        date: "2025-01-15T09:00:00Z",
+        readTime: "3 min read",
+        image: "/ai-technology-announcement.jpg",
+      },
+      {
+        slug: "google-announces-ai-overviews-expansion",
+        title: "Google Expands AI Overviews to 100+ Countries",
+        category: "news",
+        date: "2025-01-12T10:30:00Z",
+        readTime: "4 min read",
+        image: "/google-search-ai-technology.jpg",
+      },
+      {
+        slug: "anthropic-claude-3-5-citation-features",
+        title: "Anthropic's Claude 3.5 Introduces Revolutionary Citation System",
+        category: "news",
+        date: "2025-01-10T08:00:00Z",
+        readTime: "3 min read",
+        image: "/anthropic-ai-technology.jpg",
+      },
+      {
+        slug: "perplexity-ai-publisher-program-launch",
+        title: "Perplexity AI Launches Publisher Partnership Program",
+        category: "news",
+        date: "2025-01-08T11:00:00Z",
+        readTime: "4 min read",
+        image: "/perplexity-ai-partnership.jpg",
+      },
       {
         slug: "llm-optimization-guide-2025",
         title: "The Complete Guide to LLM Optimization in 2025",
-        category: "Guide",
-        date: "2025-01-15",
+        category: "guide",
+        date: "2024-12-15",
         readTime: "12 min read",
         image: "/ai-optimization-guide.jpg",
       },
-    ],
-  },
-  "marcus-rodriguez": {
-    name: "Marcus Rodriguez",
-    role: "AI Research Lead",
-    bio: "Marcus leads AI research at WriteWorks, focusing on LLM citation behavior and optimization strategies. With a PhD in Computer Science and 8 years of experience in AI, he's at the forefront of understanding how AI platforms select and cite sources.",
-    image: "/professional-man-portrait.png",
-    email: "marcus@writeworks.ai",
-    linkedin: "https://linkedin.com/in/marcusrodriguez",
-    twitter: "https://twitter.com/marcusrodriguez",
-    articles: [
       {
         slug: "chatgpt-citation-patterns",
-        title: "Understanding ChatGPT Citation Patterns",
-        category: "Blog Post",
-        date: "2025-01-12",
-        readTime: "8 min read",
+        title: "Understanding ChatGPT Citation Patterns: A Data-Driven Analysis",
+        category: "whitepaper",
+        date: "2024-12-10",
+        readTime: "15 min read",
         image: "/chatgpt-citations.jpg",
+      },
+      {
+        slug: "saas-company-300-percent-increase",
+        title: "How a SaaS Company Achieved 300% Increase in AI Citations",
+        category: "case-study",
+        date: "2024-12-05",
+        readTime: "8 min read",
+        image: "/case-study-success.jpg",
+      },
+      {
+        slug: "future-of-ai-search-2025",
+        title: "The Future of AI Search: Trends and Predictions for 2025",
+        category: "blog",
+        date: "2024-12-01",
+        readTime: "10 min read",
+        image: "/research-paper-ai.jpg",
+      },
+      {
+        slug: "ai-content-strategy-webinar",
+        title: "Mastering AI Content Strategy: Live Webinar Recording",
+        category: "webinar",
+        date: "2024-11-28",
+        readTime: "45 min watch",
+        image: "/webinar-presentation.png",
+      },
+      {
+        slug: "video-tutorial-llm-optimization",
+        title: "Video Tutorial: Step-by-Step LLM Content Optimization",
+        category: "video",
+        date: "2024-11-25",
+        readTime: "20 min watch",
+        image: "/ai-video-tutorial.png",
       },
     ],
   },
@@ -160,7 +214,7 @@ export default function AuthorPage({
             </h2>
             <div className="grid gap-6">
               {paginatedArticles.map((article) => (
-                <Link key={article.slug} href={`/resources/${article.slug}`}>
+                <Link key={article.slug} href={getResourceUrlBySlugAndCategory(article.slug, article.category)}>
                   <div className="group rounded-xl bg-white/5 border border-white/10 hover:border-white/20 shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden flex flex-col md:flex-row">
                     <div className="md:w-64 aspect-video overflow-hidden flex-shrink-0">
                       <img

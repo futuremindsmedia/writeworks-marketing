@@ -2,7 +2,7 @@ import { notFound } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, ArrowRight, User } from "lucide-react"
 import Link from "next/link"
-import { resources } from "@/lib/resources-data"
+import { resources, getResourceUrl } from "@/lib/resources-data"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 // Define valid category slugs
@@ -90,7 +90,7 @@ export default function CategoryPage({ params }: { params: { slug: string } }) {
               {categoryResources.map((resource) => (
                 <Link
                   key={resource.id}
-                  href={`/resources/${resource.slug}`}
+                  href={getResourceUrl(resource)}
                   className="group rounded-xl bg-white/5 border border-white/10 hover:border-white/20 shadow-sm hover:shadow-md transition-all duration-300 h-full overflow-hidden"
                 >
                   {/* Image */}

@@ -17,7 +17,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { resources } from "@/lib/resources-data"
+import { resources, getResourceUrl } from "@/lib/resources-data"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 import Pagination from "@/components/pagination"
 
@@ -150,7 +150,7 @@ export default function ResourcesPage() {
                 {paginatedResources.map((resource) => (
                   <div
                     key={resource.id}
-                    onClick={() => router.push(`/resources/${resource.slug}`)}
+                    onClick={() => router.push(getResourceUrl(resource))}
                     className="group rounded-xl bg-white/5 border border-white/10 hover:border-white/20 shadow-sm hover:shadow-md transition-all duration-300 h-full cursor-pointer overflow-hidden"
                   >
                     {/* Image */}
