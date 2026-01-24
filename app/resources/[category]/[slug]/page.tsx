@@ -78,36 +78,160 @@ export default async function ResourceDetailPage({
   }
   const categoryDisplay = categoryDisplayMap[category] || resource.category
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    headline: resource.title,
-    description: resource.description,
-    image: resource.image,
-    datePublished: resource.date,
-    dateModified: resource.date,
-    author: {
-      "@type": "Person",
-      name: resource.author,
-      jobTitle: resource.authorRole,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: "WriteWorks",
-      logo: {
-        "@type": "ImageObject",
-        url: "https://writeworks.ai/logo.png",
+  // Generate structured data based on content type
+  const getStructuredData = () => {
+    const baseUrl = `https://writeworks.ai${getResourceUrl(resource)}`
+    
+    // Common properties for all types
+    const commonProps = {
+      "@context": "https://schema.org",
+      headline: resource.title,
+      description: resource.description,
+      image: resource.image,
+      datePublished: resource.date,
+      dateModified: resource.modifiedDate || resource.date,
+      author: {
+        "@type": "Organization",
+        name: resource.author,
       },
-    },
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": `https://writeworks.ai${getResourceUrl(resource)}`,
-    },
+      publisher: {
+        "@type": "Organization",
+        name: "WriteWorks",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://writeworks.ai/logo.png",
+        },
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": baseUrl,
+      },
+    }
+
+    // Return specific schema based on category
+    switch (resource.category) {
+      case "blog":
+        return {
+          ...commonProps,
+          "@type": "BlogPosting",
+          articleSection: "AI Optimization",
+          keywords: resource.tags.join(", "),
+        }
+
+      case "guide":
+        return {
+          ...commonProps,
+          "@type": "HowTo",
+          name: resource.title,
+          step: resource.keyHighlights.map((highlight, index) => ({
+            "@type": "HowToStep",
+            position: index + 1,
+            name: highlight,
+          })),
+        }
+
+      case "case-study":
+        return {
+          ...commonProps,
+          "@type": "Article",
+          articleBody: resource.description,
+          genre: "Case Study",
+          about: {
+            "@type": "Thing",
+            name: "AI Content Optimization",
+          },
+        }
+
+      case "whitepaper":
+        return {
+          ...commonProps,
+          "@type": "ScholarlyArticle",
+          articleBody: resource.description,
+          genre: "Research",
+          keywords: resource.tags.join(", "),
+        }
+
+      case "video":
+        return {
+          ...commonProps,
+          "@type": "VideoObject",
+          name: resource.title,
+          thumbnailUrl: resource.image,
+          uploadDate: resource.date,
+          contentUrl: baseUrl,
+          embedUrl: baseUrl,
+          duration: resource.readTime,
+        }
+
+      case "webinar":
+        return {
+          ...commonProps,
+          "@type": "VideoObject",
+          name: resource.title,
+          thumbnailUrl: resource.image,
+          uploadDate: resource.date,
+          contentUrl: baseUrl,
+          embedUrl: baseUrl,
+          duration: resource.readTime,
+          educationalUse: "Professional Development",
+          learningResourceType: "Webinar",
+        }
+
+      case "news":
+        return {
+          ...commonProps,
+          "@type": "NewsArticle",
+          articleSection: "Technology",
+          dateline: resource.date,
+          genre: "Technology News",
+        }
+
+      default:
+        return {
+          ...commonProps,
+          "@type": "Article",
+        }
+    }
+  }
+
+  const structuredData = getStructuredData()
+
+  // Add breadcrumb structured data for better SEO
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://writeworks.ai",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Resources",
+        item: "https://writeworks.ai/resources",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: categoryDisplay,
+        item: `https://writeworks.ai/resources/${category}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: resource.title,
+        item: `https://writeworks.ai${getResourceUrl(resource)}`,
+      },
+    ],
   }
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbStructuredData) }} />
 
       <ArticleProgressBar />
 
