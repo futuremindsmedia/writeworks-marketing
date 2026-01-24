@@ -133,8 +133,8 @@ export default function ApprovalWorkflowsPage() {
               compliance, and get content approved faster.
             </p>
             <div className="flex flex-wrap gap-3 justify-center mb-8">
-              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
+              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
+                Start Free <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
 
@@ -304,8 +304,8 @@ export default function ApprovalWorkflowsPage() {
               Implement structured approval workflows. Try approval automation free for 14 days.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
-              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
+              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
+                Start Free <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button
                 size="lg"
@@ -313,7 +313,7 @@ export default function ApprovalWorkflowsPage() {
                 className="border-white/20 text-white hover:bg-white/5 bg-transparent"
                 asChild
               >
-                <Link href="/contact">Contact Sales</Link>
+                <Link href="/demo">Book Demo</Link>
               </Button>
             </div>
           </div>

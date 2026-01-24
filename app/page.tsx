@@ -221,7 +221,7 @@ export default function Home() {
                 asChild
               >
                 <a href="https://app.writeworks.ai/sign-up">
-                  Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+                  Try Free <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
               <Button
@@ -431,7 +431,7 @@ export default function Home() {
                 className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
                 asChild
               >
-                <a href="/platform">Learn About Research Tools</a>
+                <a href="https://app.writeworks.ai/sign-up">Start Free <ArrowRight className="ml-2 w-4 h-4 inline" /></a>
               </Button>
             </div>
             <div className="relative flex items-center">
@@ -487,7 +487,7 @@ export default function Home() {
                 className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
                 asChild
               >
-                <a href="/platform/features/collaboration">Explore Collaboration Features</a>
+                <a href="https://app.writeworks.ai/sign-up">Get Started <ArrowRight className="ml-2 w-4 h-4 inline" /></a>
               </Button>
             </div>
           </div>
@@ -525,7 +525,7 @@ export default function Home() {
                 className="w-full sm:w-auto bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
                 asChild
               >
-                <a href="/platform/features/content-editor">See Content Editor</a>
+                <a href="https://app.writeworks.ai/sign-up">Try Free <ArrowRight className="ml-2 w-4 h-4 inline" /></a>
               </Button>
             </div>
             <div className="relative flex items-center">
@@ -982,7 +982,7 @@ export default function Home() {
                 asChild
               >
                 <a href="https://app.writeworks.ai/sign-up">
-                  Start Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+                  Get Started <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
               <Button
@@ -991,7 +991,7 @@ export default function Home() {
                 className="border-white/20 text-white bg-transparent hover:bg-white/5"
                 asChild
               >
-                <a href="https://app.writeworks.ai/demo">Talk to Sales</a>
+                <a href="/demo"><Calendar className="mr-2 w-4 h-4 inline" /> Book Demo</a>
               </Button>
             </div>
             <p className="text-xs text-white/50 mt-4">No credit card required • 75% time saved • Instant results</p>

@@ -127,7 +127,7 @@ export default function SecurityCompliancePage() {
               protected with industry-leading measures.
             </p>
             <div className="flex flex-wrap gap-3 justify-center mb-8">
-              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
+              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
                 View Security Details
               </Button>
               <Button

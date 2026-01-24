@@ -103,7 +103,7 @@ export default function PlatformPage() {
               asChild
             >
               <a href="https://app.writeworks.ai/sign-up">
-                Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
+                Start Free <ArrowRight className="ml-2 w-4 h-4 inline" />
               </a>
             </Button>
             <Button
@@ -248,7 +248,7 @@ export default function PlatformPage() {
           </p>
           <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
             <a href="https://app.writeworks.ai/sign-up">
-              Start Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
+              Start Free <ArrowRight className="ml-2 w-4 h-4 inline" />
             </a>
           </Button>
         </div>

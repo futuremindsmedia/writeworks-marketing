@@ -161,7 +161,7 @@ export default function ProductMarketingPage() {
                 asChild
               >
                 <a href="https://app.writeworks.ai/sign-up">
-                  Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
               <Button
@@ -364,7 +364,7 @@ export default function ProductMarketingPage() {
                 asChild
               >
                 <a href="https://app.writeworks.ai/sign-up">
-                  Start Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+                  Start Start Free <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
               <Button

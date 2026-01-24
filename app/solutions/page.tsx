@@ -141,7 +141,7 @@ export default function SolutionsPage() {
               asChild
             >
               <a href="https://app.writeworks.ai/sign-up">
-                Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
+                Start Free <ArrowRight className="ml-2 w-4 h-4 inline" />
               </a>
             </Button>
             <Button
@@ -149,7 +149,7 @@ export default function SolutionsPage() {
               className="w-full sm:w-auto border-white/20 text-white hover:bg-white/5 bg-transparent"
               asChild
             >
-              <Link href="/platform">See Platform</Link>
+              <Link href="/demo"><Calendar className="mr-2 w-4 h-4 inline" /> Book Demo</Link>
             </Button>
           </div>
         </div>

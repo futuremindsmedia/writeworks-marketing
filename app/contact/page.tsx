@@ -280,16 +280,16 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/pricing"
+                href="https://app.writeworks.ai/sign-up"
                 className="px-8 py-3 bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white rounded-lg font-medium hover:opacity-90 transition-opacity"
               >
-                View Pricing
+                Start Free
               </a>
               <a
-                href="/resources"
+                href="/demo"
                 className="px-8 py-3 border border-white/20 text-white rounded-lg font-medium hover:bg-white/5 hover:border-white/40 transition-all"
               >
-                Explore Resources
+                Book Demo
               </a>
             </div>
           </div>

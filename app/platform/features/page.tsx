@@ -23,6 +23,7 @@ import {
   Clock,
   CheckCircle2,
   Lock,
+  Calendar,
 } from "lucide-react"
 
 export default function PlatformFeaturesPage() {
@@ -238,7 +239,7 @@ export default function PlatformFeaturesPage() {
           </p>
           <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
             <a href="https://app.writeworks.ai/sign-up">
-              Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
+              Start Free <ArrowRight className="ml-2 w-4 h-4 inline" />
             </a>
           </Button>
         </div>
@@ -316,7 +317,7 @@ export default function PlatformFeaturesPage() {
               asChild
             >
               <a href="https://app.writeworks.ai/sign-up">
-                Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
+                Start Free <ArrowRight className="ml-2 w-4 h-4 inline" />
               </a>
             </Button>
             <Button
@@ -324,7 +325,7 @@ export default function PlatformFeaturesPage() {
               className="w-full sm:w-auto border-white/20 text-white hover:bg-white/5 bg-transparent"
               asChild
             >
-              <Link href="/pricing">View Pricing</Link>
+              <Link href="/demo"><Calendar className="mr-2 w-4 h-4 inline" /> Book Demo</Link>
             </Button>
           </div>
         </div>

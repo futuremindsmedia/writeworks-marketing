@@ -125,8 +125,8 @@ export default function ProjectManagementPage() {
               content initiatives on track.
             </p>
             <div className="flex flex-wrap gap-3 justify-center mb-8">
-              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Start Free Trial <ArrowRight className="ml-2 h-4 w-4" />
+              <Button size="lg" className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
+                Start Free <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
 
@@ -287,10 +287,10 @@ export default function ProjectManagementPage() {
             <p className="text-white/70 mb-6 text-sm">Organize, track, and deliver content projects on time.</p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90">
-                Get Started Free <ArrowRight className="ml-2 h-4 w-4" />
+                Start Free <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button variant="outline" className="border-white/20 text-white hover:bg-white/5 bg-transparent" asChild>
-                <Link href="/contact">Contact Sales</Link>
+                <Link href="/demo">Book Demo</Link>
               </Button>
             </div>
           </div>

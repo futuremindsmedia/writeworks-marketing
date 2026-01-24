@@ -299,13 +299,13 @@ export default function DemoPage() {
                 href="https://app.writeworks.ai/sign-up"
                 className="px-8 py-3 border border-white/20 text-white rounded-lg font-medium hover:bg-white/5 hover:border-white/40 transition-all"
               >
-                Start Free Trial
+                Start Free
               </a>
               <a
-                href="/pricing"
+                href="/demo"
                 className="px-8 py-3 border border-white/20 text-white rounded-lg font-medium hover:bg-white/5 hover:border-white/40 transition-all"
               >
-                View Pricing
+                Book Demo
               </a>
             </div>
           </div>

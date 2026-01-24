@@ -130,7 +130,7 @@ export default function EnterprisePage() {
               asChild
             >
               <Link href="https://app.writeworks.ai/sign-up">
-                Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+                Start Free <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
           </div>
@@ -355,7 +355,7 @@ export default function EnterprisePage() {
               asChild
             >
               <Link href="https://app.writeworks.ai/sign-up">
-                Free Trial <ArrowRight className="ml-2 w-4 h-4" />
+                Start Free <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </Button>
           </div>

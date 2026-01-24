@@ -185,12 +185,14 @@ export default function PricingPage() {
                   }
                   asChild
                 >
-                  <a href="https://app.writeworks.ai/sign-up">
+                  <a href={plan.price === "Custom" ? "/demo" : "https://app.writeworks.ai/sign-up"}>
                     {plan.price === "Custom" ? (
-                      "Contact Sales"
+                      <>
+                        <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                      </>
                     ) : (
                       <>
-                        Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
+                        Start Free <ArrowRight className="ml-2 w-4 h-4 inline" />
                       </>
                     )}
                   </a>
@@ -387,7 +389,7 @@ export default function PricingPage() {
             asChild
           >
             <a href="https://app.writeworks.ai/sign-up">
-              Start Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
+              Start Free <ArrowRight className="ml-2 w-4 h-4 inline" />
             </a>
           </Button>
           <p className="text-sm text-white/70 mt-4">14-day free trial • No credit card required • Cancel anytime</p>
