@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Clock, AlertTriangle, Target, Calendar } from "lucide-react"
+import { ArrowRight, Clock, AlertTriangle, Target, Calendar, CheckCircle, Zap, FileText } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
@@ -29,16 +29,24 @@ export default function PRCommunicationsPage() {
 
   const solutions = [
     {
-      challenge: "Speed vs. Accuracy",
-      solution: "Pre-approved messaging frameworks enable fast turnaround while maintaining accuracy and alignment.",
+      icon: Zap,
+      title: "Speed vs. Accuracy",
+      description: "Pre-approved messaging frameworks enable fast turnaround while maintaining accuracy and alignment.",
     },
     {
-      challenge: "Crisis Management",
-      solution: "Crisis communication agents generate statements in minutes with built-in approval workflows.",
+      icon: CheckCircle,
+      title: "Crisis Management",
+      description: "Crisis communication agents generate statements in minutes with built-in approval workflows.",
     },
     {
-      challenge: "Media Coverage",
-      solution: "PR-optimized agents create newsworthy releases and personalized pitches that journalists want.",
+      icon: FileText,
+      title: "Media Coverage",
+      description: "PR-optimized agents create newsworthy releases and personalized pitches that journalists want.",
+    },
+    {
+      icon: Target,
+      title: "Message Consistency",
+      description: "Maintain brand voice and messaging consistency across all communications and stakeholders.",
     },
   ]
 
@@ -144,11 +152,12 @@ export default function PRCommunicationsPage() {
               AI-powered PR tools for modern communications teams
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-4">
+          <div className="grid md:grid-cols-2 gap-4">
             {solutions.map((solution, index) => (
               <div key={index} className="p-5 rounded-xl border border-white/10 bg-white/5">
-                <h3 className="text-lg font-semibold mb-2">{solution.challenge}</h3>
-                <p className="text-sm text-white/60">{solution.solution}</p>
+                <solution.icon className="w-8 h-8 text-white/80 mb-3" />
+                <h3 className="text-lg font-semibold mb-2">{solution.title}</h3>
+                <p className="text-sm text-white/60">{solution.description}</p>
               </div>
             ))}
           </div>

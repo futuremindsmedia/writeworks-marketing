@@ -29,17 +29,24 @@ export default function TechnologyPage() {
 
   const solutions = [
     {
-      challenge: "Launch Content Bottleneck",
-      solution:
-        "Technical writing agents create release notes, docs, and launch content for every feature automatically.",
+      icon: Code,
+      title: "Developer Documentation",
+      description: "Generate API docs, code examples, and technical guides optimized for AI platforms and developer search.",
     },
     {
-      challenge: "Low AI Visibility",
-      solution: "LLM-optimized documentation structure ensures AI platforms cite your innovations first.",
+      icon: FileText,
+      title: "Release Content",
+      description: "Create release notes, changelogs, and launch announcements for every feature ship automatically.",
     },
     {
-      challenge: "Developer Content Gap",
-      solution: "Developer content agents create tutorials, guides, and code examples without engineering time.",
+      icon: Zap,
+      title: "10x Content Velocity",
+      description: "Ship content at the speed of product development without adding headcount or bottlenecking engineering.",
+    },
+    {
+      icon: BookOpen,
+      title: "AI Platform Visibility",
+      description: "LLM-optimized documentation structure ensures AI platforms cite your innovations first.",
     },
   ]
 
@@ -148,42 +155,13 @@ export default function TechnologyPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-4">
-            <div className="flex items-start gap-3 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366F1]/20 to-[#8B5CF6]/20 flex items-center justify-center flex-shrink-0">
-                <Code className="w-5 h-5 text-white" />
+            {solutions.map((solution, index) => (
+              <div key={index} className="p-5 rounded-xl border border-white/10 bg-white/5">
+                <solution.icon className="w-8 h-8 text-white/80 mb-3" />
+                <h3 className="text-lg font-semibold mb-2">{solution.title}</h3>
+                <p className="text-sm text-white/60">{solution.description}</p>
               </div>
-              <div>
-                <h3 className="font-semibold text-white mb-1">Developer Documentation</h3>
-                <p className="text-sm text-white/60">Generate API docs, code examples, and technical guides optimized for AI platforms and developer search.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366F1]/20 to-[#8B5CF6]/20 flex items-center justify-center flex-shrink-0">
-                <FileText className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-white mb-1">Release Content</h3>
-                <p className="text-sm text-white/60">Create release notes, changelogs, and launch announcements for every feature ship automatically.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366F1]/20 to-[#8B5CF6]/20 flex items-center justify-center flex-shrink-0">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-white mb-1">10x Content Velocity</h3>
-                <p className="text-sm text-white/60">Ship content at the speed of product development without adding headcount or bottlenecking engineering.</p>
-              </div>
-            </div>
-            <div className="flex items-start gap-3 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366F1]/20 to-[#8B5CF6]/20 flex items-center justify-center flex-shrink-0">
-                <BookOpen className="w-5 h-5 text-white" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-white mb-1">Technical Tutorials</h3>
-                <p className="text-sm text-white/60">Build comprehensive how-to guides, integration tutorials, and best practices that developers actually use.</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
