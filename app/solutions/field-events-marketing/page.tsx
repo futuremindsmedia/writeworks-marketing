@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Clock, AlertTriangle, Target } from "lucide-react"
+import { ArrowRight, Clock, AlertTriangle, Target, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Field & Events Marketing Solutions | WriteWorks AI",
-  description: "Maximize event attendance and create meaningful experiences with AI-powered content creation.",
+  title: "Field & Events Marketing Content Writing & Management Software | WriteWorks",
+  description: "Create all event content 75% faster—from invitations to follow-ups. Maximize registrations and attendance with AI-powered event marketing tools that scale across your entire program.",
 }
 
 export default function FieldEventsMarketingPage() {
@@ -70,7 +70,7 @@ export default function FieldEventsMarketingPage() {
               <span className="text-xs text-white/70">Solutions for Event Teams</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              Event Marketing Content AI: From Invites to Follow-Ups
+              Field &amp; Events Marketing Content Writing &amp; Management Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Maximize event attendance and create meaningful experiences. Scale event content without the crunch.
@@ -101,6 +101,16 @@ export default function FieldEventsMarketingPage() {
                 <Link href="https://app.writeworks.ai/sign-up">
                   Start Free <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
               </Button>
             </div>
           </div>
@@ -209,15 +219,28 @@ export default function FieldEventsMarketingPage() {
             <p className="text-white/70 mb-6">
               Join event teams using WriteWorks to drive more registrations and engagement
             </p>
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
-              asChild
-            >
-              <Link href="https://app.writeworks.ai/sign-up">
-                Start Free <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
+                asChild
+              >
+                <Link href="https://app.writeworks.ai/sign-up">
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
+              </Button>
+            </div>
+            <p className="text-xs text-white/50 mt-4">No credit card required • Cancel anytime</p>
           </div>
         </div>
       </section>

@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Clock, AlertTriangle, Target } from "lucide-react"
+import { ArrowRight, Clock, AlertTriangle, Target, Calendar } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Brand Marketing Solutions | WriteWorks AI",
-  description: "Automate brand compliance. Protect voice, tone, and style at scale with AI-powered brand management.",
+  title: "Brand Marketing Content Writing & Management Software | WriteWorks",
+  description: "Enforce brand consistency automatically across all content. Reduce review time 90% with AI-powered brand compliance that protects voice, tone, and style at scale.",
 }
 
 export default function BrandMarketingPage() {
@@ -69,7 +69,7 @@ export default function BrandMarketingPage() {
               <span className="text-xs text-white/70">Solutions for Brand Teams</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              AI Brand Content Tool: Consistent Voice, Every Channel
+              Brand Marketing Content Writing &amp; Management Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Automate brand compliance. Protect voice, tone, and style at scale.
@@ -100,6 +100,16 @@ export default function BrandMarketingPage() {
                 <Link href="https://app.writeworks.ai/sign-up">
                   Start Free <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
               </Button>
             </div>
           </div>
@@ -208,15 +218,28 @@ export default function BrandMarketingPage() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Protect Your Brand</h2>
             <p className="text-white/70 mb-6">Join brand teams using WriteWorks to maintain consistency at scale</p>
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
-              asChild
-            >
-              <Link href="https://app.writeworks.ai/sign-up">
-                Start Free <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
+                asChild
+              >
+                <Link href="https://app.writeworks.ai/sign-up">
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
+              </Button>
+            </div>
+            <p className="text-xs text-white/50 mt-4">No credit card required • Cancel anytime</p>
           </div>
         </div>
       </section>

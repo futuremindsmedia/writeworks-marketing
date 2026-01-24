@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { ArrowRight, Clock, AlertTriangle, Target } from "lucide-react"
+import { ArrowRight, Clock, AlertTriangle, Target, Calendar, Code, FileText, Zap, BookOpen } from "lucide-react"
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Technology Solutions | WriteWorks AI",
-  description: "Move faster from roadmap to reality. Scale technical content and get cited by AI platforms.",
+  title: "Technology Content Writing & Management Software | WriteWorks",
+  description: "Scale technical content 10x faster. Create docs, release notes, and developer content that gets cited by AI platforms and drives product adoption.",
 }
 
 export default function TechnologyPage() {
@@ -70,7 +70,7 @@ export default function TechnologyPage() {
               <span className="text-xs text-white/70">Solutions by Industry</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              AI Writing for Tech Companies: From Docs to Launch Content
+              Technology Content Writing &amp; Management Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Move faster from roadmap to reality. Scale technical content and get cited by AI platforms.
@@ -102,6 +102,16 @@ export default function TechnologyPage() {
                   Start Free <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
               </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
+              </Button>
             </div>
           </div>
         </div>
@@ -129,16 +139,138 @@ export default function TechnologyPage() {
       </section>
 
       {/* How We Solve It */}
-      {/* Solutions section will be added here if needed */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">How WriteWorks Solves It</h2>
+            <p className="text-white/70 max-w-2xl mx-auto">
+              AI-powered technical content built for developer adoption and AI visibility
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-4">
+            <div className="flex items-start gap-3 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366F1]/20 to-[#8B5CF6]/20 flex items-center justify-center flex-shrink-0">
+                <Code className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-white mb-1">Developer Documentation</h3>
+                <p className="text-sm text-white/60">Generate API docs, code examples, and technical guides optimized for AI platforms and developer search.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366F1]/20 to-[#8B5CF6]/20 flex items-center justify-center flex-shrink-0">
+                <FileText className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-white mb-1">Release Content</h3>
+                <p className="text-sm text-white/60">Create release notes, changelogs, and launch announcements for every feature ship automatically.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366F1]/20 to-[#8B5CF6]/20 flex items-center justify-center flex-shrink-0">
+                <Zap className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-white mb-1">10x Content Velocity</h3>
+                <p className="text-sm text-white/60">Ship content at the speed of product development without adding headcount or bottlenecking engineering.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 p-4 rounded-lg bg-white/5 border border-white/10 hover:border-white/20 transition-colors">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#6366F1]/20 to-[#8B5CF6]/20 flex items-center justify-center flex-shrink-0">
+                <BookOpen className="w-5 h-5 text-white" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-white mb-1">Technical Tutorials</h3>
+                <p className="text-sm text-white/60">Build comprehensive how-to guides, integration tutorials, and best practices that developers actually use.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Jobs to Be Done */}
-      {/* Jobs to Be Done section will be added here if needed */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Jobs To Be Done</h2>
+            <p className="text-white/70">Time saved on technical content tasks</p>
+          </div>
+          <div className="max-w-3xl mx-auto">
+            <div className="rounded-xl border border-white/10 overflow-hidden">
+              <table className="w-full">
+                <thead>
+                  <tr className="border-b border-white/10 bg-white/5">
+                    <th className="text-left p-3 text-sm font-medium text-white/70">Task</th>
+                    <th className="text-center p-3 text-sm font-medium text-white/70">New Time</th>
+                    <th className="text-right p-3 text-sm font-medium text-white/70">Time Saved</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {jobsToBeDone.map((job, index) => (
+                    <tr key={index} className="border-b border-white/5 last:border-0">
+                      <td className="p-3 text-sm text-white/90">{job.task}</td>
+                      <td className="p-3 text-sm text-white/50 text-center">{job.after}</td>
+                      <td className="p-3 text-right">
+                        <span className="text-sm font-semibold text-[#6366F1]">{job.timeSaved}</span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Target Audience */}
-      {/* Target Audience section will be added here if needed */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">Built For</h2>
+            <p className="text-white/70">Technical content teams at technology companies</p>
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            {targetAudience.map((persona, index) => (
+              <div key={index} className="p-4 rounded-xl border border-white/10 bg-white/5 text-center">
+                <div className="text-lg font-semibold mb-1">{persona.role}</div>
+                <div className="text-sm text-white/60">{persona.description}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
-      {/* CTA section will be added here if needed */}
+      <section className="py-12 md:py-16 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">Scale Your Technical Content</h2>
+            <p className="text-white/70 mb-6">Join technology companies using WriteWorks to ship docs and content at product velocity</p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
+                asChild
+              >
+                <Link href="https://app.writeworks.ai/sign-up">
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
+              </Button>
+            </div>
+            <p className="text-xs text-white/50 mt-4">No credit card required • Cancel anytime</p>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

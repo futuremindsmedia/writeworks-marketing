@@ -4,9 +4,9 @@ import { ArrowRight, Clock, AlertTriangle, Target, Calendar } from "lucide-react
 import { Breadcrumbs } from "@/components/breadcrumbs"
 
 export const metadata = {
-  title: "Content Marketing Solutions | WriteWorks AI",
+  title: "Content Marketing Content Writing & Management Software | WriteWorks",
   description:
-    "Scale content production, maintain brand consistency, and optimize for AI visibility with WriteWorks AI content marketing platform.",
+    "Scale content production 10x faster with AI-powered writing tools. Create high-quality, on-brand content across all channels while maintaining consistency and optimizing for better performance.",
 }
 
 export default function ContentMarketingPage() {
@@ -70,7 +70,7 @@ export default function ContentMarketingPage() {
               <span className="text-xs text-white/70">Solutions for Content Teams</span>
             </div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
-              The AI Content Marketing Platform That Scales With You
+              Content Marketing Content Writing &amp; Management Software
             </h1>
             <p className="text-lg text-white/70 mb-6 max-w-2xl mx-auto">
               Plan, create, and scale with ease. Elevate quality and performance across all channels.
@@ -219,15 +219,28 @@ export default function ContentMarketingPage() {
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Scale Your Content Marketing</h2>
             <p className="text-white/70 mb-6">Join content teams using WriteWorks to create more, faster, and better</p>
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
-              asChild
-            >
-              <Link href="https://app.writeworks.ai/sign-up">
-                Start Free <ArrowRight className="ml-2 w-4 h-4" />
-              </Link>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90"
+                asChild
+              >
+                <Link href="https://app.writeworks.ai/sign-up">
+                  Start Free <ArrowRight className="ml-2 w-4 h-4" />
+                </Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white/20 text-white bg-transparent hover:bg-white/5"
+                asChild
+              >
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
+              </Button>
+            </div>
+            <p className="text-xs text-white/50 mt-4">No credit card required • Cancel anytime</p>
           </div>
         </div>
       </section>
