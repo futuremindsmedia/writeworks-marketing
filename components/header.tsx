@@ -466,6 +466,11 @@ export function Header() {
           <Button variant="ghost" className="text-white" asChild>
             <Link href="https://app.writeworks.ai/login">Sign In</Link>
           </Button>
+          <Button variant="outline" className="border-white/20 text-white bg-transparent hover:bg-white/5" asChild>
+            <Link href="/demo">
+              <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+            </Link>
+          </Button>
           <Button className="bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90" asChild>
             <Link href="https://app.writeworks.ai/sign-up">
               Free Trial <ArrowRight className="ml-2 w-4 h-4 inline" />
@@ -601,6 +606,11 @@ export function Header() {
             <div className="flex flex-col gap-3 pt-6 mt-4 border-t border-white/10">
               <Button variant="outline" className="w-full border-white/20 text-white bg-transparent h-12" asChild>
                 <Link href="https://app.writeworks.ai/login">Sign In</Link>
+              </Button>
+              <Button variant="outline" className="w-full border-white/20 text-white bg-transparent h-12" asChild>
+                <Link href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </Link>
               </Button>
               <Button
                 className="w-full bg-gradient-to-r from-[#6366F1] to-[#8B5CF6] text-white hover:opacity-90 h-12"

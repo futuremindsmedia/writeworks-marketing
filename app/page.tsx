@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-import { Sparkles, Zap, Users, Check, FileText, Target, ArrowRight, XCircle, Megaphone, Award, TrendingUp, Globe, Briefcase, Building2, PenTool } from "lucide-react"
+import { Sparkles, Zap, Users, Check, FileText, Target, ArrowRight, XCircle, Megaphone, Award, TrendingUp, Globe, Briefcase, Building2, PenTool, Calendar } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 function useInView(options = {}) {
@@ -230,7 +230,9 @@ export default function Home() {
                 className="border-white/20 text-white bg-transparent hover:bg-white/5"
                 asChild
               >
-                <a href="https://app.writeworks.ai/demo">Book Demo</a>
+                <a href="/demo">
+                  <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
+                </a>
               </Button>
             </div>
           </div>
