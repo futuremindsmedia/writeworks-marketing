@@ -49,8 +49,8 @@ export default function ProductMarketingPage() {
         "Your announcements aren't being cited by AI platforms when users ask about solutions in your category.",
     },
     {
-      title: "Messaging Doesn't Reach AI",
-      description: "Traditional positioning frameworks don't optimize for LLM citation patterns.",
+      title: "Messaging Gets Lost",
+      description: "Traditional positioning frameworks don't resonate in today's fast-paced market.",
     },
     {
       title: "Slow Time-to-Market",
@@ -64,14 +64,14 @@ export default function ProductMarketingPage() {
 
   const solutions = [
     {
-      title: "LLM-Optimized Launches",
+      title: "AI-Powered Launches",
       description:
-        "Human-built frameworks ensure your product announcements get cited by ChatGPT, Claude, and Perplexity.",
+        "Human-built frameworks ensure your product announcements reach the right audience at the right time.",
       icon: Megaphone,
     },
     {
-      title: "AI-Ready Positioning",
-      description: "Messaging structured for maximum visibility in AI-powered search and recommendations.",
+      title: "Strategic Positioning",
+      description: "Messaging structured for maximum market impact and audience resonance.",
       icon: Target,
     },
     {
@@ -99,7 +99,7 @@ export default function ProductMarketingPage() {
     },
     {
       role: "VP of Product Marketing",
-      description: "Drive measurable LLM visibility across your entire product portfolio.",
+      description: "Drive measurable impact across your entire product portfolio.",
       icon: TrendingUp,
     },
     {
@@ -250,7 +250,7 @@ export default function ProductMarketingPage() {
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
               <h2 className="text-2xl md:text-3xl font-bold mb-2">How WriteWorks Solves It</h2>
-              <p className="text-white/70">AI-powered product marketing built for LLM visibility</p>
+              <p className="text-white/70">AI-powered product marketing built for market impact</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {solutions.map((solution, index) => (
