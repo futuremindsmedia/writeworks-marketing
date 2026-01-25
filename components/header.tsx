@@ -449,7 +449,7 @@ export function Header() {
             {solutionsOpen && (
               <div className="fixed left-0 right-0 top-[calc(100%+1px)] flex justify-center pointer-events-none z-50">
                 <div className="pointer-events-auto container mx-auto px-3 md:px-4">
-                  <div className="bg-black/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-2xl shadow-white/5 p-4 md:p-6 mt-2">
+                  <div className="bg-background/95 backdrop-blur-lg border border-border rounded-xl shadow-2xl p-4 md:p-6 mt-2">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-6">
                       <div>
                         <h3 className="text-sm font-semibold text-foreground mb-4 flex items-center gap-2">
@@ -545,7 +545,7 @@ export function Header() {
             {platformOpen && (
               <div className="fixed left-0 right-0 top-[calc(100%+1px)] flex justify-center pointer-events-none z-50">
                 <div className="pointer-events-auto container mx-auto px-3 md:px-4">
-                  <div className="bg-background/95 backdrop-blur-lg border border-border rounded-xl shadow-2xl shadow-white/5 p-4 md:p-6 mt-2">
+                  <div className="bg-background/95 backdrop-blur-lg border border-border rounded-xl shadow-2xl p-4 md:p-6 mt-2">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {platformFeatures.map((feature) => (
                         <Link
@@ -592,7 +592,7 @@ export function Header() {
             {resourcesOpen && (
               <div className="fixed left-0 right-0 top-[calc(100%+1px)] flex justify-center pointer-events-none z-50">
                 <div className="pointer-events-auto container mx-auto px-3 md:px-4">
-                  <div className="bg-background/95 backdrop-blur-lg border border-border rounded-xl shadow-2xl shadow-white/5 p-4 md:p-6 mt-2">
+                  <div className="bg-background/95 backdrop-blur-lg border border-border rounded-xl shadow-2xl p-4 md:p-6 mt-2">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {resourceCategories.map((resource) => (
                         <Link
@@ -717,7 +717,7 @@ export function Header() {
                   </div>
                   <Link
                     href="/solutions"
-                    className="flex items-center justify-center gap-2 text-sm text-[#6366F1] hover:text-[#8B5CF6] transition-colors py-3 px-3 rounded-lg border border-border hover:border-border cursor-pointer"
+                    className="flex items-center justify-center gap-2 text-sm text-[#6366F1] hover:text-[#8B5CF6] transition-colors py-3 px-3 rounded-lg border border-border hover:bg-accent cursor-pointer"
                   >
                     View all solutions <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
                   </Link>
