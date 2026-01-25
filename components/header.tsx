@@ -63,6 +63,7 @@ import {
 } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import { usePathname } from "next/navigation"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -428,7 +429,7 @@ export function Header() {
   ]
 
   return (
-    <header className="border-b border-white/10 sticky top-0 bg-black/80 backdrop-blur-lg z-50">
+    <header className="border-b border-border sticky top-0 bg-background/80 backdrop-blur-lg z-50">
       <div className="max-w-7xl mx-auto px-3 md:px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <a href="/">
@@ -441,17 +442,17 @@ export function Header() {
           <div className="relative" ref={dropdownRef}>
             <button
               onClick={() => setSolutionsOpen(!solutionsOpen)}
-              className="text-sm font-medium text-white/70 hover:text-white transition-colors flex items-center gap-1"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
             >
               Solutions <ChevronDown className={`w-4 h-4 transition-transform ${solutionsOpen ? "rotate-180" : ""}`} />
             </button>
             {solutionsOpen && (
               <div className="fixed left-0 right-0 top-[calc(100%+1px)] flex justify-center pointer-events-none z-50">
                 <div className="pointer-events-auto container mx-auto px-3 md:px-4">
-                  <div className="bg-black/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-2xl shadow-white/5 p-4 md:p-6 mt-2">
+                  <div className="bg-background/95 backdrop-blur-lg border border-border rounded-xl shadow-2xl p-4 md:p-6 mt-2">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-6">
                       <div>
-                        <h3 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
+                        <h3 className="text-sm font-semibold text-foreground mb-4 flex items-center gap-2">
                           <div className="w-1 h-4 bg-gradient-to-b from-[#6366F1] to-[#8B5CF6] rounded-full"></div>
                           Solutions by Role
                         </h3>
@@ -460,21 +461,21 @@ export function Header() {
                             <Link
                               key={solution.href}
                               href={solution.href}
-                              className="group flex items-start gap-2.5 p-2 rounded-lg hover:bg-white/5 transition-all duration-200"
+                              className="group flex items-start gap-2.5 p-2 rounded-lg hover:bg-accent transition-all duration-200"
                             >
-                              <solution.icon className="w-4 h-4 text-white/70 mt-0.5 flex-shrink-0 group-hover:text-white group-hover:scale-110 transition-all" />
+                              <solution.icon className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0 group-hover:text-foreground group-hover:scale-110 transition-all" />
                               <div>
-                                <div className="text-sm font-medium text-white group-hover:text-white transition-colors">
+                                <div className="text-sm font-medium text-foreground group-hover:text-foreground transition-colors">
                                   {solution.name}
                                 </div>
-                                <div className="text-xs text-white/60 mt-0.5">{solution.description}</div>
+                                <div className="text-xs text-muted-foreground mt-0.5">{solution.description}</div>
                               </div>
                             </Link>
                           ))}
                         </ul>
                       </div>
                       <div>
-                        <h3 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
+                        <h3 className="text-sm font-semibold text-foreground mb-4 flex items-center gap-2">
                           <div className="w-1 h-4 bg-gradient-to-b from-[#6366F1] to-[#8B5CF6] rounded-full"></div>
                           Solutions by Industry
                         </h3>
@@ -483,21 +484,21 @@ export function Header() {
                             <Link
                               key={solution.href}
                               href={solution.href}
-                              className="group flex items-start gap-2.5 p-2 rounded-lg hover:bg-white/5 transition-all duration-200"
+                              className="group flex items-start gap-2.5 p-2 rounded-lg hover:bg-accent transition-all duration-200"
                             >
-                              <solution.icon className="w-4 h-4 text-white/70 mt-0.5 flex-shrink-0 group-hover:text-white group-hover:scale-110 transition-all" />
+                              <solution.icon className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0 group-hover:text-foreground group-hover:scale-110 transition-all" />
                               <div>
-                                <div className="text-sm font-medium text-white group-hover:text-white transition-colors">
+                                <div className="text-sm font-medium text-foreground group-hover:text-foreground transition-colors">
                                   {solution.name}
                                 </div>
-                                <div className="text-xs text-white/60 mt-0.5">{solution.description}</div>
+                                <div className="text-xs text-muted-foreground mt-0.5">{solution.description}</div>
                               </div>
                             </Link>
                           ))}
                         </ul>
                       </div>
                       <div>
-                        <h3 className="text-sm font-semibold text-white mb-4 flex items-center gap-2">
+                        <h3 className="text-sm font-semibold text-foreground mb-4 flex items-center gap-2">
                           <div className="w-1 h-4 bg-gradient-to-b from-[#6366F1] to-[#8B5CF6] rounded-full"></div>
                           Solutions by Channel
                         </h3>
@@ -506,28 +507,28 @@ export function Header() {
                             <Link
                               key={solution.href}
                               href={solution.href}
-                              className="group flex items-start gap-2.5 p-2 rounded-lg hover:bg-white/5 transition-all duration-200"
+                              className="group flex items-start gap-2.5 p-2 rounded-lg hover:bg-accent transition-all duration-200"
                             >
-                              <solution.icon className="w-4 h-4 text-white/70 mt-0.5 flex-shrink-0 group-hover:text-white group-hover:scale-110 transition-all" />
+                              <solution.icon className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0 group-hover:text-foreground group-hover:scale-110 transition-all" />
                               <div>
-                                <div className="text-sm font-medium text-white group-hover:text-white transition-colors">
+                                <div className="text-sm font-medium text-foreground group-hover:text-foreground transition-colors">
                                   {solution.name}
                                 </div>
-                                <div className="text-xs text-white/60 mt-0.5">{solution.description}</div>
+                                <div className="text-xs text-muted-foreground mt-0.5">{solution.description}</div>
                               </div>
                             </Link>
                           ))}
                         </ul>
                       </div>
                     </div>
-                    <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                    <div className="mt-6 pt-4 border-t border-border flex items-center justify-between">
                       <Link
                         href="/solutions"
                         className="text-sm text-[#6366F1] hover:text-[#8B5CF6] transition-colors flex items-center gap-2"
                       >
                         View all solutions <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
                       </Link>
-                      <div className="text-xs text-white/60">AI that accelerates workflows across the entire team</div>
+                      <div className="text-xs text-muted-foreground">AI that accelerates workflows across the entire team</div>
                     </div>
                   </div>
                 </div>
@@ -537,39 +538,39 @@ export function Header() {
           <div className="relative" ref={platformDropdownRef}>
             <button
               onClick={() => setPlatformOpen(!platformOpen)}
-              className="text-sm font-medium text-white/70 hover:text-white transition-colors flex items-center gap-1"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
             >
               Platform <ChevronDown className={`w-4 h-4 transition-transform ${platformOpen ? "rotate-180" : ""}`} />
             </button>
             {platformOpen && (
               <div className="fixed left-0 right-0 top-[calc(100%+1px)] flex justify-center pointer-events-none z-50">
                 <div className="pointer-events-auto container mx-auto px-3 md:px-4">
-                  <div className="bg-black/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-2xl shadow-white/5 p-4 md:p-6 mt-2">
+                  <div className="bg-background/95 backdrop-blur-lg border border-border rounded-xl shadow-2xl p-4 md:p-6 mt-2">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {platformFeatures.map((feature) => (
                         <Link
                           key={feature.href}
                           href={feature.href}
-                          className="group flex items-start gap-2.5 p-2 rounded-lg hover:bg-white/5 transition-all duration-200"
+                          className="group flex items-start gap-2.5 p-2 rounded-lg hover:bg-accent transition-all duration-200"
                         >
-                          <feature.icon className="w-4 h-4 text-white/70 mt-0.5 flex-shrink-0 group-hover:text-white group-hover:scale-110 transition-all" />
+                          <feature.icon className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0 group-hover:text-foreground group-hover:scale-110 transition-all" />
                           <div>
-                            <div className="text-sm font-medium text-white group-hover:text-white transition-colors">
+                            <div className="text-sm font-medium text-foreground group-hover:text-foreground transition-colors">
                               {feature.name}
                             </div>
-                            <div className="text-xs text-white/60 mt-0.5">{feature.description}</div>
+                            <div className="text-xs text-muted-foreground mt-0.5">{feature.description}</div>
                           </div>
                         </Link>
                       ))}
                     </div>
-                    <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                    <div className="mt-6 pt-4 border-t border-border flex items-center justify-between">
                       <Link
                         href="/platform"
                         className="text-sm text-[#6366F1] hover:text-[#8B5CF6] transition-colors flex items-center gap-2"
                       >
                         View platform overview <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
                       </Link>
-                      <div className="text-xs text-white/60">
+                      <div className="text-xs text-muted-foreground">
                         Enterprise AI content platform for high-performance teams
                       </div>
                     </div>
@@ -578,38 +579,38 @@ export function Header() {
               </div>
             )}
           </div>
-          <Link href="/enterprise" className="text-sm font-medium text-white/70 hover:text-white transition-colors">
+          <Link href="/enterprise" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Enterprise
           </Link>
           <div className="relative" ref={resourcesDropdownRef}>
             <button
               onClick={() => setResourcesOpen(!resourcesOpen)}
-              className="text-sm font-medium text-white/70 hover:text-white transition-colors flex items-center gap-1"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
             >
               Resources <ChevronDown className={`w-4 h-4 transition-transform ${resourcesOpen ? "rotate-180" : ""}`} />
             </button>
             {resourcesOpen && (
               <div className="fixed left-0 right-0 top-[calc(100%+1px)] flex justify-center pointer-events-none z-50">
                 <div className="pointer-events-auto container mx-auto px-3 md:px-4">
-                  <div className="bg-black/95 backdrop-blur-lg border border-white/10 rounded-xl shadow-2xl shadow-white/5 p-4 md:p-6 mt-2">
+                  <div className="bg-background/95 backdrop-blur-lg border border-border rounded-xl shadow-2xl p-4 md:p-6 mt-2">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {resourceCategories.map((resource) => (
                         <Link
                           key={resource.href}
                           href={resource.href}
-                          className="group flex items-start gap-2.5 p-2 rounded-lg hover:bg-white/5 transition-all duration-200"
+                          className="group flex items-start gap-2.5 p-2 rounded-lg hover:bg-accent transition-all duration-200"
                         >
-                          <resource.icon className="w-4 h-4 text-white/70 mt-0.5 flex-shrink-0 group-hover:text-white group-hover:scale-110 transition-all" />
+                          <resource.icon className="w-4 h-4 text-muted-foreground mt-0.5 flex-shrink-0 group-hover:text-foreground group-hover:scale-110 transition-all" />
                           <div>
-                            <div className="text-sm font-medium text-white group-hover:text-white transition-colors">
+                            <div className="text-sm font-medium text-foreground group-hover:text-foreground transition-colors">
                               {resource.name}
                             </div>
-                            <div className="text-xs text-white/60 mt-0.5">{resource.description}</div>
+                            <div className="text-xs text-muted-foreground mt-0.5">{resource.description}</div>
                           </div>
                         </Link>
                       ))}
                     </div>
-                    <div className="mt-6 pt-4 border-t border-white/10">
+                    <div className="mt-6 pt-4 border-t border-border">
                       <Link
                         href="/resources"
                         className="text-sm text-[#6366F1] hover:text-[#8B5CF6] transition-colors flex items-center gap-2"
@@ -622,17 +623,18 @@ export function Header() {
               </div>
             )}
           </div>
-          <Link href="/pricing" className="text-sm font-medium text-white/70 hover:text-white transition-colors">
+          <Link href="/pricing" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
             Pricing
           </Link>
         </nav>
 
         {/* Desktop CTA Buttons */}
         <div className="hidden md:flex items-center gap-3">
-          <Button variant="ghost" className="text-white" asChild>
+          <ThemeToggle />
+          <Button variant="ghost" className="text-foreground" asChild>
             <Link href="https://app.writeworks.ai/login">Sign In</Link>
           </Button>
-          <Button variant="outline" className="border-white text-white bg-transparent hover:bg-white/5 font-bold" asChild>
+          <Button variant="outline" className="border-border text-foreground bg-transparent hover:bg-accent font-bold" asChild>
             <Link href="/demo">
               <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
             </Link>
@@ -646,7 +648,7 @@ export function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"
+          className="md:hidden text-foreground p-2 hover:bg-accent rounded-lg transition-colors"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -656,12 +658,12 @@ export function Header() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-t border-white/10 bg-black/95 backdrop-blur-lg absolute left-0 right-0 top-full max-h-[calc(100vh-5rem)] overflow-y-auto z-40">
+        <div className="md:hidden border-t border-border bg-background/95 backdrop-blur-lg absolute left-0 right-0 top-full max-h-[calc(100vh-5rem)] overflow-y-auto z-40">
           <nav className="container mx-auto px-3 md:px-4 py-6 flex flex-col gap-2">
-            <div className="border-b border-white/10 pb-4 mb-2">
+            <div className="border-b border-border pb-4 mb-2">
               <button
                 onClick={() => setSolutionsOpen(!solutionsOpen)}
-                className="text-base text-white hover:text-white/80 transition-colors py-3 flex items-center justify-between w-full font-medium"
+                className="text-base text-foreground hover:text-foreground/80 transition-colors py-3 flex items-center justify-between w-full font-medium"
               >
                 Solutions{" "}
                 <ChevronDown className={`w-5 h-5 transition-transform ${solutionsOpen ? "rotate-180" : ""}`} />
@@ -669,45 +671,45 @@ export function Header() {
               {solutionsOpen && (
                 <div className="mt-3 space-y-4 animate-in slide-in-from-top-2 duration-200">
                   <div>
-                    <div className="text-xs font-semibold text-white/70 mb-3 uppercase tracking-wider">By Role</div>
+                    <div className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">By Role</div>
                     <div className="space-y-1">
                       {solutionsByRole.slice(0, 5).map((solution) => (
                         <Link
                           key={solution.href}
                           href={solution.href}
-                          className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
+                          className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground hover:bg-accent transition-all py-3 px-3 rounded-lg cursor-pointer"
                         >
-                          <solution.icon className="w-5 h-5 text-white flex-shrink-0" />
+                          <solution.icon className="w-5 h-5 text-foreground flex-shrink-0" />
                           <span>{solution.name}</span>
                         </Link>
                       ))}
                     </div>
                   </div>
                   <div>
-                    <div className="text-xs font-semibold text-white/70 mb-3 uppercase tracking-wider">By Industry</div>
+                    <div className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">By Industry</div>
                     <div className="space-y-1">
                       {solutionsByIndustry.slice(0, 5).map((solution) => (
                         <Link
                           key={solution.href}
                           href={solution.href}
-                          className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
+                          className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground hover:bg-accent transition-all py-3 px-3 rounded-lg cursor-pointer"
                         >
-                          <solution.icon className="w-5 h-5 text-white flex-shrink-0" />
+                          <solution.icon className="w-5 h-5 text-foreground flex-shrink-0" />
                           <span>{solution.name}</span>
                         </Link>
                       ))}
                     </div>
                   </div>
                   <div>
-                    <div className="text-xs font-semibold text-white/70 mb-3 uppercase tracking-wider">By Channel</div>
+                    <div className="text-xs font-semibold text-muted-foreground mb-3 uppercase tracking-wider">By Channel</div>
                     <div className="space-y-1">
                       {solutionsByChannel.slice(0, 5).map((solution) => (
                         <Link
                           key={solution.href}
                           href={solution.href}
-                          className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
+                          className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground hover:bg-accent transition-all py-3 px-3 rounded-lg cursor-pointer"
                         >
-                          <solution.icon className="w-5 h-5 text-white flex-shrink-0" />
+                          <solution.icon className="w-5 h-5 text-foreground flex-shrink-0" />
                           <span>{solution.name}</span>
                         </Link>
                       ))}
@@ -715,17 +717,17 @@ export function Header() {
                   </div>
                   <Link
                     href="/solutions"
-                    className="flex items-center justify-center gap-2 text-sm text-[#6366F1] hover:text-[#8B5CF6] transition-colors py-3 px-3 rounded-lg border border-white/20 hover:border-white/40 cursor-pointer"
+                    className="flex items-center justify-center gap-2 text-sm text-[#6366F1] hover:text-[#8B5CF6] transition-colors py-3 px-3 rounded-lg border border-border hover:bg-accent cursor-pointer"
                   >
                     View all solutions <ChevronDown className="w-4 h-4 rotate-[-90deg]" />
                   </Link>
                 </div>
               )}
             </div>
-            <div className="border-b border-white/10 pb-4 mb-2">
+            <div className="border-b border-border pb-4 mb-2">
               <button
                 onClick={() => setPlatformOpen(!platformOpen)}
-                className="text-base text-white hover:text-white/80 transition-colors py-3 flex items-center justify-between w-full font-medium"
+                className="text-base text-foreground hover:text-foreground/80 transition-colors py-3 flex items-center justify-between w-full font-medium"
               >
                 Platform <ChevronDown className={`w-5 h-5 transition-transform ${platformOpen ? "rotate-180" : ""}`} />
               </button>
@@ -735,9 +737,9 @@ export function Header() {
                     <Link
                       key={feature.href}
                       href={feature.href}
-                      className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
+                      className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground hover:bg-accent transition-all py-3 px-3 rounded-lg cursor-pointer"
                     >
-                      <feature.icon className="w-5 h-5 text-white flex-shrink-0" />
+                      <feature.icon className="w-5 h-5 text-foreground flex-shrink-0" />
                       <span>{feature.name}</span>
                     </Link>
                   ))}
@@ -746,14 +748,14 @@ export function Header() {
             </div>
             <Link
               href="/enterprise"
-              className="text-base text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg"
+              className="text-base text-muted-foreground hover:text-foreground hover:bg-accent transition-all py-3 px-3 rounded-lg"
             >
               Enterprise
             </Link>
-            <div className="border-b border-white/10 pb-4 mb-2">
+            <div className="border-b border-border pb-4 mb-2">
               <button
                 onClick={() => setResourcesOpen(!resourcesOpen)}
-                className="text-base text-white hover:text-white/80 transition-colors py-3 flex items-center justify-between w-full font-medium"
+                className="text-base text-foreground hover:text-foreground/80 transition-colors py-3 flex items-center justify-between w-full font-medium"
               >
                 Resources{" "}
                 <ChevronDown className={`w-5 h-5 transition-transform ${resourcesOpen ? "rotate-180" : ""}`} />
@@ -764,9 +766,9 @@ export function Header() {
                     <Link
                       key={resource.href}
                       href={resource.href}
-                      className="flex items-center gap-3 text-sm text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg cursor-pointer"
+                      className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground hover:bg-accent transition-all py-3 px-3 rounded-lg cursor-pointer"
                     >
-                      <resource.icon className="w-5 h-5 text-white flex-shrink-0" />
+                      <resource.icon className="w-5 h-5 text-foreground flex-shrink-0" />
                       <span>{resource.name}</span>
                     </Link>
                   ))}
@@ -775,15 +777,18 @@ export function Header() {
             </div>
             <Link
               href="/pricing"
-              className="text-base text-white/70 hover:text-white hover:bg-white/5 transition-all py-3 px-3 rounded-lg"
+              className="text-base text-muted-foreground hover:text-foreground hover:bg-accent transition-all py-3 px-3 rounded-lg"
             >
               Pricing
             </Link>
-            <div className="flex flex-col gap-3 pt-6 mt-4 border-t border-white/10">
-              <Button variant="outline" className="w-full border-white/20 text-white bg-transparent h-12 font-semibold" asChild>
+            <div className="flex flex-col gap-3 pt-6 mt-4 border-t border-border">
+              <div className="flex items-center justify-center pb-2">
+                <ThemeToggle />
+              </div>
+              <Button variant="outline" className="w-full border-border text-foreground bg-transparent h-12 font-semibold" asChild>
                 <Link href="https://app.writeworks.ai/login">Sign In</Link>
               </Button>
-              <Button variant="outline" className="w-full border-white text-white bg-transparent h-12 font-bold" asChild>
+              <Button variant="outline" className="w-full border-border text-foreground bg-transparent h-12 font-bold" asChild>
                 <Link href="/demo">
                   <Calendar className="mr-2 w-4 h-4 inline" /> Book Demo
                 </Link>
