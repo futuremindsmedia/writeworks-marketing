@@ -144,7 +144,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
             <div className="text-sm text-white/60">© 2025 WriteWorks AI. All rights reserved.</div>
             <div className="flex items-center gap-6 text-sm text-white/60">
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="/privacy" className="hover:text-white transition-colors">
                 Privacy
               </a>
               <a href="#" className="hover:text-white transition-colors">
