@@ -9,36 +9,36 @@ const geist = Geist({ subsets: ["latin"] })
 const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "WriteWorks AI - LLM Content Optimization Platform",
+  title: "WriteWorks - Content Creation Platform for Marketing Teams",
   description:
-    "Get your brand cited by ChatGPT, Claude, Perplexity, and AI Overviews. Create content optimized for LLM visibility using human-built frameworks and 80+ specialized AI agents.",
+    "Create high-quality, on-brand content at scale. 80+ specialized agents help you produce engaging content faster while maintaining consistency across all channels.",
   keywords: [
-    "LLM optimization",
-    "AI content writing",
-    "ChatGPT citations",
-    "Claude mentions",
-    "Perplexity visibility",
-    "AI platform optimization",
+    "content creation",
+    "content writing",
+    "content marketing platform",
+    "writing assistant",
+    "content optimization",
+    "brand content",
     "content marketing",
-    "AI agents",
+    "marketing platform",
   ],
-  authors: [{ name: "WriteWorks AI" }],
-  creator: "WriteWorks AI",
-  publisher: "WriteWorks AI",
+  authors: [{ name: "WriteWorks" }],
+  creator: "WriteWorks",
+  publisher: "WriteWorks",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://writeworks.ai",
-    siteName: "WriteWorks AI",
-    title: "WriteWorks AI - LLM Content Optimization Platform",
+    siteName: "WriteWorks",
+    title: "WriteWorks - Content Creation Platform for Marketing Teams",
     description:
-      "Get your brand cited by ChatGPT, Claude, Perplexity, and AI Overviews. Create content optimized for LLM visibility.",
+      "Create high-quality, on-brand content at scale with 80+ specialized agents.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "WriteWorks AI - LLM Content Optimization Platform",
+    title: "WriteWorks - Content Creation Platform for Marketing Teams",
     description:
-      "Get your brand cited by ChatGPT, Claude, Perplexity, and AI Overviews. Create content optimized for LLM visibility.",
+      "Create high-quality, on-brand content at scale with 80+ specialized agents.",
   },
   generator: "v0.app",
 }

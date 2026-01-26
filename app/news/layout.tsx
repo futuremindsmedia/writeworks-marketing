@@ -2,29 +2,29 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "AI & LLM Industry News - WriteWorks AI | Latest Updates on AI Search & Content Optimization",
+  title: "Content Marketing News | WriteWorks - Latest Updates & Industry Insights",
   description:
-    "Stay updated with the latest developments in AI search, LLM technology, ChatGPT, Claude, Perplexity, and content optimization. Get industry news, product updates, and insights from AI experts.",
+    "Stay updated with the latest developments in content marketing, industry trends, best practices, and insights. Get news, product updates, and expert perspectives.",
   keywords: [
-    "AI news",
-    "LLM industry updates",
-    "ChatGPT news",
-    "Claude updates",
-    "Perplexity news",
-    "AI search trends",
+    "content marketing news",
+    "marketing industry updates",
+    "content strategy news",
+    "marketing trends",
+    "content marketing insights",
+    "marketing best practices",
     "content optimization news",
-    "AI platform updates",
+    "marketing updates",
   ],
   openGraph: {
-    title: "AI & LLM Industry News - WriteWorks AI | Latest Updates on AI Search & Content Optimization",
-    description: "Stay updated with the latest developments in AI search, LLM technology, and content optimization.",
+    title: "Content Marketing News | WriteWorks - Latest Updates & Industry Insights",
+    description: "Stay updated with the latest developments in content marketing, industry trends, and best practices.",
     url: "https://writeworks.ai/news",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI & LLM Industry News - WriteWorks AI | Latest Updates on AI Search & Content Optimization",
-    description: "Stay updated with the latest developments in AI search, LLM technology, and content optimization.",
+    title: "Content Marketing News | WriteWorks - Latest Updates & Industry Insights",
+    description: "Stay updated with the latest developments in content marketing, industry trends, and best practices.",
   },
 }
 

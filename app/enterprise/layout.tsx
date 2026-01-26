@@ -4,9 +4,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Enterprise | WriteWorks AI - Scale Content Intelligence Across Your Organization",
   description:
-    "Enterprise-grade content intelligence platform for large organizations. Optimize content for LLM citations at scale with advanced security, team collaboration, and dedicated support.",
+    "Enterprise-grade content intelligence platform for large organizations. Create high-quality content at scale with advanced security, team collaboration, and dedicated support.",
   keywords:
-    "enterprise content management, LLM optimization enterprise, AI content platform, enterprise SEO, content intelligence, team collaboration, SOC 2, GDPR compliance",
+    "enterprise content management, enterprise AI platform, AI content platform, enterprise SEO, content intelligence, team collaboration, SOC 2, GDPR compliance",
   openGraph: {
     title: "Enterprise | WriteWorks AI",
     description:

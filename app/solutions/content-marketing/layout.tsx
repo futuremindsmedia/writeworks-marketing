@@ -2,27 +2,27 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "AI Content Marketing Platform | Strategy to Execution",
+  title: "Content Marketing Platform | Strategy to Execution",
   description:
-    "Transform your content marketing with our AI content marketing platform. Plan, create, optimize, and measure content performance—all in one place.",
+    "Transform your content marketing with our content marketing platform. Plan, create, optimize, and measure content performance—all in one place.",
   keywords: [
-    "ai content marketing platform",
-    "content marketing ai",
-    "ai for content strategy",
-    "content creation ai",
+    "content marketing platform",
+    "content marketing software",
+    "content strategy",
+    "content creation",
     "marketing content generator",
   ],
   openGraph: {
-    title: "AI Content Marketing Platform | Strategy to Execution",
+    title: "Content Marketing Platform | Strategy to Execution",
     description:
-      "Transform your content marketing with our AI content marketing platform. Plan, create, optimize, and measure content performance—all in one place.",
+      "Transform your content marketing with our content marketing platform. Plan, create, optimize, and measure content performance—all in one place.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Content Marketing Platform | Strategy to Execution",
+    title: "Content Marketing Platform | Strategy to Execution",
     description:
-      "Transform your content marketing with our AI content marketing platform. Plan, create, optimize, and measure content performance—all in one place.",
+      "Transform your content marketing with our content marketing platform. Plan, create, optimize, and measure content performance—all in one place.",
   },
 }
 

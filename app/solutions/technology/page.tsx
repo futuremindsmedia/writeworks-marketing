@@ -45,8 +45,8 @@ export default function TechnologyPage() {
     },
     {
       icon: BookOpen,
-      title: "AI Platform Visibility",
-      description: "LLM-optimized documentation structure ensures AI platforms cite your innovations first.",
+      title: "Search Optimized Docs",
+      description: "Well-structured documentation ensures developers find your solutions when searching for answers.",
     },
   ]
 

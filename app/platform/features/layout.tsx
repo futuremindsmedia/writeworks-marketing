@@ -2,30 +2,30 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Platform Features | WriteWorks AI - Complete LLM Content Optimization Tools",
+  title: "Platform Features | WriteWorks - Complete Content Creation Tools",
   description:
-    "Explore all WriteWorks AI platform features: LLM visibility scoring, 80+ AI agents, brand management, team collaboration, content analytics, and more. Everything you need to optimize content for AI platforms.",
+    "Explore all WriteWorks platform features: content scoring, 80+ specialized agents, brand management, team collaboration, content analytics, and more. Everything you need to create high-quality content at scale.",
   keywords: [
-    "LLM content optimization features",
-    "AI content tools",
+    "content creation features",
+    "content tools",
     "content management platform",
-    "AI writing assistant",
+    "writing assistant",
     "team collaboration tools",
     "content analytics",
     "brand management",
     "WriteWorks features",
   ],
   openGraph: {
-    title: "Platform Features | WriteWorks AI",
+    title: "Platform Features | WriteWorks",
     description:
-      "Comprehensive tools for LLM content optimization: AI agents, visibility scoring, brand management, collaboration, and analytics.",
+      "Comprehensive tools for content creation: specialized agents, content scoring, brand management, collaboration, and analytics.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Platform Features | WriteWorks AI",
+    title: "Platform Features | WriteWorks",
     description:
-      "Comprehensive tools for LLM content optimization: AI agents, visibility scoring, brand management, collaboration, and analytics.",
+      "Comprehensive tools for content creation: specialized agents, content scoring, brand management, collaboration, and analytics.",
   },
 }
 

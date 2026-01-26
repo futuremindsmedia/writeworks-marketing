@@ -23,8 +23,8 @@ export default function ContentMarketingPage() {
     },
     {
       icon: Target,
-      title: "Low AI Visibility",
-      description: "Content doesn't get cited by ChatGPT, Claude, or Perplexity when users search.",
+      title: "Low Engagement",
+      description: "Content doesn't drive the engagement, leads, and conversions your team needs.",
     },
   ]
 
@@ -38,8 +38,8 @@ export default function ContentMarketingPage() {
       solution: "Brand knowledge base ensures every piece of content matches your voice, tone, and guidelines.",
     },
     {
-      challenge: "Low AI Visibility",
-      solution: "Real-time LLM scoring optimizes content structure for maximum AI platform citations.",
+      challenge: "Low Engagement",
+      solution: "Real-time content scoring optimizes structure for maximum reader engagement and conversions.",
     },
   ]
 
