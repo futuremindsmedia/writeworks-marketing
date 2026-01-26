@@ -9,16 +9,16 @@ const geist = Geist({ subsets: ["latin"] })
 const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "WriteWorks AI - LLM Content Optimization Platform",
+  title: "WriteWorks AI - AI Content Creation Platform",
   description:
-    "Get your brand cited by ChatGPT, Claude, Perplexity, and AI Overviews. Create content optimized for LLM visibility using human-built frameworks and 80+ specialized AI agents.",
+    "Create high-quality, on-brand content at scale. 80+ specialized AI agents help you produce engaging content faster while maintaining consistency across all channels.",
   keywords: [
-    "LLM optimization",
+    "AI content creation",
     "AI content writing",
-    "ChatGPT citations",
-    "Claude mentions",
-    "Perplexity visibility",
-    "AI platform optimization",
+    "content marketing platform",
+    "AI writing assistant",
+    "content optimization",
+    "brand content",
     "content marketing",
     "AI agents",
   ],
@@ -30,15 +30,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://writeworks.ai",
     siteName: "WriteWorks AI",
-    title: "WriteWorks AI - LLM Content Optimization Platform",
+    title: "WriteWorks AI - AI Content Creation Platform",
     description:
-      "Get your brand cited by ChatGPT, Claude, Perplexity, and AI Overviews. Create content optimized for LLM visibility.",
+      "Create high-quality, on-brand content at scale with 80+ specialized AI agents.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "WriteWorks AI - LLM Content Optimization Platform",
+    title: "WriteWorks AI - AI Content Creation Platform",
     description:
-      "Get your brand cited by ChatGPT, Claude, Perplexity, and AI Overviews. Create content optimized for LLM visibility.",
+      "Create high-quality, on-brand content at scale with 80+ specialized AI agents.",
   },
   generator: "v0.app",
 }
