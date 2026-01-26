@@ -2,22 +2,22 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "AI Content Resources | Guides, Webinars & Research",
+  title: "Content Marketing Resources | Guides, Webinars & Research",
   description:
-    "Explore our library of AI content resources. In-depth guides, original research, webinars, and best practices to elevate your content marketing.",
-  keywords: ["ai content resources", "content marketing resources", "ai writing guides", "marketing content hub"],
+    "Explore our library of content marketing resources. In-depth guides, original research, webinars, and best practices to elevate your marketing strategy.",
+  keywords: ["content marketing resources", "marketing guides", "writing resources", "marketing content hub"],
   openGraph: {
-    title: "AI Content Resources | Guides, Webinars & Research",
+    title: "Content Marketing Resources | Guides, Webinars & Research",
     description:
-      "Explore our library of AI content resources. In-depth guides, original research, webinars, and best practices to elevate your content marketing.",
+      "Explore our library of content marketing resources. In-depth guides, original research, webinars, and best practices to elevate your marketing strategy.",
     url: "https://writeworks.ai/resources",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Content Resources | Guides, Webinars & Research",
+    title: "Content Marketing Resources | Guides, Webinars & Research",
     description:
-      "Explore our library of AI content resources. In-depth guides, original research, webinars, and best practices to elevate your content marketing.",
+      "Explore our library of content marketing resources. In-depth guides, original research, webinars, and best practices to elevate your marketing strategy.",
   },
 }
 

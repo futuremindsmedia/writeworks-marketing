@@ -9,36 +9,36 @@ const geist = Geist({ subsets: ["latin"] })
 const geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "WriteWorks AI - AI Content Creation Platform",
+  title: "WriteWorks - Content Creation Platform for Marketing Teams",
   description:
-    "Create high-quality, on-brand content at scale. 80+ specialized AI agents help you produce engaging content faster while maintaining consistency across all channels.",
+    "Create high-quality, on-brand content at scale. 80+ specialized agents help you produce engaging content faster while maintaining consistency across all channels.",
   keywords: [
-    "AI content creation",
-    "AI content writing",
+    "content creation",
+    "content writing",
     "content marketing platform",
-    "AI writing assistant",
+    "writing assistant",
     "content optimization",
     "brand content",
     "content marketing",
-    "AI agents",
+    "marketing platform",
   ],
-  authors: [{ name: "WriteWorks AI" }],
-  creator: "WriteWorks AI",
-  publisher: "WriteWorks AI",
+  authors: [{ name: "WriteWorks" }],
+  creator: "WriteWorks",
+  publisher: "WriteWorks",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://writeworks.ai",
-    siteName: "WriteWorks AI",
-    title: "WriteWorks AI - AI Content Creation Platform",
+    siteName: "WriteWorks",
+    title: "WriteWorks - Content Creation Platform for Marketing Teams",
     description:
-      "Create high-quality, on-brand content at scale with 80+ specialized AI agents.",
+      "Create high-quality, on-brand content at scale with 80+ specialized agents.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "WriteWorks AI - AI Content Creation Platform",
+    title: "WriteWorks - Content Creation Platform for Marketing Teams",
     description:
-      "Create high-quality, on-brand content at scale with 80+ specialized AI agents.",
+      "Create high-quality, on-brand content at scale with 80+ specialized agents.",
   },
   generator: "v0.app",
 }

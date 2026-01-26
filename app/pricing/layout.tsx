@@ -2,26 +2,26 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "AI Content Platform Pricing | Plans & Features",
+  title: "WriteWorks Pricing | Plans & Features for Marketing Teams",
   description:
-    "Transparent AI content platform pricing for teams of all sizes. Compare plans, features, and find the perfect fit. Enterprise custom pricing available.",
+    "Transparent pricing for teams of all sizes. Compare plans, features, and find the perfect fit for your content needs. Enterprise custom pricing available.",
   keywords: [
-    "ai content platform pricing",
-    "ai writing tool cost",
-    "content ai pricing plans",
+    "content platform pricing",
+    "writing tool cost",
+    "content pricing plans",
     "enterprise content pricing",
   ],
   openGraph: {
-    title: "AI Content Platform Pricing | Plans & Features",
+    title: "WriteWorks Pricing | Plans & Features for Marketing Teams",
     description:
-      "Transparent AI content platform pricing for teams of all sizes. Compare plans, features, and find the perfect fit. Enterprise custom pricing available.",
+      "Transparent pricing for teams of all sizes. Compare plans, features, and find the perfect fit for your content needs. Enterprise custom pricing available.",
     url: "https://writeworks.ai/pricing",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI Content Platform Pricing | Plans & Features",
+    title: "WriteWorks Pricing | Plans & Features for Marketing Teams",
     description:
-      "Transparent AI content platform pricing for teams of all sizes. Compare plans, features, and find the perfect fit. Enterprise custom pricing available.",
+      "Transparent pricing for teams of all sizes. Compare plans, features, and find the perfect fit for your content needs. Enterprise custom pricing available.",
   },
 }
 
